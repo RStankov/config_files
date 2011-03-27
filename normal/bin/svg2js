@@ -1,0 +1,44 @@
+#!/usr/bin/env ruby
+
+class Svg2JsConvertor
+  def self.convert(format, from_file, to_file)
+    convertor = self.new
+    convertor.load_file(from_file)
+
+    File.open(to_file, 'w+') do |file|
+      file.write convertor.send(:"to_js_#{format}")
+    end
+  end
+
+  PATTERN = /\W+d=("[^"]+")/
+
+  def initialize
+    @content = []
+  end
+
+  def load_file(file_name)
+    open(file_name) do |file|
+      file.each do |line|
+        if match = line.match(PATTERN)
+          @content << match[1]
+        end
+      end
+    end
+  end
+
+  def to_js_object
+    index = 0
+    pad   = @content.size.to_s.size
+    "{\n    " + @content.map { |line| "\"label#{(index += 1).to_s.rjust(pad, '0')}\": #{line}" }.join("\n  , ") + "\n};"
+  end
+
+  def to_js_array
+    "[\n  " + @content.join("\n, ") + "\n];"
+  end
+end
+
+exit "usage: svg2js [format: array or object] [from_file: svg file] [to_file: js file]" unless ARGV.length === 3
+
+Svg2JsConvertor.convert(*ARGV)
+
+puts "#{ARGV[2]} generated succesfully"

@@ -1,0 +1,6 @@
+source ~/.bash/aliases
+source ~/.bash/completions
+source ~/.bash/exports
+
+[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
+

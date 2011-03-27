@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+
+def run cmd
+  puts cmd
+  result = `#{cmd}`
+  puts result
+  result
+end
+
+output = run "rails generate migration #{ARGV[0]}"
+
+migration_path = output.match(%r|db/migrate/.*\.rb|)[0]
+
+run "mate #{migration_path}" unless migration_path.nil?

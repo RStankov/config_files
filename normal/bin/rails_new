@@ -1,0 +1,3 @@
+#! /bin/bash
+
+rails new $1 --skip-git --skip-gemfile --skip-prototype --skip-test-unit --skip-gemfile -m ~/.rails/template.rb

@@ -1,0 +1,36 @@
+# bundle
+alias b="bundle"
+alias bu="b update"
+alias be="b exec"
+alias bec='be cucumber'
+alias gemopen="bundle open"
+
+# rails
+alias r='rails'
+alias rm="rake db:migrate db:test:prepare"
+
+# git
+alias g="git"
+alias ga="git add ."
+alias gb='git branch'
+alias gba='git branch -a'
+alias gp="git pull --rebase"
+alias gr="git rebase -i"
+alias gr10="git rebase -i HEAD~10"
+alias grm="git rebase master"
+alias grc="git rebase --continue"
+alias gra="git rebase --abort"
+alias gs="git stash"
+alias gsp="git stash pop"
+alias gst="git status"
+alias gc="git commit -m"
+alias gitx="open -a /Applications/GitX.app"
+
+# ls
+alias ls="ls -Fh"
+alias la="ls -A"
+alias ls="ls -alFG"
+alias ll="ls -alFG"
+
+alias run_resque="RAILS_ENV=development QUEUE=* VERBOSE=1 rake environment resque:work"
+alias o="open ."
