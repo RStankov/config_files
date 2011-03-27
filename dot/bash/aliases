@@ -7,7 +7,7 @@ alias gemopen="bundle open"
 
 # rails
 alias r='rails'
-alias rm="rake db:migrate db:test:prepare"
+alias migrate="rake db:migrate db:test:prepare"
 
 # git
 alias g="git"
