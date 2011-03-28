@@ -24,6 +24,7 @@ alias gs="git stash"
 alias gsp="git stash pop"
 alias gst="git status"
 alias gc="git commit -m"
+alias gm="git merge --no-ff master"
 alias gitx="open -a /Applications/GitX.app"
 
 # ls
