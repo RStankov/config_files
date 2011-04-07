@@ -9,6 +9,14 @@ class Installer
         link.create
       end
     end
+
+    def defaults(application, settings)
+      settings.each do |name, value|
+        cmd = "defaults write #{application} #{name} #{value}"
+        puts cmd
+        system cmd
+      end
+    end
   end
 
   def initialize(file_name, options = {})
