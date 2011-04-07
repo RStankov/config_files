@@ -21,4 +21,28 @@ task :install do
   Dir['textmate/plugins/*'].each do |file_name|
     Installer.link file_name, :directory => "#{text_mate_path}/Plugins"
   end
+
+  defaults = {
+    'com.macromates.textmate' => {
+      'OakFolderReferenceFolderPattern'   => "-string '!.*/(\\.[^/]*|CVS|tmp|log|autotest|script|public|tmp|_darcs|_MTN|\\{arch\\}|blib|.*~\\.nib|.*\\.(framework|app|pbproj|pbxproj|xcode(proj)?|bundle))$'",
+      'OakTextViewLineNumbersEnabled'     => 1,
+      'OakTextViewShowInvisiblesEnabled'  => 1,
+      'OakWordCharacters'                 => "'-_'",
+      'OakProjectDrawerPrefersRightEdge'  => 1,
+      'OakProjectDrawerWidth'             => 300,
+      'OakShellVariables'                 => '-array ' + [
+        '{enabled = 1; value = "PATH"; variable = "/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin";}',
+        '{enabled = 1; value = "TM_GIT"; variable = "git";}',
+        '{enabled = 1; value = "TM_RUBY"; variable = "ruby";}'
+      ].map { |v| "'#{v}'" }.join(' ')
+    }
+  }
+
+  defaults.each do |application, settings|
+    settings.each do |name, value|
+      cmd = "defaults write #{application} #{name} #{value}"
+      puts cmd
+      system cmd
+    end
+  end
 end
