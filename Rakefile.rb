@@ -1,4 +1,6 @@
-desc "install the dot files into user's home directory"
+task :default => [:install]
+
+desc "install config files into user's home directory"
 task :install do
   Dir['dot/*'].each do |file_name|
     Installer.link file_name, :link_name => ".#{File.basename(file_name)}"
