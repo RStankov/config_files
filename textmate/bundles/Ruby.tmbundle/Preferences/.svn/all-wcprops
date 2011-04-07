@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/Bundles/!svn/ver/8979/trunk/Bundles/Ruby.tmbundle/Preferences
+END
+Comments.plist
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/Bundles/!svn/ver/3044/trunk/Bundles/Ruby.tmbundle/Preferences/Comments.plist
+END
+Completion: ENV[…] variables.tmPreferences
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/Bundles/!svn/ver/6049/trunk/Bundles/Ruby.tmbundle/Preferences/Completion:%20ENV%5B%E2%80%A6%5D%20variables.tmPreferences
+END
+Symbo List: Method.plist
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/Bundles/!svn/ver/4114/trunk/Bundles/Ruby.tmbundle/Preferences/Symbo%20List:%20Method.plist
+END
+Completion: require strings.tmPreferences
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/Bundles/!svn/ver/8979/trunk/Bundles/Ruby.tmbundle/Preferences/Completion:%20require%20strings.tmPreferences
+END
+Symbol List: No Function Call.tmPreferences
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/Bundles/!svn/ver/6984/trunk/Bundles/Ruby.tmbundle/Preferences/Symbol%20List:%20No%20Function%20Call.tmPreferences
+END
+Miscellaneous.plist
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/Bundles/!svn/ver/7091/trunk/Bundles/Ruby.tmbundle/Preferences/Miscellaneous.plist
+END
+Block typing pairs.plist
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/Bundles/!svn/ver/8288/trunk/Bundles/Ruby.tmbundle/Preferences/Block%20typing%20pairs.plist
+END

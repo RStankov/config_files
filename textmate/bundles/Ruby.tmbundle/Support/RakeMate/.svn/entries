@@ -1,0 +1,52 @@
+8
+
+dir
+10740
+http://macromates.com/svn/Bundles/trunk/Bundles/Ruby.tmbundle/Support/RakeMate
+http://macromates.com/svn/Bundles
+
+
+
+2007-04-06T15:28:38.400523Z
+6958
+chris
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+dfb7d73b-c2ec-0310-8fea-fb051d288c6d
+
+rake_mate.rb
+file
+
+
+
+
+2009-04-07T16:19:45.000000Z
+220a6c47dfbb28d28b95c19fd8f65030
+2007-04-06T15:28:38.400523Z
+6958
+chris
+
+run_rake_task.rb
+file
+
+
+
+
+2009-04-07T16:19:45.000000Z
+14b0212e9659f297b0290b4251069011
+2006-11-14T03:43:03.954854Z
+6108
+JEG2
+

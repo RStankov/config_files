@@ -1,0 +1,67 @@
+8
+
+dir
+10740
+http://macromates.com/svn/Bundles/trunk/Bundles/Ruby.tmbundle
+http://macromates.com/svn/Bundles
+
+
+
+2008-10-16T17:09:28.159284Z
+10718
+aross
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+dfb7d73b-c2ec-0310-8fea-fb051d288c6d
+
+DragCommands
+dir
+
+Commands
+dir
+
+Preferences
+dir
+
+Tests
+dir
+
+Macros
+dir
+
+Snippets
+dir
+
+info.plist
+file
+
+
+
+
+2009-04-07T16:19:47.000000Z
+0227ba6ac9a6707d399737de49fd8df3
+2008-07-08T16:49:19.137931Z
+10206
+JEG2
+
+Support
+dir
+
+Syntaxes
+dir
+
+Templates
+dir
+
