@@ -1,8 +1,9 @@
 # bundle
 alias b="bundle"
 alias bu="b update"
+alias bi="b install"
 alias be="b exec"
-alias bec='be cucumber'
+alias bec="be cucumber"
 alias gemopen="bundle open"
 
 # rails
