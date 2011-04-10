@@ -7,7 +7,8 @@ alias bec="be cucumber"
 alias gemopen="bundle open"
 
 # rails
-alias r='rails'
+alias r="rails"
+alias rs="rails server"
 alias migrate="rake db:migrate db:test:prepare"
 
 # git
