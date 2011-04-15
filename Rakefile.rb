@@ -16,6 +16,9 @@ namespace :install do
   task :textmate do
     text_mate_path = "#{ENV['HOME']}/Library/Application Support/TextMate"
 
+    FileUtils.mkdir_p "#{text_mate_path}/Bundles"
+    FileUtils.mkdir_p "#{text_mate_path}/Plugins"
+
     Dir['textmate/bundles/*'].each do |file_name|
       Installer.link file_name, :directory => "#{text_mate_path}/Bundles"
     end
