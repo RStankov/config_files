@@ -1,8 +1,10 @@
 require 'lib/installer.rb'
 
+desc 'Install everything'
 task :default => ['install:configs', 'install:textmate']
 
 namespace :install do
+  desc 'Install config files'
   task :configs do
     Dir['dot/*'].each do |file_name|
       Installer.link file_name, :link_name => ".#{File.basename(file_name)}"
@@ -13,6 +15,7 @@ namespace :install do
     end
   end
 
+  desc 'Configurate textmate'
   task :textmate do
     text_mate_path = "#{ENV['HOME']}/Library/Application Support/TextMate"
 
