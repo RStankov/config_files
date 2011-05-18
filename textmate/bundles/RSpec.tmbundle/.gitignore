@@ -1,0 +1,6 @@
+tmtags
+Support/coverage
+.DS_Store
+.emacs-project
+*~
+Support/Gemfile.lock

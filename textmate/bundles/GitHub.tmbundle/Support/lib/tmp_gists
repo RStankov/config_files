@@ -1,0 +1,27 @@
+[{"	name"untitled__.txt"content"—I have done some research on Facebook's APIs. This is what I found related to "better invitation tool":
+
+Facebook has FQL API ( http://developers.facebook.com/docs/reference/fql/ ), from which we can search for users/friends and so.
+The only limitation there are the Facebook Privacy Setting and if certain user didn't authorize us to access his data, we can't access it.
+Since out target are users who are not yet connected to Garmz.com, we can only access this information about them:
+
+uid
+first_name
+middle_name
+last_name
+name
+locale
+current_location
+affiliations (regional type only)
+pic_square
+profile_url
+sex
+
+http://developers.facebook.com/docs/reference/rest/users.getInfo/
+
+For posting on someone's wall there is Facebook's Graph API ( http://developers.facebook.com/docs/reference/api/  ) and the Post object ( http://developers.facebook.com/docs/reference/api/post/ ). With those we can post a wall post + link. 
+But we will need to require "publish_stream" permissions from a user to post message though him.
+
+What we can do for example is to:
+  Select 5 random female friends of the current user, who are not connected to Garmz.com and take uid, names, picture, profile_url from them via FQL
+  Display those 5 users with custom made invitation UI.
+  When the current user want's to share the page with a friend, he fill some textarea and then we post this message + link to the page on his friend's wall via Graph API.
