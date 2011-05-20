@@ -30,6 +30,8 @@ namespace :install do
       Installer.link file_name, :directory => "#{text_mate_path}/Plugins"
     end
 
+    system %Q[osascript -e 'tell app "TextMate" to reload bundles']
+
     Installer.defaults 'com.macromates.textmate', {
       'OakFolderReferenceFolderPattern'   => "-string '!.*/(\\.[^/]*|CVS|tmp|log|autotest|script|public|tmp|_darcs|_MTN|\\{arch\\}|blib|.*~\\.nib|.*\\.(framework|app|pbproj|pbxproj|xcode(proj)?|bundle))$'",
       'OakTextViewLineNumbersEnabled'     => 1,
