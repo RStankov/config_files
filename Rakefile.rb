@@ -32,6 +32,7 @@ namespace :install do
       'OakWordCharacters'                 => "'-_'",
       'OakProjectDrawerPrefersRightEdge'  => 1,
       'OakProjectDrawerWidth'             => 300,
+      'OakThemeManagerSelectedTheme'      => "'A4299D9B-1DE5-4BC4-87F6-A757E71B1597'",
       'OakShellVariables'                 => '-array ' + [
         '{enabled = 1; value = "PATH"; variable = "/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin";}',
         '{enabled = 1; value = "TM_GIT"; variable = "git";}',
