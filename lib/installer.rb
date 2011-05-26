@@ -55,6 +55,6 @@ class Installer
   end
 
   def e(path)
-    path.gsub(' ', '\ ')
+    path.gsub(/( |\(|\))/){ |s| '\\' + s }
   end
 end
