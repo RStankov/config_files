@@ -21,13 +21,18 @@ namespace :install do
 
     FileUtils.mkdir_p "#{text_mate_path}/Bundles"
     FileUtils.mkdir_p "#{text_mate_path}/Plugins"
+    FileUtils.mkdir_p "#{text_mate_path}/Themes"
 
     Dir['textmate/bundles/*'].each do |file_name|
       Installer.link file_name, :directory => "#{text_mate_path}/Bundles"
     end
 
     Dir['textmate/plugins/*'].each do |file_name|
-      Installer.link file_name, :directory => "#{text_mate_path}/Plugins"
+     Installer.link file_name, :directory => "#{text_mate_path}/Plugins"
+    end
+
+    Dir['textmate/themes/*'].each do |file_name|
+      Installer.link file_name, :directory => "#{text_mate_path}/Themes"
     end
 
     system %Q[osascript -e 'tell app "TextMate" to reload bundles']
