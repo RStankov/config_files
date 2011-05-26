@@ -10,6 +10,14 @@ class Installer
       end
     end
 
+    def link_dir_contents(from, to)
+      FileUtils.mkdir_p to
+
+      Dir["#{from}/*"].each do |file_name|
+        Installer.link file_name, :directory => to
+      end
+    end
+
     def defaults(application, settings)
       settings.each do |name, value|
         cmd = "defaults write #{application} #{name} #{value}"
