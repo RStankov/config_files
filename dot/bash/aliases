@@ -9,7 +9,7 @@ alias gemopen="bundle open"
 # rails
 alias r="rails"
 alias rs="rails server"
-alias migrate="rake db:migrate db:test:prepare"
+alias migrate="bundle exec rake db:migrate db:test:prepare"
 
 # git
 alias g="git"
