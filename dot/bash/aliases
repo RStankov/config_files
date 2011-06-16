@@ -17,6 +17,7 @@ alias ga="git add ."
 alias gb='git branch'
 alias gba='git branch -a'
 alias gp="git pull --rebase"
+alias gpc="git add .; git rebase --continue"
 alias gr="git rebase -i"
 alias gr10="git rebase -i HEAD~10"
 alias grm="git rebase master"
