@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/ruby
+
+require "#{ENV['TM_BUNDLE_PATH']}/Commands/css_rule_expander"
+
+puts CssRuleExpander.new(STDIN.readlines()).collapse(ENV['TM_LINE_NUMBER'].to_i - 1).to_s
+</string>
+	<key>fallbackInput</key>
+	<string>document</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>keyEquivalent</key>
+	<string>^@-</string>
+	<key>name</key>
+	<string>Css Rules Collapse</string>
+	<key>output</key>
+	<string>replaceSelectedText</string>
+	<key>scope</key>
+	<string>source.css, source.scss</string>
+	<key>uuid</key>
+	<string>B0063F52-E302-4236-84D5-BB7B0DE24375</string>
+</dict>
+</plist>
