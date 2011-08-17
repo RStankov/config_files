@@ -4,6 +4,7 @@ alias bu="b update"
 alias bi="b install"
 alias be="b exec"
 alias bec="be cucumber"
+alias becw="bec -p wip"
 alias gemopen="bundle open"
 
 # rails
