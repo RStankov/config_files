@@ -12,6 +12,8 @@ alias r="rails"
 alias rs="rails server"
 alias migrate="bundle exec rake db:migrate db:test:prepare"
 
+alias sp="bundle exec specjour"
+
 # git
 alias g="git"
 alias ga="git add ."
