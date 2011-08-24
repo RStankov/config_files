@@ -38,5 +38,5 @@ alias la="ls -A"
 alias ls="ls -alFG"
 alias ll="ls -alFG"
 
-alias run_resque="RAILS_ENV=development QUEUE=* VERBOSE=1 rake environment resque:work"
+alias run_resque="RAILS_ENV=development QUEUE=* VERBOSE=1 bundle exec rake environment resque:work"
 alias o="open ."

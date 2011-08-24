@@ -1,11 +1,11 @@
 require 'lib/installer.rb'
 
 desc 'Install everything'
-task :default => ['install:configs', 'install:textmate']
+task :default => ['configurate:dotfiles', 'configurate:osx', 'configurate:textmate']
 
-namespace :install do
+namespace :configurate do
   desc 'Install config files'
-  task :configs do
+  task :dotfiles do
     Dir['dot/*'].each do |file_name|
       Installer.link file_name, :link_name => ".#{File.basename(file_name)}"
     end
@@ -13,6 +13,30 @@ namespace :install do
     Dir['normal/*'].each do |file_name|
       Installer.link file_name
     end
+  end
+
+  desc "Configurate osx preferences"
+  task :osx do
+     Installer.defaults 'com.apple.Terminal', {
+       'Default Window Settings' => 'Pro',
+       'Startup Window Settings' => 'Pro',
+       'FocusFollowsMouse' => 'TRUE'
+      }
+
+      Installer.defaults 'com.apple.Dock', {
+        'autohide' => 'TRUE',
+        'magnification' => 'TRUE'
+      }
+
+      Installer.defaults 'com.apple.Safari', {
+        'IncludeDebugMenu' => 'TRUE',
+        'TargetedClicksCreateTabs' => 'TRUE'
+      }
+
+      Installer.defaults '-g', {
+        'InitialKeyRepeat' => 15,
+        'KeyRepeat' => 2
+      }
   end
 
   desc 'Configurate textmate'

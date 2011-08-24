@@ -20,7 +20,7 @@ class Installer
 
     def defaults(application, settings)
       settings.each do |name, value|
-        cmd = "defaults write #{application} #{name} #{value}"
+        cmd = %Q(defaults write #{application} "#{name}" #{value})
         puts cmd
         system cmd
       end
