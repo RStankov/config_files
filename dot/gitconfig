@@ -25,7 +25,7 @@
 	whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
 [alias]
 	st = status
-	ci = commit
+	ci = commit -m
 	br = branch
 	co = checkout
 	df = diff
@@ -33,7 +33,8 @@
 	lol = log --graph --decorate --pretty=oneline --abbrev-commit
 	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
 	ls = ls-files
+	today = log --stat --since='1 Day Ago' --graph --pretty=oneline --abbrev-commit --date=relative
 [push]
-	default = tracking
+	default = current
 [branch]
 	autosetuprebase = always
