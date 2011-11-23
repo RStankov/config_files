@@ -18,6 +18,9 @@ set shiftwidth=2
 set background=dark
 colo solarized
 
+command! CEdit e $MYVIMRC
+command! CRefresh source $MYVIMRC
+
 nmap gn :NERDTreeToggle<cr>
 nmap _ :SplitjoinJoin<cr>
 nmap + :SplitjoinSplit<cr>
