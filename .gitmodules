@@ -4,3 +4,24 @@
 [submodule "dot/vim/bundle/nerdtree"]
 	path = dot/vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
+[submodule "dot/vim/bundle/lang-coffee-script"]
+	path = dot/vim/bundle/lang-coffee-script
+	url = https://github.com/kchmck/vim-coffee-script.git
+[submodule "dot/vim/bundle/lang-slim"]
+	path = dot/vim/bundle/lang-slim
+	url = https://github.com/bbommarito/vim-slim.git
+[submodule "dot/vim/bundle/lang-cucumber"]
+	path = dot/vim/bundle/lang-cucumber
+	url = https://github.com/tpope/vim-cucumber.git
+[submodule "dot/vim/bundle/lang-markdown"]
+	path = dot/vim/bundle/lang-markdown
+	url = https://github.com/tpope/vim-markdown.git
+[submodule "dot/vim/bundle/lang-html5"]
+	path = dot/vim/bundle/lang-html5
+	url = https://github.com/othree/html5.vim.git
+[submodule "dot/vim/bundle/lang-ruby"]
+	path = dot/vim/bundle/lang-ruby
+	url = https://github.com/vim-ruby/vim-ruby.git
+[submodule "dot/vim/bundle/rails"]
+	path = dot/vim/bundle/rails
+	url = https://github.com/tpope/vim-rails.git
