@@ -28,3 +28,6 @@
 [submodule "dot/vim/bundle/fugitive"]
 	path = dot/vim/bundle/fugitive
 	url = https://github.com/tpope/vim-fugitive.git
+[submodule "dot/vim/bundle/splitjoin"]
+	path = dot/vim/bundle/splitjoin
+	url = https://github.com/AndrewRadev/splitjoin.vim.git

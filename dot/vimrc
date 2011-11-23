@@ -19,3 +19,5 @@ set background=dark
 colo solarized
 
 nmap gn :NERDTreeToggle<cr>
+nmap _ :SplitjoinJoin<cr>
+nmap + :SplitjoinSplit<cr>
