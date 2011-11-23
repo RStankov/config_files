@@ -14,3 +14,4 @@ set number
 set background=dark
 colo solarized
 
+nmap gn :NERDTreeToggle<cr>
