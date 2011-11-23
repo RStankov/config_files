@@ -8,14 +8,36 @@ syntax on
 
 set clipboard=unnamedplus
 
-set noswapfile
+set nobackup nowritebackup noswapfile
 set number
 set laststatus=2
 
+set statusline=
+set statusline+=%<%f\ %h%m%r             " filename and flags
+set statusline+=%{fugitive#statusline()} " git info
+set statusline+=%=                       " alignment separator
+set statusline+=[%{&ft}]                 " filetype
+set statusline+=%-14.([%l/%L],%c%V%)     " cursor info
+
 set expandtab
 set shiftwidth=2
+set formatoptions=croqn
+set linebreak showbreak=+>
+
+set autoread autowrite
+set encoding=utf-8
+set ffs=unix
 
 set hlsearch incsearch
+
+set backspace=indent,eol,start
+set autoindent
+set expandtab smarttab
+set tabstop=8 softtabstop=2
+set shiftwidth=2 shiftround
+
+set wildmenu
+set wildmode=list:longest,full
 
 set background=dark
 colo solarized
