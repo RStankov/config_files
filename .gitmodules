@@ -34,3 +34,6 @@
 [submodule "dot/vim/bundle/ack"]
 	path = dot/vim/bundle/ack
 	url = https://github.com/AndrewRadev/ack.vim.git
+[submodule "dot/vim/bundle/snipmate"]
+	path = dot/vim/bundle/snipmate
+	url = https://github.com/msanders/snipmate.vim
