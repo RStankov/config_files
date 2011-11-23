@@ -31,3 +31,6 @@
 [submodule "dot/vim/bundle/splitjoin"]
 	path = dot/vim/bundle/splitjoin
 	url = https://github.com/AndrewRadev/splitjoin.vim.git
+[submodule "dot/vim/bundle/ack"]
+	path = dot/vim/bundle/ack
+	url = https://github.com/AndrewRadev/ack.vim.git
