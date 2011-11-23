@@ -10,6 +10,10 @@ set clipboard=unnamedplus
 
 set noswapfile
 set number
+set laststatus=2
+
+set expandtab
+set shiftwidth=2
 
 set background=dark
 colo solarized
