@@ -10,3 +10,7 @@ set clipboard=unnamedplus
 
 set noswapfile
 set number
+
+set background=dark
+colo solarized
+
