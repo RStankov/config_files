@@ -1,0 +1,12 @@
+set nocompatible
+
+call pathogen#infect()
+
+filetype plugin on
+filetype indent on
+syntax on
+
+set clipboard=unnamedplus
+
+set noswapfile
+set number
