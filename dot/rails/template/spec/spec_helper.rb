@@ -1,19 +1,22 @@
-# This file is copied to spec/ when you run 'rails generate rspec:install'
-ENV["RAILS_ENV"] ||= 'test'
-require File.expand_path("../../config/environment", __FILE__)
-require 'rspec/rails'
+require 'rubygems'
+require 'spork'
 
-# Requires supporting ruby files with custom matchers and macros, etc,
-# in spec/support/ and its subdirectories.
-Dir[Rails.root.join("spec/support/**/*.rb")].each {|f| require f}
+Spork.prefork do
+  ENV['RAILS_ENV'] ||= 'test'
+  require File.expand_path('../../config/environment', __FILE__)
+  require 'rspec/rails'
 
-require 'shoulda'
-require 'factory_girl'
-require 'paperclip/matchers'
+  ActiveSupport::Dependencies.clear
+end
 
-RSpec.configure do |config|
-  config.mock_with :rspec
-  config.use_transactional_fixtures = true
+Spork.each_run do
+  Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
 
-  config.include Paperclip::Shoulda::Matchers
+  <%= app_const %>::Application.reload_routes!
+
+  RSpec.configure do |config|
+    config.mock_with :rspec
+    config.use_transactional_fixtures = true
+    config.include Factory::Syntax::Methods
+  end
 end

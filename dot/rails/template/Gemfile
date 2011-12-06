@@ -1,0 +1,47 @@
+source 'http://rubygems.org'
+
+gem 'rails', '3.1.1'
+
+gem 'sqlite3'
+
+gem 'compass', :git => 'https://github.com/chriseppstein/compass.git', :branch => 'rails31'
+gem 'slim'
+
+group :assets do
+  gem 'sass-rails',   '~> 3.1.4'
+  gem 'coffee-rails', '~> 3.1.1'
+  gem 'uglifier', '>= 1.0.3'
+end
+
+gem 'jquery-rails'
+
+# To use debugger
+# gem 'ruby-debug19', :require => 'ruby-debug'
+
+gem 'simple_form'
+gem 'inherited_resources'
+gem 'draper'
+
+gem 'spork', '~> 0.9.0.rc9'
+gem 'ruby-debug19', :require => 'ruby-debug'
+
+group :development, :test do
+  gem 'active_reload'
+  gem 'jasmine'
+  gem 'rspec-rails'
+  gem 'cucumber-rails'
+  gem 'factory_girl_rails'
+  gem 'faker'
+  gem 'pry'
+end
+
+group :test do
+  gem 'minitest'
+  gem 'launchy'
+  gem 'shoulda-matchers'
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'timecop'
+  gem 'webrat'
+  gem 'turn', :require => false
+end
