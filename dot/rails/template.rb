@@ -4,6 +4,7 @@
 #
 # usage:
 # => rails new NewProject --skip-test-unit --skip-git --skip-javascript --skip-gemfile -m ~/.rails/template.rb
+# => rails_new NewProject
 #
 
 
