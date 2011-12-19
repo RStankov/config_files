@@ -38,7 +38,7 @@ class Installer
   end
 
   def replace
-    system "rm #{e link_path}"
+    system "rm -rf #{e link_path}"
     create
   end
 
