@@ -37,9 +37,9 @@
 [submodule "dot/vim/bundle/snipmate"]
 	path = dot/vim/bundle/snipmate
 	url = https://github.com/msanders/snipmate.vim
-[submodule "dot/vim/bundle/endwise.git"]
-	path = dot/vim/bundle/endwise.git
-	url = git://github.com/tpope/vim-endwise.git
+[submodule "dot/vim/bundle/endwise"]
+	path = dot/vim/bundle/endwise
+	url = https://github.com/tpope/vim-endwise.git
 [submodule "dot/vim/bundle/tabular"]
 	path = dot/vim/bundle/tabular
 	url = https://github.com/godlygeek/tabular
@@ -49,3 +49,6 @@
 [submodule "dot/vim/bundle/auto-pair"]
 	path = dot/vim/bundle/auto-pair
 	url = https://github.com/vim-scripts/Auto-Pairs.git
+[submodule "textmate/bundles/Copy as RTF.tmbundle"]
+        path = textmate/bundles/Copy as RTF.tmbundle
+        url = https://github.com/drnic/copy-as-rtf-tmbundle.git
