@@ -4,7 +4,7 @@ class Installer
       link = self.new(file_name, options)
 
       if link.already_exists?
-        link.propose_overwrite
+        link.replace
       else
         link.create
       end
@@ -35,15 +35,6 @@ class Installer
 
   def already_exists?
     File.exist? link_path
-  end
-
-  def propose_overwrite
-    puts "overwrite #{link_path} ? [ynq] "
-    case $stdin.gets.chomp
-      when 'y' then replace
-      when 'n' then puts "skipping #{link_path}"
-      when 'q' then exit
-    end
   end
 
   def replace
