@@ -4,8 +4,12 @@ alias bu="b update"
 alias bi="b install"
 alias be="b exec"
 alias bec="be cucumber"
+alias becs="be cucumber --drb"
 alias becw="bec -p wip"
 alias gemopen="bundle open"
+
+# rspec
+alias rss="rspec --drb"
 
 # rails
 alias r="rails"
