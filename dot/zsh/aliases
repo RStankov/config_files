@@ -1,0 +1,30 @@
+# cucumber
+alias cs="be cucumber --drb"
+alias csw="bec -p wip"
+alias csj="bec -p wip"
+alias csn="bec -p wip"
+alias gemopen="bundle open"
+
+# rspec
+alias rs="rspec --drb"
+
+# rails
+alias r="rails"
+alias rs="rails server"
+alias migrate="rake db:migrate db:test:prepare"
+
+# specjour
+alias sp="bundle exec specjour"
+
+# git
+alias ga="git add ."
+alias gp="git pull --rebase"
+alias gpc="git add .; git rebase --continue"
+alias gr="git rebase -i"
+alias gr10="git rebase -i HEAD~10"
+alias gs="git stash"
+alias gc="git commit -m"
+alias gitx="open -a /Applications/GitX.app"
+
+alias run_resque="RAILS_ENV=development QUEUE=* VERBOSE=1 rake environment resque:work"
+alias o="open ."

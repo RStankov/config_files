@@ -1,0 +1,12 @@
+rails-new() {
+  rails new $1 --skip-test-unit --skip-git --skip-javascript --skip-gemfile -m ~/.rails/template.rb
+}
+
+ls-tree() {
+  ls -R $1 | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/   /' -e 's/-/|/'
+}
+
+toggle-hidden-files() {
+  defaults write com.apple.finder AppleShowAllFiles %1
+  killall Finder
+}
