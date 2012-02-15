@@ -1,5 +1,5 @@
-PROMPT='%1~ %# '
-RPROMPT='$(git_prompt_info)'
+PROMPT='%1~ \$ '
+RPROMPT='%{$fg[gray]%}$(git_prompt_info)%{$reset_color%}'
 
-CLICOLOR=1
-LSCOLORS=ExFxCxDxBxegedabagacad
+CLICOLOR=$fs[pink]
+LSCOLORS=$fs[blue]
