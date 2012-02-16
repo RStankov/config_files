@@ -56,7 +56,7 @@ namespace :configurate do
     desc 'Configurate textmate preferences'
     task :preferences do
       Installer.defaults 'com.macromates.textmate', {
-        'OakFolderReferenceFolderPattern'   => "-string '!.*/(\\.[^/]*|CVS|tmp|log|autotest|script|public|tmp|_darcs|_MTN|\\{arch\\}|blib|.*~\\.nib|.*\\.(framework|app|pbproj|pbxproj|xcode(proj)?|bundle))$'",
+        'OakFolderReferenceFolderPattern'   => "-string '!.*/(\\.[^/]*|CVS|tmp|log|autotest|script|node_modules|tmp|_darcs|_MTN|\\{arch\\}|blib|.*~\\.nib|.*\\.(framework|app|pbproj|pbxproj|xcode(proj)?|bundle))$'",
         'OakTextViewLineNumbersEnabled'     => 1,
         'OakTextViewShowInvisiblesEnabled'  => 1,
         'OakWordCharacters'                 => "'-_'",
