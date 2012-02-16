@@ -1,8 +1,8 @@
 # cucumber
 alias cc="be cucumber --drb"
-alias ccw="bec -p wip"
-alias ccj="bec -p js"
-alias ccn="bec -p no-js"
+alias ccw="cc -p wip"
+alias ccj="cc -p js"
+alias ccn="cc -p no-js"
 
 #bundler
 alias gemopen="bundle open"
