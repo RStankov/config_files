@@ -29,13 +29,10 @@ plugins=(git terminalapp osx node gem cloudapp cap bundler brew)
 
 source $ZSH/oh-my-zsh.sh
 
+[[ -s $HOME/.nvm/nvm.sh ]] && source $HOME/.nvm/nvm.sh
+[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
+
 source $HOME/.zsh/theme
 source $HOME/.zsh/exports
 source $HOME/.zsh/aliases
 source $HOME/.zsh/plugins
-
-[[ -s $HOME/.nvm/nvm.sh ]] && source $HOME/.nvm/nvm.sh
-
-[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
-
-

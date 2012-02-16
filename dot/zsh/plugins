@@ -14,3 +14,17 @@ toggle-hidden-files() {
 p() { cd ~/Projects/$1; }
 _p() { _files -W ~/Projects -/; }
 compdef _p p
+
+export CURRENT_PROJECT_PATH=$HOME/.zsh-current-project
+
+function chpwd {
+  echo $(pwd) >! $CURRENT_PROJECT_PATH
+}
+
+current() {
+  if [[ -f $CURRENT_PROJECT_PATH ]]; then
+    cd "$(cat $CURRENT_PROJECT_PATH)"
+  fi
+}
+
+current
