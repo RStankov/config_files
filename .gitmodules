@@ -50,5 +50,44 @@
 	path = dot/vim/bundle/auto-pair
 	url = https://github.com/vim-scripts/Auto-Pairs.git
 [submodule "textmate/bundles/Copy as RTF.tmbundle"]
-        path = textmate/bundles/Copy as RTF.tmbundle
-        url = https://github.com/drnic/copy-as-rtf-tmbundle.git
+	path = textmate/bundles/Copy as RTF.tmbundle
+	url = https://github.com/drnic/copy-as-rtf-tmbundle.git
+[submodule "textmate/bundles/CoffeeScriptBundle.tmbundle"]
+	path = textmate/bundles/CoffeeScriptBundle.tmbundle
+	url = git://github.com/jashkenas/coffee-script-tmbundle.git
+[submodule "Copy as RTF.tmbundle"]
+	path = Copy as RTF.tmbundle
+	url = git://github.com/drnic/copy-as-rtf-tmbundle.git
+[submodule "textmate/bundles/Git.tmbundle"]
+	path = textmate/bundles/Git.tmbundle
+	url = https://github.com/jcf/git-tmbundle.git
+[submodule "textmate/bundles/Jasmine.tmbundle"]
+	path = textmate/bundles/Jasmine.tmbundle
+	url = git://github.com/pivotal/jasmine-tmbundle.git
+[submodule "textmate/bundles/HTML.tmbundle"]
+	path = textmate/bundles/HTML.tmbundle
+	url = git://github.com/textmate/html.tmbundle.git
+[submodule "JavaScript jQuery.tmbundle"]
+	path = textmate/bundles/JavaScript jQuery.tmbundle
+	url = git://github.com/kswedberg/jquery-tmbundle.git
+[submodule "RSpec.tmbundle"]
+	path = textmate/bundles/RSpec.tmbundle
+	url = https://github.com/rspec/rspec-tmbundle.git
+[submodule "textmate/bundles/Ruby-Slim.tmbundle"]
+	path = textmate/bundles/Ruby-Slim.tmbundle
+	url = git://github.com/fredwu/ruby-slim-tmbundle.git
+[submodule "textmate/bundles/Ruby.tmbundle"]
+	path = textmate/bundles/Ruby.tmbundle
+	url = git://github.com/drnic/ruby-tmbundle.git
+[submodule "textmate/bundles/SCSS.tmbundle"]
+	path = textmate/bundles/SCSS.tmbundle
+	url = git://github.com/kuroir/SCSS.tmbundle.git
+[submodule "JavaScript.tmbundle"]
+	path = textmate/bundles/JavaScript.tmbundle
+	url = git://github.com/subtleGradient/javascript.tmbundle.git
+[submodule "Javascript Tools.tmbundle"]
+	path = textmate/bundles/Javascript Tools.tmbundle
+	url = git://github.com/subtleGradient/javascript-tools.tmbundle.git
+[submodule "textmate/bundles/Mustache.tmbundle"]
+	path = textmate/bundles/Mustache.tmbundle
+	url = git://github.com/defunkt/Mustache.tmbundle.git
