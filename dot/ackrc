@@ -5,7 +5,10 @@
 --type-add=ruby=.erb
 --type-add=ruby=.ru
 --type-add=ruby=.haml
+--type-add=ruby=.slim
 --type-add=ruby=.gemspec
+--type-add=js=.coffee
+--type-set=slim=.slim
 --type-set=bin=.pdf
 --nobin
 --ignore-dir=.bundle
