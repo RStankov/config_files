@@ -8,11 +8,10 @@ alias ccn="cc -p no-js"
 alias gemopen="bundle open"
 
 # rspec
-alias rspd="rspec --drb"
+alias rs="rspec --drb"
 
 # rails
 alias r="rails"
-alias rs="rails server"
 alias migrate="rake db:migrate db:test:prepare"
 
 # specjour
