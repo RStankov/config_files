@@ -63,6 +63,12 @@ namespace :configurate do
         'OakThemeManagerSelectedTheme'      => "'A4299D9B-1DE5-4BC4-87F6-A757E71B1597'",
         'OakTextViewNormalFontName'         => "-string 'Inconsolata'",
         'OakTextViewNormalFontSize'         => '16',
+        'NSUserKeyEquivalents'              => '-object' + [
+          '{',
+            '"Find in Project..." = "@^$f";',
+            '"Search Project With AckMate..." = "@$f";',
+            '}'
+        ].join(''),
         'OakShellVariables'                 => '-array ' + [
           '{enabled = 1; value = "PATH"; variable = "/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin";}',
           '{enabled = 1; value = "TM_GIT"; variable = "git";}',
