@@ -94,3 +94,6 @@
 [submodule "textmate/bundles/Cucumber.tmbundle"]
 	path = textmate/bundles/Cucumber.tmbundle
 	url = git://github.com/cucumber/cucumber-tmbundle.git
+[submodule "textmate/bundles/GitHub.tmbundle"]
+	path = textmate/bundles/GitHub.tmbundle
+	url = git://github.com/drnic/github-tmbundle.git
