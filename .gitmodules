@@ -91,3 +91,6 @@
 [submodule "textmate/bundles/Mustache.tmbundle"]
 	path = textmate/bundles/Mustache.tmbundle
 	url = git://github.com/defunkt/Mustache.tmbundle.git
+[submodule "textmate/bundles/Cucumber.tmbundle"]
+	path = textmate/bundles/Cucumber.tmbundle
+	url = git://github.com/cucumber/cucumber-tmbundle.git
