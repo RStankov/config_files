@@ -60,8 +60,6 @@ namespace :configurate do
         'OakTextViewLineNumbersEnabled'     => 1,
         'OakTextViewShowInvisiblesEnabled'  => 1,
         'OakWordCharacters'                 => "'-_'",
-        'OakProjectDrawerPrefersRightEdge'  => 1,
-        'OakProjectDrawerWidth'             => 300,
         'OakThemeManagerSelectedTheme'      => "'A4299D9B-1DE5-4BC4-87F6-A757E71B1597'",
         'OakTextViewNormalFontName'         => "-string 'Inconsolata'",
         'OakTextViewNormalFontSize'         => '16',
