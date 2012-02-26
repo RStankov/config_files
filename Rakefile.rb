@@ -30,12 +30,45 @@ namespace :configurate do
 
       Installer.defaults 'com.apple.Safari', {
         'IncludeDebugMenu' => 'TRUE',
+        'IncludeInternalDebugMenu' => 'TRUE',
         'TargetedClicksCreateTabs' => 'TRUE'
       }
 
-      Installer.defaults '-g', {
+      Installer.defaults 'NSGlobalDomain', {
+        'AppleEnableMenuBarTransparency' => 'TRUE',
+        'AppleShowAllExtensions' => 'TRUE',
+        'WebKitDeveloperExtras' => 'TRUE',
         'InitialKeyRepeat' => 15,
-        'KeyRepeat' => 2
+        'KeyRepeat' => 0
+      }
+
+      Installer.defaults 'com.apple.desktopservices', {
+        'DSDontWriteNetworkStores' => 'TRUE'
+      }
+
+      Installer.defaults 'com.apple.finder', {
+        'EmptyTrashSecurely' => 'TRUE',
+        'OpenWindowForNewRemovableDisk' => 'TRUE'
+      }
+
+      Installer.defaults 'com.apple.menuextra.battery', {
+        'ShowPercent' => 'NO',
+        'ShowTime' => 'YES'
+      }
+
+      Installer.defaults 'com.apple.iTunes', {
+        'disablePingSidebar' => 'TRUE',
+        'disablePing' => 'TRUE'
+      }
+
+      Installer.defaults 'com.apple.frameworks.diskimages', {
+        'auto-open-ro-root' => 'TRUE',
+        'auto-open-rw-root' => 'TRUE'
+      }
+
+      Installer.defaults 'com.apple.screensaver', {
+        'askForPassword' => 1,
+        'askForPasswordDelay' => 0
       }
   end
 
