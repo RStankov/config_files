@@ -20,6 +20,13 @@ class Installer
 
     def defaults(application, settings)
       settings.each do |name, value|
+        value = case value
+          when true, false then "-bool #{value}"
+          when Integer     then "-int #{value}"
+          when Hash        then '-dict ' + value.map { |k,v| %("#{k}" "#{v}") }.join(' ')
+          else value
+        end
+
         cmd = %Q(defaults write #{application} "#{name}" #{value})
         puts cmd
         system cmd

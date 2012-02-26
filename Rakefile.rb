@@ -20,35 +20,35 @@ namespace :configurate do
      Installer.defaults 'com.apple.Terminal', {
        'Default Window Settings' => 'Pro',
        'Startup Window Settings' => 'Pro',
-       'FocusFollowsMouse' => 'TRUE'
+       'FocusFollowsMouse' => true
       }
 
       Installer.defaults 'com.apple.Dock', {
-        'autohide' => 'TRUE',
-        'magnification' => 'TRUE'
+        'autohide' => true,
+        'magnification' => true
       }
 
       Installer.defaults 'com.apple.Safari', {
-        'IncludeDebugMenu' => 'TRUE',
-        'IncludeInternalDebugMenu' => 'TRUE',
-        'TargetedClicksCreateTabs' => 'TRUE'
+        'IncludeDebugMenu' => true,
+        'IncludeInternalDebugMenu' => true,
+        'TargetedClicksCreateTabs' => true
       }
 
       Installer.defaults 'NSGlobalDomain', {
-        'AppleEnableMenuBarTransparency' => 'TRUE',
-        'AppleShowAllExtensions' => 'TRUE',
-        'WebKitDeveloperExtras' => 'TRUE',
+        'AppleEnableMenuBarTransparency' => true,
+        'AppleShowAllExtensions' => true,
+        'WebKitDeveloperExtras' => true,
         'InitialKeyRepeat' => 15,
         'KeyRepeat' => 0
       }
 
       Installer.defaults 'com.apple.desktopservices', {
-        'DSDontWriteNetworkStores' => 'TRUE'
+        'DSDontWriteNetworkStores' => true
       }
 
       Installer.defaults 'com.apple.finder', {
-        'EmptyTrashSecurely' => 'TRUE',
-        'OpenWindowForNewRemovableDisk' => 'TRUE'
+        'EmptyTrashSecurely' => true,
+        'OpenWindowForNewRemovableDisk' => true
       }
 
       Installer.defaults 'com.apple.menuextra.battery', {
@@ -57,13 +57,13 @@ namespace :configurate do
       }
 
       Installer.defaults 'com.apple.iTunes', {
-        'disablePingSidebar' => 'TRUE',
-        'disablePing' => 'TRUE'
+        'disablePingSidebar' => true,
+        'disablePing' => true
       }
 
       Installer.defaults 'com.apple.frameworks.diskimages', {
-        'auto-open-ro-root' => 'TRUE',
-        'auto-open-rw-root' => 'TRUE'
+        'auto-open-ro-root' => true,
+        'auto-open-rw-root' => true
       }
 
       Installer.defaults 'com.apple.screensaver', {
@@ -92,11 +92,15 @@ namespace :configurate do
         'OakFolderReferenceFolderPattern'   => "-string '!.*/(\\.[^/]*|CVS|tmp|log|autotest|script|node_modules|tmp|_darcs|_MTN|\\{arch\\}|blib|.*~\\.nib|.*\\.(framework|app|pbproj|pbxproj|xcode(proj)?|bundle))$'",
         'OakTextViewLineNumbersEnabled'     => 1,
         'OakTextViewShowInvisiblesEnabled'  => 1,
-        'OakWordCharacters'                 => "'-_'",
-        'OakThemeManagerSelectedTheme'      => "'A4299D9B-1DE5-4BC4-87F6-A757E71B1597'",
-        'OakTextViewNormalFontName'         => "-string 'Inconsolata'",
-        'OakTextViewNormalFontSize'         => '16',
-        'NSUserKeyEquivalents'              => '-dict "Find in Project..." "@^$f" "Search Project With AckMate..." "@$f"',
+        'OakWordCharacters'                 => "-_",
+        'OakThemeManagerSelectedTheme'      => "A4299D9B-1DE5-4BC4-87F6-A757E71B1597",
+        'OakTextViewNormalFontName'         => "Inconsolata",
+        'OakTextViewNormalFontSize'         => 16,
+        'NSUserKeyEquivalents'              =>
+        {
+          'Find in Project...' => '@^$f',
+          'Search Project With AckMate...' => '@$f'
+        },
         'OakShellVariables'                 => '-array ' + [
           '{enabled = 1; value = "PATH"; variable = "/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin";}',
           '{enabled = 1; value = "TM_GIT"; variable = "git";}',
