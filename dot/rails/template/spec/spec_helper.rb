@@ -3,10 +3,14 @@ require 'spork'
 
 Spork.prefork do
   ENV['RAILS_ENV'] ||= 'test'
+
   require File.expand_path('../../config/environment', __FILE__)
   require 'rspec/rails'
 
-  ActiveSupport::Dependencies.clear
+  if Spork.using_spork?
+    ActiveSupport::Dependencies.clear
+    ActiveRecord::Base.instantiate_observers
+  end
 end
 
 Spork.each_run do
@@ -18,5 +22,10 @@ Spork.each_run do
     config.mock_with :rspec
     config.use_transactional_fixtures = true
     config.include Factory::Syntax::Methods
+    config.include EmailSpec::Helpers
+    config.include EmailSpec::Matcher
+
+    config.include SpecSupport::Model, :type => :model
+    config.include SpecSupport::Controller, :type => :controller
   end
 end
