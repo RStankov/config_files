@@ -6,6 +6,11 @@ ls-tree() {
   ls -R $1 | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/   /' -e 's/-/|/'
 }
 
+restore-postgres() {
+ rm /usr/local/var/postgres/postmaster.pid
+ pg_ctl -D /usr/local/var/postgres/ -l /usr/local/var/postgres/server.log start
+}
+
 toggle-hidden-files() {
   defaults write com.apple.finder AppleShowAllFiles %1
   killall Finder

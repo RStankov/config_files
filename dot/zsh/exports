@@ -1,4 +1,4 @@
-export PATH=$PATH:~/bin:/usr/local/bin
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH:~/bin
 
 export EDITOR=mate
 
