@@ -1,0 +1,94 @@
+# Set terminal theme to Pro
+defaults write com.apple.Terminal "Default Window Settings" "Pro"
+defaults write com.apple.Terminal "Startup Window Settings" "Pro"
+defaults write com.apple.Terminal "FocusFollowsMouse" -bool true
+
+# Automatically hide and show the Dock
+defaults write com.apple.Dock autohide -bool true
+
+# Use magnification for the Dock
+defaults write com.apple.Dock magnification -bool true
+
+# Disable Safari’s thumbnail cache for History and Top Sites
+defaults write com.apple.Safari DebugSnapshotsUpdatePolicy -int 2
+
+# Enable Safari’s debug menu
+defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
+
+# Make Safari’s search banners default to Contains instead of Starts With
+defaults write com.apple.Safari FindOnPageMatchesWordStartsOnly -bool false
+
+# Remove icons from Safari’s bookmarks bar
+defaults write com.apple.Safari ProxiesInBookmarksBar "()"
+
+# Targeted clicks create tabs
+defaults write com.apple.Safari TargetedClicksCreateTabs -bool true
+
+# Enable menu bar transparency
+defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool true
+
+# Show extensions 
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
+# Enable webkit developer extras
+defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
+
+# Key repeat setup
+defaults write NSGlobalDomain InitialKeyRepeat 15
+defaults write NSGlobalDomain KeyRepeat 0
+
+# Don't add .DS everywhere
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+
+# Empty Trash securely (and extremely slow)
+defaults write com.apple.finder EmptyTrashSecurely -bool true
+
+# Automatically open a new Finder window when a volume is mounted
+defaults write com.apple.frameworks.diskimages auto-open-ro-root -bool true
+defaults write com.apple.frameworks.diskimages auto-open-rw-root -bool true
+defaults write OpenWindowForNewRemovableDisk -bool true
+
+# Show remaining battery time and hide percentage
+defaults write com.apple.menuextra.battery ShowPercent -string "NO"
+defaults write com.apple.menuextra.battery ShowTime -string "YES"
+
+# No Ping
+defaults write com.apple.iTunes disablePingSidebar -bool true
+defaults write com.apple.iTunes disablePing -bool true
+
+# Make ⌘ + F focus the search input in iTunes
+defaults write com.apple.iTunes NSUserKeyEquivalents -dict-add "Target Search Field" "@F"
+
+# Require password immediately after sleep or screen saver begins 
+defaults write com.apple.screensaver askForPassword -int 1
+defaults write com.apple.screensaver askForPasswordDelay -int 0
+
+# Enable full keyboard access for all controls (e.g. enable Tab in modal dialogs)
+defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
+
+# Enable subpixel font rendering on non-Apple LCDs
+defaults write NSGlobalDomain AppleFontSmoothing -int 2
+
+# Expand save panel by default
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
+
+# Disable the “Are you sure you want to open this application?” dialog
+defaults write com.apple.LaunchServices LSQuarantine -bool false
+
+# Increase window resize speed for Cocoa applications
+defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
+
+# Only use UTF-8 in Terminal.app
+defaults write com.apple.terminal StringEncodings -array 4
+
+# Always open everything in Finder's list view. This is important.
+defaults write com.apple.Finder FXPreferredViewStyle Nlsv
+
+# Copy email addresses as `foo@example.com` instead of `Foo Bar <foo@example.com>` in Mail.app
+defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
+
+# Disable auto-correct
+defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
+
+# Show the ~/Library folder
+chflags nohidden ~/Library

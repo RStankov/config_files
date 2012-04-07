@@ -1,7 +1,7 @@
 require 'lib/installer.rb'
 
 desc 'Install everything'
-task :default => ['configurate:dotfiles', 'configurate:osx', 'configurate:textmate']
+task :default => ['configurate:dotfiles', 'configurate:textmate']
 
 namespace :configurate do
   desc 'Install config files'
@@ -13,63 +13,6 @@ namespace :configurate do
     Dir['normal/*'].each do |file_name|
       Installer.link file_name
     end
-  end
-
-  desc "Configurate osx preferences"
-  task :osx do
-     Installer.defaults 'com.apple.Terminal', {
-       'Default Window Settings' => 'Pro',
-       'Startup Window Settings' => 'Pro',
-       'FocusFollowsMouse' => true
-      }
-
-      Installer.defaults 'com.apple.Dock', {
-        'autohide' => true,
-        'magnification' => true
-      }
-
-      Installer.defaults 'com.apple.Safari', {
-        'IncludeDebugMenu' => true,
-        'IncludeInternalDebugMenu' => true,
-        'TargetedClicksCreateTabs' => true
-      }
-
-      Installer.defaults 'NSGlobalDomain', {
-        'AppleEnableMenuBarTransparency' => true,
-        'AppleShowAllExtensions' => true,
-        'WebKitDeveloperExtras' => true,
-        'InitialKeyRepeat' => 15,
-        'KeyRepeat' => 0
-      }
-
-      Installer.defaults 'com.apple.desktopservices', {
-        'DSDontWriteNetworkStores' => true
-      }
-
-      Installer.defaults 'com.apple.finder', {
-        'EmptyTrashSecurely' => true,
-        'OpenWindowForNewRemovableDisk' => true
-      }
-
-      Installer.defaults 'com.apple.menuextra.battery', {
-        'ShowPercent' => 'NO',
-        'ShowTime' => 'YES'
-      }
-
-      Installer.defaults 'com.apple.iTunes', {
-        'disablePingSidebar' => true,
-        'disablePing' => true
-      }
-
-      Installer.defaults 'com.apple.frameworks.diskimages', {
-        'auto-open-ro-root' => true,
-        'auto-open-rw-root' => true
-      }
-
-      Installer.defaults 'com.apple.screensaver', {
-        'askForPassword' => 1,
-        'askForPasswordDelay' => 0
-      }
   end
 
   desc 'Configurate textmate'
