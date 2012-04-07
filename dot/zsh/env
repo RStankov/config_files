@@ -16,6 +16,9 @@ setopt CORRECT
 # Try to correct the spelling of all arguments in a line.
 setopt CORRECT_ALL
 
+# Do not exit on end-of-file. Require the use of exit or logout instead.
+setopt IGNORE_EOF
+
 # ZSH HISTORY
 HISTFILE=~/.zsh_history
 SAVEHIST=10000
