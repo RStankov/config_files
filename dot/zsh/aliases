@@ -1,5 +1,5 @@
 # cucumber
-alias cc="be cucumber --drb"
+alias cc="clear && bundle exec cucumber --drb"
 alias ccw="cc -p wip"
 alias ccj="cc -p js"
 alias ccn="cc -p no-js"
@@ -8,14 +8,14 @@ alias ccn="cc -p no-js"
 alias gemopen="bundle open"
 
 # rspec
-alias rs="rspec --drb"
+alias rs="clear && rspec --drb"
 
 # rails
 alias r="rails"
 alias migrate="rake db:migrate db:test:prepare"
 
 # specjour
-alias spj="bundle exec specjour"
+alias spj="clear && bundle exec specjour"
 
 # git
 alias ga="git add -A"
