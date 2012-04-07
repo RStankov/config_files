@@ -26,6 +26,10 @@ function chpwd {
   echo $(pwd) >! $CURRENT_PROJECT_PATH
 }
 
+function gci () {
+  git commit -m "$*"
+}
+
 current() {
   if [[ -f $CURRENT_PROJECT_PATH ]]; then
     cd "$(cat $CURRENT_PROJECT_PATH)"
