@@ -4,7 +4,7 @@ alias ccw="cc -p wip"
 alias ccj="cc -p js"
 alias ccn="cc -p no-js"
 
-#bundler
+# bundler
 alias gemopen="bundle open"
 
 # rspec
@@ -29,3 +29,6 @@ alias gitx="open -a /Applications/GitX.app"
 
 alias run_resque="RAILS_ENV=development QUEUE=* VERBOSE=1 rake environment resque:work"
 alias o="open ."
+
+# ls
+alias l="ls -lahF"
