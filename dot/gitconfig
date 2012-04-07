@@ -34,6 +34,7 @@
 	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
 	ls = ls-files
 	today = log --stat --since='1 Day Ago' --graph --pretty=oneline --abbrev-commit --date=relative
+	undo = reset --soft HEAD^
 [push]
 	default = current
 [branch]
