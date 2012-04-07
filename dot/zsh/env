@@ -1,0 +1,22 @@
+# Do not enter command lines into the history list if they are duplicates of the previous event.
+setopt HIST_IGNORE_DUPS
+
+# Do not enter command lines into the history list if they begin with a blank.
+setopt HIST_IGNORE_SPACE
+
+# Append their history list to the history file, rather than overwrite it
+setopt APPEND_HISTORY
+
+# Automatically use menu completion after the second consecutive request for completion
+setopt AUTO_MENU
+
+# Try to correct the spelling of commands.
+setopt CORRECT
+
+# Try to correct the spelling of all arguments in a line.
+setopt CORRECT_ALL
+
+# ZSH HISTORY
+HISTFILE=~/.zsh_history
+SAVEHIST=10000
+HISTSIZE=10000
