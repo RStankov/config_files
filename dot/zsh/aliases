@@ -18,7 +18,7 @@ alias migrate="rake db:migrate db:test:prepare"
 alias spj="bundle exec specjour"
 
 # git
-alias ga="git add ."
+alias ga="git add -A"
 alias gp="git pull --rebase"
 alias gpc="git add .; git rebase --continue"
 alias gr="git rebase -i"
