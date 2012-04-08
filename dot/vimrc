@@ -56,15 +56,36 @@ set ignorecase
 set wildmenu
 set wildmode=list:longest,full
 
+" Ignore certain files in wildmenu
+set wildignore+=*.o,*.out,*.obj,.git,*.rbc,*.rbo,*.class,.svn,*.gem
+set wildignore+=*.zip,*.tar.gz,*.tar.bz2,*.rar,*.tar.xz
+set wildignore+=*/vendor/gems/*,*/vendor/cache/*,*/.bundle/*,*/.sass-cache/*
+set wildignore+=*.swp,*~,._*
+
 " Show the current mode
 set showmode
 
-" Show line numbers
-set number
+" Keep short history
+set history=50
+
+" Syntax coloring lines that are too long just slows down the world
+set synmaxcol=2048
+
+" A tab should display as "|    "
+set listchars=tab:\|\
+
+" Show trailing spaces as dots
+set listchars+=trail:.
 
 " Theme setup
 set background=dark
 colo solarized
+
+" Show line numbers
+set number
+
+" Show line and column number
+set ruler
 
 " Quick shortcuts for editing vim config
 command! CEdit e $MYVIMRC
