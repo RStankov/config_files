@@ -106,3 +106,9 @@
 [submodule "dot/vim/bundle/poweline"]
 	path = dot/vim/bundle/poweline
 	url = git://github.com/Lokaltog/vim-powerline.git
+[submodule "dot/vim/bundle/supertab"]
+	path = dot/vim/bundle/supertab
+	url = git://github.com/ervandew/supertab.git
+[submodule "dot/vim/bundle/indent-object"]
+	path = dot/vim/bundle/indent-object
+	url = git://github.com/michaeljsmith/vim-indent-object.git
