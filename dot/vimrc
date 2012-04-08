@@ -6,8 +6,6 @@ set nocompatible
 
 " Pathogen
 call pathogen#infect()
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
 
 " Filetype settings
 filetype plugin on
