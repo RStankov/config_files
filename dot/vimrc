@@ -41,3 +41,9 @@ command! CRefresh source $MYVIMRC | source $MYGVIMRC
 nmap gn :NERDTreeToggle<cr>
 nmap _ :SplitjoinJoin<cr>
 nmap + :SplitjoinSplit<cr>
+
+" Split screens
+nnoremap gh <C-w>h
+nnoremap gj <C-w>j
+nnoremap gk <C-w>k
+nnoremap gl <C-w>l
