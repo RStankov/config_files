@@ -1,10 +1,5 @@
 set guioptions-=T
 
-if has("gui_macvim")
-  macmenu &File.New\ Tab key=<nop>
-  map <D-t> <Plug>PeepOpen
-end
-
 " Hide toolbar and menubar.
 set guioptions-=T
 set guioptions-=m
@@ -15,7 +10,7 @@ set guioptions-=T
 
 if has("gui_macvim")
   macmenu &File.New\ Tab key=<nop>
-  map <D-t> <Plug>PeepOpen
+  map <c-t> <Plug>PeepOpen
 end
 
 " Hide toolbar and menubar.
