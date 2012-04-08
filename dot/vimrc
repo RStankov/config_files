@@ -6,9 +6,12 @@ set nocompatible
 
 " Pathogen
 call pathogen#infect()
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
+" Filetype settings
 filetype plugin on
 filetype indent on
-syntax on
 
 " Disable swap files
 set nobackup nowritebackup noswapfile
@@ -78,8 +81,7 @@ set listchars=tab:\|\
 set listchars+=trail:.
 
 " Theme setup
-set background=dark
-colo vwilight
+colors vwilight
 
 " Show line numbers
 set number

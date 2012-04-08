@@ -1,13 +1,3 @@
-set guioptions-=T
-
-" Hide toolbar and menubar.
-set guioptions-=T
-set guioptions-=m
-
-" Font.
-set guifont=Monaco:h14
-set guioptions-=T
-
 if has("gui_macvim")
   macmenu &File.New\ Tab key=<nop>
   map <c-t> <Plug>PeepOpen
