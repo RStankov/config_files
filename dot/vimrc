@@ -41,7 +41,7 @@ set incsearch
 " Fix backspace in insert mode
 set backspace=indent,eol,start
 
-"<D-"> Set clipboard
+" Set clipboard
 set clipboard=unnamedplus
 
 " Autoindent options
@@ -103,6 +103,9 @@ nnoremap gh <C-w>h
 nnoremap gj <C-w>j
 nnoremap gk <C-w>k
 nnoremap gl <C-w>l
+
+" CtrlP clear cache
+nnoremap <D-5> :CtrlPClearCache<CR>
 
 " Clear search results when hitting space
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
