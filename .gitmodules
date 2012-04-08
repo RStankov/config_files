@@ -100,3 +100,6 @@
 [submodule "textmate/bundles/ImageBrowser.tmbundle"]
 	path = textmate/bundles/ImageBrowser.tmbundle
 	url = git://github.com/textmate/imagebrowser.tmbundle.git
+[submodule "dot/vim/bundle/vwilight"]
+	path = dot/vim/bundle/vwilight
+	url = git://github.com/bry4n/vwilight.vim.git

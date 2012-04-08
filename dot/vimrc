@@ -79,7 +79,7 @@ set listchars+=trail:.
 
 " Theme setup
 set background=dark
-colo solarized
+colo vwilight
 
 " Show line numbers
 set number
