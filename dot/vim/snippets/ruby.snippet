@@ -1,0 +1,28 @@
+#rspec
+snippet it
+	it "${1:spec_name}" do
+		${2}
+	end
+snippet desc
+	require 'spec_helper'
+
+	describe ${1:class_name} do
+		${2}
+	end
+snippet des
+	describe ${1:class_name} do
+		${2}
+	end
+snippet con
+	context '${1:message}' do
+		${2}
+	end
+snippet bef
+	before(:${1:each}) do
+		${2}
+	end
+snippet aft
+	after(:${1:each}) do
+		${2}
+	end
+
