@@ -4,3 +4,37 @@ if has("gui_macvim")
   macmenu &File.New\ Tab key=<nop>
   map <D-t> <Plug>PeepOpen
 end
+
+" Hide toolbar and menubar.
+set guioptions-=T
+set guioptions-=m
+
+" Font.
+set guifont=Monaco:h14
+set guioptions-=T
+
+if has("gui_macvim")
+  macmenu &File.New\ Tab key=<nop>
+  map <D-t> <Plug>PeepOpen
+end
+
+" Hide toolbar and menubar.
+set guioptions-=T
+set guioptions-=m
+
+" Font.
+set guifont=Inconsolata:h15
+
+" Scrollbars
+set guioptions-=L
+set guioptions-=r
+
+" Turn off blinking in normal mode
+set gcr=n:blinkon0
+
+" Scrollbars
+set guioptions-=L
+set guioptions-=r
+
+" Turn off blinking in normal mode
+set gcr=n:blinkon0
