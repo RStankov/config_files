@@ -103,3 +103,6 @@
 [submodule "dot/vim/bundle/vwilight"]
 	path = dot/vim/bundle/vwilight
 	url = git://github.com/bry4n/vwilight.vim.git
+[submodule "dot/vim/bundle/poweline"]
+	path = dot/vim/bundle/poweline
+	url = git://github.com/Lokaltog/vim-powerline.git
