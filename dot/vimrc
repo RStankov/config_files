@@ -36,7 +36,7 @@ set background=dark
 colo solarized
 
 command! CEdit e $MYVIMRC
-command! CRefresh source $MYVIMRC
+command! CRefresh source $MYVIMRC | source $MYGVIMRC
 
 nmap gn :NERDTreeToggle<cr>
 nmap _ :SplitjoinJoin<cr>
