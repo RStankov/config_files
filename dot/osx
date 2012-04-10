@@ -36,6 +36,7 @@ defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 # Key repeat setup
 defaults write NSGlobalDomain InitialKeyRepeat 15
 defaults write NSGlobalDomain KeyRepeat 0
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
 # Don't add .DS everywhere
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
