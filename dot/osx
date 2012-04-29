@@ -91,5 +91,11 @@ defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
 # Disable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
+# Turn off Resume
+defaults write com.apple.Preview NSQuitAlwaysKeepsWindows -bool false
+defaults write com.apple.Terminal NSQuitAlwaysKeepsWindows -bool false
+defaults write nl.frim.GitX NSQuitAlwaysKeepsWindows -bool false
+defaults write org.vim.MacVim NSQuitAlwaysKeepsWindows -bool false
+
 # Show the ~/Library folder
 chflags nohidden ~/Library
