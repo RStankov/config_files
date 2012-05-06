@@ -27,8 +27,6 @@ alias gs="git stash"
 alias gc="git commit -m"
 alias gl="git log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'"
 
-alias gitx="open -a /Applications/GitX.app"
-
 alias run_resque="RAILS_ENV=development QUEUE=* VERBOSE=1 rake environment resque:work"
 alias o="open ."
 
