@@ -82,9 +82,6 @@
 [submodule "textmate/bundles/SCSS.tmbundle"]
 	path = textmate/bundles/SCSS.tmbundle
 	url = git://github.com/kuroir/SCSS.tmbundle.git
-[submodule "JavaScript.tmbundle"]
-	path = textmate/bundles/JavaScript.tmbundle
-	url = git://github.com/subtleGradient/javascript.tmbundle.git
 [submodule "Javascript Tools.tmbundle"]
 	path = textmate/bundles/Javascript Tools.tmbundle
 	url = git://github.com/subtleGradient/javascript-tools.tmbundle.git
