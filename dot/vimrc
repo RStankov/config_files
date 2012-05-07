@@ -119,3 +119,6 @@ nnoremap <D-5> :CtrlPClearCache<CR>
 
 " Clear search results when hitting space
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
+
+" Insert a hash rocket
+imap <c-l> <space>=><space>
