@@ -66,6 +66,12 @@ set wildignore+=*.o,*.out,*.obj,.git,*.rbc,*.rbo,*.class,.svn,*.gem
 set wildignore+=*.zip,*.tar.gz,*.tar.bz2,*.rar,*.tar.xz
 set wildignore+=*/vendor/gems/*,*/vendor/cache/*,*/.bundle/*,*/.sass-cache/*
 set wildignore+=*.swp,*~,._*
+set wildignore+=.DS_Store
+set wildignore+=.git*
+set wildignore+=*.woff,*.eof,*.otf
+set wildignore+=*.jpg,*.png,*.gif,*.jpeg,*.ico
+set wildignore+=*.swf,*.htc
+set wildignore+=*/tmp/*,*/db/migrate,*/public/stylesheets/compiled
 
 " Show the current mode
 set showmode
