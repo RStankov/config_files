@@ -4,6 +4,9 @@ syntax on
 " Use vim defauls
 set nocompatible
 
+" Spellcheck on
+set spell
+
 " Pathogen
 call pathogen#infect()
 
