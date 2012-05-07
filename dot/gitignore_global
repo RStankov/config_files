@@ -1,0 +1,6 @@
+.bundle
+.DS_Store
+.log
+.dump.rdb
+tmp
+*~
