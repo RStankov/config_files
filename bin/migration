@@ -11,4 +11,4 @@ output = run "rails generate migration #{ARGV[0]}"
 
 migration_path = output.match(%r|db/migrate/.*\.rb|)[0]
 
-run "mate #{migration_path}" unless migration_path.nil?
+run "mvim #{migration_path}" unless migration_path.nil?
