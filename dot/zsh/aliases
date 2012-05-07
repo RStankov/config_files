@@ -20,7 +20,7 @@ alias spj="clear && bundle exec specjour"
 # git
 alias ga="git add -A"
 alias gp="git pull --rebase"
-alias gpc="git add .; git rebase --continue"
+alias grc="git add .; git rebase --continue"
 alias gr="git rebase -i"
 alias gr10="git rebase -i HEAD~10"
 alias gs="git stash"
