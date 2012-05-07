@@ -44,9 +44,6 @@ set incsearch
 " Fix backspace in insert mode
 set backspace=indent,eol,start
 
-" Set clipboard
-set clipboard=unnamedplus
-
 " Autoindent options
 set autoindent
 set expandtab smarttab
