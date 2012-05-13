@@ -101,6 +101,9 @@ set ruler
 command! CEdit e $MYVIMRC
 command! CRefresh source $MYVIMRC | source $MYGVIMRC
 
+" Make , the leader key
+let mapleader = ","
+
 " Toggle NERDTree
 nmap gn :NERDTreeToggle<cr>
 
@@ -122,3 +125,9 @@ nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
 " Insert a hash rocket
 imap <c-l> <space>=><space>
+
+" Nexus run file
+map <Leader>f <Plug>NexusRunTestFile
+
+" Nexus run lien
+map <Leader>d <Plug>NexusRunTestLine
