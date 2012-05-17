@@ -30,6 +30,10 @@ function gci () {
   git commit -m "$*"
 }
 
+function kill-ruby {
+  ps -A | grep ruby | cut -d ' ' -f 1 | xargs kill 2>/dev/null
+}
+
 current() {
   if [[ -f $CURRENT_PROJECT_PATH ]]; then
     cd "$(cat $CURRENT_PROJECT_PATH)"
