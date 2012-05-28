@@ -58,7 +58,6 @@ set scrolloff=8
 set ignorecase
 set infercase
 
-
 " Enable wildmenu command completions
 set wildmenu
 set wildmode=list:longest,full
@@ -95,6 +94,9 @@ set number
 
 " Show line and column number
 set ruler
+
+" Use only my snippets
+let g:snippets_dir=$HOME . "/.vim/snippets"
 
 " gui settings
 if has("gui_running")
