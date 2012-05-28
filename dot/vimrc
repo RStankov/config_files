@@ -54,8 +54,10 @@ set shiftwidth=2 shiftround
 " lines from the bottom
 set scrolloff=8
 
-" Set ignorecase in searches
+" Be case sensitive when searching
 set ignorecase
+set infercase
+
 
 " Enable wildmenu command completions
 set wildmenu
