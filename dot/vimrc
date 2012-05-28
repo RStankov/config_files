@@ -90,14 +90,31 @@ set listchars=tab:\|\
 " Show trailing spaces as dots
 set listchars+=trail:.
 
-" Theme setup
-colors vwilight
-
 " Show line numbers
 set number
 
 " Show line and column number
 set ruler
+
+" gui settings
+if has("gui_running")
+  " Theme setup
+  colors vwilight
+
+  " Font.
+  set guifont=Monaco:h12
+
+  " Hide toolbar and menubar.
+  set guioptions-=T
+  set guioptions-=m
+
+  " Scrollbars
+  set guioptions-=L
+  set guioptions-=r
+
+  " Turn off blinking in normal mode
+  set gcr=n:blinkon0
+endif
 
 " Quick shortcuts for editing vim config
 command! CEdit e $MYVIMRC
