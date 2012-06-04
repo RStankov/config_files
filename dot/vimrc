@@ -67,6 +67,9 @@ set magic
 " A buffer becomes hidden when it is abandoned
 set hid
 
+" Auto and Smart indent
+set ai si
+
 " Enable wildmenu command completions
 set wildmenu
 set wildmode=list:longest,full
