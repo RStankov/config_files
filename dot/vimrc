@@ -64,6 +64,9 @@ set smartcase
 " For regular expressions turn magic on
 set magic
 
+" A buffer becomes hidden when it is abandoned
+set hid
+
 " Enable wildmenu command completions
 set wildmenu
 set wildmode=list:longest,full
