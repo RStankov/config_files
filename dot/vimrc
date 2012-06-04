@@ -58,6 +58,12 @@ set scrolloff=8
 set ignorecase
 set infercase
 
+" When searching try to be smart about cases
+set smartcase
+
+" For regular expressions turn magic on
+set magic
+
 " Enable wildmenu command completions
 set wildmenu
 set wildmode=list:longest,full
