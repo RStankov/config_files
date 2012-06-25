@@ -57,6 +57,7 @@ set scrolloff=8
 " Be case sensitive when searching
 set ignorecase
 set infercase
+set noignorecase
 
 " When searching try to be smart about cases
 set smartcase
