@@ -75,6 +75,9 @@ set ai si
 set wildmenu
 set wildmode=list:longest,full
 
+" words also include dashes (-)
+setlocal iskeyword+=-
+
 " Ignore certain files in wildmenu
 set wildignore+=*.o,*.out,*.obj,.git,*.rbc,*.rbo,*.class,.svn,*.gem
 set wildignore+=*.zip,*.tar.gz,*.tar.bz2,*.rar,*.tar.xz
