@@ -12,3 +12,7 @@
 --type-set=bin=.pdf
 --nobin
 --ignore-dir=.bundle
+--ignore-dir=log
+--ignore-dir=tmp
+--ignore-dir=doc
+--ignore-dir=coverage
