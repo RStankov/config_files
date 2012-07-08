@@ -73,3 +73,6 @@
 [submodule "dot/vim/bundle/bufexplorer"]
 	path = dot/vim/bundle/bufexplorer
 	url = git://github.com/corntrace/bufexplorer.git
+[submodule "dot/vim/bundle/vim-visualstar"]
+	path = dot/vim/bundle/vim-visualstar
+	url = https://github.com/thinca/vim-visualstar.git
