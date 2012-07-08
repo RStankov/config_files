@@ -169,6 +169,9 @@ map <Leader>f <Plug>NexusRunTestFile
 " Nexus run lien
 map <Leader>d <Plug>NexusRunTestLine
 
+" Tabularize equals
+:nnoremap <leader>= :Tabularize /=<CR>
+
 " smarter * search in visual mode
 xnoremap * :<C-u>call <SID>VSetSearch()<CR>/<C-R>=@/<CR><CR>
 xnoremap # :<C-u>call <SID>VSetSearch()<CR>?<C-R>=@/<CR><CR>
