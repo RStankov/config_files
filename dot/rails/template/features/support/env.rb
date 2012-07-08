@@ -11,9 +11,6 @@ Spork.prefork do
   require 'capybara/cucumber'
   require 'capybara/session'
 
-  require 'email_spec'
-  require 'email_spec/cucumber'
-
   require File.expand_path(File.dirname(__FILE__) + '/driver')
 
   Capybara.default_selector = :css
@@ -34,7 +31,7 @@ Spork.each_run do
   require File.expand_path(File.dirname(__FILE__) + '/helpers')
 
   World(CucumberHelpers)
-  World(Factory::Syntax::Methods)
+  World(FactoryGirl::Syntax::Methods)
 
   <%= app_const %>.reload_routes!
 

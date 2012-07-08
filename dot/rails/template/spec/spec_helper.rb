@@ -16,15 +16,12 @@ end
 Spork.each_run do
   Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
 
-  <%= app_const %>::Application.reload_routes!
+  <%= app_const %>.reload_routes!
 
   RSpec.configure do |config|
     config.mock_with :rspec
     config.use_transactional_fixtures = true
-    config.include Factory::Syntax::Methods
-    config.include EmailSpec::Helpers
-    config.include EmailSpec::Matcher
-
+    config.include FactoryGirl::Syntax::Methods
     config.include SpecSupport::Model, :type => :model
     config.include SpecSupport::Controller, :type => :controller
   end

@@ -10,7 +10,6 @@
 inject_into_class 'config/application.rb', 'Application', <<-RUBY
     config.autoload_paths += %W(\#{config.root}/lib)
     config.filter_parameters += [:password, :password_confirmation]
-    config.paths['config/routes'].unshift('config/routes_for_mail_view.rb') if Rails.env.development?
 RUBY
 
 templates_dir = File.expand_path(File.join(File.dirname(__FILE__), 'template'))
@@ -38,9 +37,6 @@ Dir[File.join templates_dir, '**', '*'].
 run 'rm -rf doc'
 run 'rm -rf vendor/plugins'
 run 'rm -rf vendor/assets/stylesheets'
-
-create_file '.rvmrc'
-prepend_file '.rvmrc', 'rvm use 1.9.2'
 
 git :init
 git :add => '.'

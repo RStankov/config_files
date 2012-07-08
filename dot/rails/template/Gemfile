@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.1'
+gem 'rails'
 gem 'rake'
 
 gem 'sqlite3'
@@ -9,27 +9,21 @@ gem 'slim'
 
 group :assets do
   gem 'sass-rails'
+  gem 'compass-rails'
   gem 'coffee-rails'
   gem 'uglifier'
-  gem 'compass-rails'
 end
 
 gem 'jquery-rails'
 
-gem 'simple_form', '1.5.2'
-# gem 'inherited_resources'
-# gem 'draper'
-
-gem 'premailer'
-gem 'mail_view'
+gem 'simple_form'
 
 group :development, :test do
   gem 'rspec-rails'
   gem 'spork-rails'
-  gem 'cucumber-rails'
-  gem 'jasmine'
+  gem 'cucumber-rails', :require => false
+  gem "konacha"
   gem 'pry'
-  gem 'ruby-debug19', :require => 'ruby-debug'
 end
 
 group :test do
@@ -39,5 +33,7 @@ group :test do
   gem 'database_cleaner'
   gem 'factory_girl_rails'
   gem 'selenium-webdriver', '= 2.14.0'
-  gem 'email_spec'
+  gem 'specjour', :git => 'https://github.com/garmz/specjour', :branch => 'fix-rspec-issues'
 end
+
+
