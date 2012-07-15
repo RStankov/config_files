@@ -35,5 +35,9 @@ Spork.each_run do
 
   <%= app_const %>.reload_routes!
 
+  FactoryGirl.factories.clear
+
+  load Rails.root.join('spec/factories.rb')
+
   I18n.reload!
 end
