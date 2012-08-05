@@ -108,6 +108,9 @@ set listchars+=trail:.
 " Show line numbers
 set number
 
+" Don't break words
+set linebreak
+
 " Show line and column number
 set ruler
 
