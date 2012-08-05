@@ -30,8 +30,8 @@ function gci () {
   git commit -m "$*"
 }
 
-function kill-ruby {
-  ps -A | grep ruby | cut -d ' ' -f 1 | xargs kill 2>/dev/null
+function pkill {
+  ps ax | grep $1 | awk '{print $1}' | xargs kill -9 > /dev/null 2>&1
 }
 
 current() {
