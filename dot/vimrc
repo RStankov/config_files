@@ -114,6 +114,9 @@ set linebreak
 " Show line and column number
 set ruler
 
+" Remove startup message
+set shortmess+=I
+
 " Use only my snippets
 let g:snippets_dir=$HOME . "/.vim/snippets"
 
