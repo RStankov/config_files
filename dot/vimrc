@@ -185,6 +185,9 @@ map <leader>d <Plug>NexusRunTestLine
 " Tabularize equals
 nnoremap <leader>= :Tabularize /=<CR>
 
+" Stitch
+nnoremap <leader>- :Switch<cr>
+
 " Resize widows with <leader> + arrows
 nnoremap <leader><Right> :vertical res +5<cr>
 nnoremap <leader><Left> :vertical res -5<cr>

@@ -79,3 +79,6 @@
 [submodule "dot/vim/bundle/lang-css3"]
 	path = dot/vim/bundle/lang-css3
 	url = https://github.com/hail2u/vim-css3-syntax.git
+[submodule "dot/vim/bundle/vim-switch"]
+	path = dot/vim/bundle/vim-switch
+	url = git://github.com/AndrewRadev/switch.vim.git
