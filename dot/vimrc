@@ -195,5 +195,5 @@ nnoremap <leader><Up> :res +5<cr>
 nnoremap <leader><Down> :res -5<cr>
 
 " Insert blank lines
-map <S-Enter> m`O<Esc>``
-map <C-Enter> m`o<Esc>``
+map <C-Enter> m`O<Esc>``
+map <S-Enter> m`o<Esc>``
