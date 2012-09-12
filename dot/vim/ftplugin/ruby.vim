@@ -49,3 +49,6 @@ function! InlineVariable()
 endfunction
 
 nnoremap <leader>iv :call InlineVariable()<cr>
+
+" Shift + Enter in insert mode closes statement with 'end'
+imap <S-CR> <CR><CR>end<Esc>-cc
