@@ -7,6 +7,16 @@ endfunction
 
 nnoremap <leader>pl :call PromoteToLet()<cr>
 
+function! PromoteToBefore()
+  :'<,'>s/\(\s*\)\(\w.*\)/\1before do\r\1  \2\r\1end\r/
+  normal ==
+  normal! V
+  /before do
+endfunction
+
+nnoremap <leader>pb V:call PromoteToBefore()<cr>
+vnoremap <leader>pb :call PromoteToBefore()<cr>
+
 function! ExtractVariable()
   let name = input("Variable name: ")
   if name == ''
