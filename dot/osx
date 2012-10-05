@@ -41,8 +41,8 @@ defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 # Don't add .DS everywhere
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
-# Empty Trash securely (and extremely slow)
-defaults write com.apple.finder EmptyTrashSecurely -bool false
+# Enable text selection in preview windows
+defaults write com.apple.finder QLEnableTextSelection -bool TRUE; killall Finder
 
 # Automatically open a new Finder window when a volume is mounted
 defaults write com.apple.frameworks.diskimages auto-open-ro-root -bool true
@@ -99,3 +99,4 @@ defaults write org.vim.MacVim NSQuitAlwaysKeepsWindows -bool false
 
 # Show the ~/Library folder
 chflags nohidden ~/Library
+
