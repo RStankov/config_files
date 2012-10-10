@@ -194,6 +194,9 @@ nnoremap <leader><Left> :vertical res -5<cr>
 nnoremap <leader><Up> :res +5<cr>
 nnoremap <leader><Down> :res -5<cr>
 
+" Open BufExplorer
+nnoremap <leader>be :BufExplorer<cr>
+
 " Insert blank lines
 map <C-Enter> m`O<Esc>``
 map <S-Enter> m`o<Esc>``

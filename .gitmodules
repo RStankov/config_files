@@ -79,6 +79,6 @@
 [submodule "dot/vim/bundle/vim-switch"]
 	path = dot/vim/bundle/vim-switch
 	url = git://github.com/AndrewRadev/switch.vim.git
-[submodule "dot/vim/bundle/easybuffer"]
-	path = dot/vim/bundle/easybuffer
-	url = git://github.com/troydm/easybuffer.vim.git
+[submodule "dot/vim/bundle/bufexplorer"]
+	path = dot/vim/bundle/bufexplorer
+	url = https://github.com/corntrace/bufexplorer.git
