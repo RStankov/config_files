@@ -123,7 +123,7 @@ let g:snippets_dir=$HOME . "/.vim/snippets"
 " gui settings
 if has("gui_running")
   " Theme setup
-  colors vwilight
+  colors rstankov
 
   " Font.
   set guifont=Monaco:h12
