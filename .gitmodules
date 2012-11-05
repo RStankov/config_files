@@ -79,3 +79,6 @@
 [submodule "dot/vim/bundle/bufexplorer"]
 	path = dot/vim/bundle/bufexplorer
 	url = https://github.com/corntrace/bufexplorer.git
+[submodule "dot/vim/bundle/colors-irblack"]
+	path = dot/vim/bundle/colors-irblack
+	url = git://github.com/wgibbs/vim-irblack.git
