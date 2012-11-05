@@ -25,4 +25,3 @@ hi MatchParen     guifg=#f6f3e8     guibg=#857b6f     gui=BOLD      ctermfg=whit
 hi Pmenu          guifg=#f6f3e8     guibg=#444444     gui=NONE      ctermfg=NONE     ctermbg=NONE        cterm=NONE
 
 hi Todo           guifg=NONE        guibg=NONE        gui=NONE      ctermfg=NONE     ctermbg=NONE        cterm=NONE
-hi Operator       guifg=#6699CC     guibg=NONE        gui=NONE      ctermfg=lightblue   ctermbg=NONE        cterm=NONE
