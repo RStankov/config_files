@@ -3,7 +3,11 @@ runtime bundle/vwilight/colors/vwilight.vim
 
 let g:colors_name = "rstankov"
 
+hi Normal         guifg=#f6f3e8     guibg=black       gui=NONE      ctermfg=NONE     ctermbg=NONE        cterm=NONE
+hi NonText        guifg=#070707     guibg=black       gui=NONE      ctermfg=black    ctermbg=NONE        cterm=NONE
+
 hi Cursor         guifg=black       guibg=white       gui=NONE      ctermfg=black    ctermbg=white       cterm=reverse
+hi LineNr         guifg=#3D3D3D     guibg=black       gui=NONE      ctermfg=darkgray ctermbg=NONE        cterm=NONE
 
 hi Folded         guifg=#a0a8b0     guibg=#384048     gui=NONE      ctermfg=NONE     ctermbg=NONE        cterm=NONE
 hi Title          guifg=#f6f3e8     guibg=NONE        gui=bold      ctermfg=NONE     ctermbg=NONE        cterm=NONE
