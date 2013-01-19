@@ -1,3 +1,9 @@
+" Rails.vim :A on lib/foo.rb -> spec/lib/foo_spec.rb
+autocmd User Rails/lib/* let b:rails_alternate = 'spec/' . rails#buffer().name()[0:-4] . '_spec.rb'
+
+" Rails.vim :A on spec/lib/foo_spec.rb -> lib/foo.rb
+autocmd User Rails/spec/lib/* let b:rails_alternate = rails#buffer().name()[5:-9] . '.rb'
+
 function! PromoteToLet()
   normal! dd
   normal! P
