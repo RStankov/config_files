@@ -176,12 +176,6 @@ nnoremap k gk
 " Insert a hash rocket
 imap <c-l> <space>=><space>
 
-" Nexus run file
-map <leader>f <Plug>NexusRunTestFile
-
-" Nexus run lien
-map <leader>d <Plug>NexusRunTestLine
-
 " Tabularize equals
 nnoremap <leader>= :Tabularize /=<CR>
 

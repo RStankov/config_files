@@ -61,9 +61,6 @@
 [submodule "dot/vim/bundle/ctrlp"]
 	path = dot/vim/bundle/ctrlp
 	url = git://github.com/kien/ctrlp.vim.git
-[submodule "dot/vim/bundle/vim-nexus"]
-	path = dot/vim/bundle/vim-nexus
-	url = git://github.com/skanev/vim-nexus.git
 [submodule "dot/vim/bundle/vim-markdown-preview"]
 	path = dot/vim/bundle/vim-markdown-preview
 	url = git://github.com/greyblake/vim-preview.git
