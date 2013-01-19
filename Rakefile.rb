@@ -1,4 +1,4 @@
-require 'lib/installer.rb'
+require_relative 'lib/installer.rb'
 
 desc 'Install config files'
 task :default do
