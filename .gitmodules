@@ -79,3 +79,6 @@
 [submodule "dot/vim/bundle/colors-irblack"]
 	path = dot/vim/bundle/colors-irblack
 	url = git://github.com/wgibbs/vim-irblack.git
+[submodule "dot/vim/bundle/colors-mac-classic"]
+	path = dot/vim/bundle/colors-mac-classic
+	url = https://github.com/nelstrom/vim-mac-classic-theme.git
