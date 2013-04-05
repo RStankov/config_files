@@ -1,28 +1,7 @@
-[core]
-	excludesfile = /Users/rstankov/.gitignore
-	editor = mate -w
 [user]
 	name = Radoslav Stankov
 	email = rstankov@gmail.com
-[color "branch"]
-	current = yellow reverse
-	local = yellow
-	remote = green
-[color "diff"]
-	meta = yellow bold
-	frag = magenta bold
-	old = red bold
-	new = green bold
-[color "status"]
-	added = yellow
-	changed = green
-	untracked = cyan
-[color]
-	ui = auto
-[color "diff"]
-	whitespace = red reverse
-[core]
-	whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
+
 [alias]
 	st = status
 	ci = commit -m
@@ -37,7 +16,39 @@
 	undo = reset --soft HEAD^
         amend = commit --amend
         unstage = reset HEAD
+
+[core]
+	whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
+	excludesfile = /Users/rstankov/.gitignore
+	editor = mvim -f
 [push]
 	default = current
+
 [branch]
 	autosetuprebase = always
+
+[help]
+        autocorrect = 1
+
+[push]
+        default = tracking
+
+[color]
+	ui = auto
+
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
