@@ -32,6 +32,9 @@ imap <c-l> <space>=><space>
 " Tabularize equals
 nnoremap <leader>= :Tabularize /=<CR>
 
+" Tabularize => (I use ctrl + l for inserting =>)
+nnoremap <leader>l :Tabularize /=><CR>
+
 " Stitch
 nnoremap <leader>- :Switch<cr>
 
