@@ -40,5 +40,12 @@ current() {
   fi
 }
 
+cfg() {
+  current_pwd=$(pwd)
+  cd ~/Projects/config_files
+  mvim . && cd current_pwd >> /dev/null
+  unset current_pwd
+}
+
 current
 
