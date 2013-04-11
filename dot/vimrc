@@ -12,3 +12,6 @@ if has("gui_running")
   runtime config/gui.vim
 endif
 
+if filereadable(glob("~/.vimrc.local"))
+    source ~/.vimrc.local
+endif
