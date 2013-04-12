@@ -13,6 +13,7 @@ nnoremap gh <C-w>h
 nnoremap gj <C-w>j
 nnoremap gk <C-w>k
 nnoremap gl <C-w>l
+nnoremap gq :on<cr>
 
 " CtrlP clear cache
 nnoremap <D-5> :CtrlPClearCache<CR>
