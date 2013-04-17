@@ -7,11 +7,8 @@
 	ci = commit -m
 	br = branch
 	co = checkout
-	df = diff
-	lg = log -p
-	lol = log --graph --decorate --pretty=oneline --abbrev-commit
-	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
 	ls = ls-files
+	lol = log --graph --decorate --pretty='format:%C(yellow)%h%Cgreen%d%Creset %s %C(white) %an, %ar%Creset' --abbrev-commit
 	today = log --stat --since='1 Day Ago' --graph --pretty=oneline --abbrev-commit --date=relative
 	undo = reset --soft HEAD^
         amend = commit --amend
