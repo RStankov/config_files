@@ -8,7 +8,7 @@
 	br = branch
 	co = checkout
 	ls = ls-files
-	lol = log --graph --decorate --pretty='format:%C(yellow)%h%Cgreen%d%Creset %s %C(white) %an, %ar%Creset' --abbrev-commit
+	lol = log --graph --decorate --pretty='format:%C(yellow)%h%Cgreen%d%Creset %s %C(white) (%an, %ar)%Creset' --abbrev-commit
 	today = log --stat --since='1 Day Ago' --graph --pretty=oneline --abbrev-commit --date=relative
 	undo = reset --soft HEAD^
         amend = commit --amend
