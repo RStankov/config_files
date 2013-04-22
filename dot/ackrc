@@ -6,6 +6,8 @@
 --type-add=ruby=.ru
 --type-add=ruby=.haml
 --type-add=ruby=.slim
+--type-add=ruby=.builder
+--type-add=ruby=.rjs
 --type-add=ruby=.gemspec
 --type-add=js=.coffee
 --type-set=slim=.slim
