@@ -9,11 +9,11 @@ nmap _ :SplitjoinJoin<cr>
 nmap + :SplitjoinSplit<cr>
 
 " Split screens
-nnoremap gh <C-w>h
-nnoremap gj <C-w>j
-nnoremap gk <C-w>k
-nnoremap gl <C-w>l
-nnoremap gq :on<cr>
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+nnoremap <C-q> :on<cr>
 
 " CtrlP clear cache
 nnoremap <D-5> :CtrlPClearCache<CR>
