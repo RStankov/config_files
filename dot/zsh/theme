@@ -3,5 +3,4 @@ ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[red]%}*%{$reset_color%}]"
 PROMPT='%1~ \$ '
 RPROMPT='$(git_prompt_info)'
 
-CLICOLOR=$fs[pink]
-LSCOLORS=$fs[blue]
+LSCOLORS=cxfxFxdxHxegedabagacax
