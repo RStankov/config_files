@@ -82,3 +82,6 @@
 [submodule "dot/vim/bundle/colors-mac-classic"]
 	path = dot/vim/bundle/colors-mac-classic
 	url = https://github.com/nelstrom/vim-mac-classic-theme.git
+[submodule "dot/vim/bundle/vim-commentary"]
+	path = dot/vim/bundle/vim-commentary
+	url = git://github.com/tpope/vim-commentary.git
