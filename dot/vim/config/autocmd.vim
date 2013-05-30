@@ -6,3 +6,5 @@ au BufReadPost *
 
 " JSON -> JavaScript
 au BufEnter *.json set filetype=javascript
+
+au BufNewFile,BufRead *.ruby set filetype=ruby

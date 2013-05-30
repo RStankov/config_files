@@ -8,6 +8,7 @@
 --type-add=ruby=.slim
 --type-add=ruby=.builder
 --type-add=ruby=.rjs
+--type-add=ruby=.ruby
 --type-add=ruby=.gemspec
 --type-add=js=.coffee
 --type-set=slim=.slim
