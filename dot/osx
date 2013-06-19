@@ -100,3 +100,6 @@ defaults write org.vim.MacVim NSQuitAlwaysKeepsWindows -bool false
 # Show the ~/Library folder
 chflags nohidden ~/Library
 
+# Add shift+cmd+v a shortcut for "Paste and Match Style"
+defaults write .GlobalPreferences -dict-add NSUserKeyEquivalents "Paste and Match Style" -string "@$v"
+
