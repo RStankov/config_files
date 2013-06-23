@@ -41,8 +41,7 @@ alias pg-down='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 alias reload!='. ~/.zshrc'
 
 # zeus
-alias zr="clear && zeus rspec"
 alias zc="zeus console"
 alias zs="zeus server"
 alias zdb="zeus dbconsole"
-alias zrake="zeus rake"
+alias zr="zeus rake"
