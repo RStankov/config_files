@@ -118,3 +118,8 @@ defaults write com.skype.skype NSUserKeyEquivalents '{ "Next Conversation" = "@\
 # * Clear conversation - ctrl + l
 defaults write com.apple.iChat NSUserKeyEquivalents '{ "Clear Transcript" = "^l"; "Close Conversation..." = "@w"; "Select Next Conversation" = "@]"; "Select Previous Conversation" = "@["; }'
 
+# iTerm shortcuts:
+# * Next Pane - cmd + shift + ]
+# * Previous Pane - cmd + shift + [
+defaults write com.googlecode.iterm2 NSUserKeyEquivalents '{ "Next Pane" = "@$]"; "Previous Pane" = "@$["; }'
+
