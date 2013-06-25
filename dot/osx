@@ -100,6 +100,21 @@ defaults write org.vim.MacVim NSQuitAlwaysKeepsWindows -bool false
 # Show the ~/Library folder
 chflags nohidden ~/Library
 
-# Add shift+cmd+v a shortcut for "Paste and Match Style"
-defaults write .GlobalPreferences -dict-add NSUserKeyEquivalents "Paste and Match Style" -string "@$v"
+# Global shortcuts:
+# * Paste and Match style - cmd + shift + v
+# * Next tab - cmd + [
+# * Previous tab - cmd + ]
+defaults write .GlobalPreferences NSUserKeyEquivalents '{ "Paste and Match Style" = "@$v";  "Select Next Tab" = "@]"; "Select Previous Tab" = "@["; }'
+
+# Skype shortcuts:
+# * Next conversation - cmd + [
+# * Previous conversation - cmd + ]
+defaults write com.skype.skype NSUserKeyEquivalents '{ "Next Conversation" = "@\]"; "Previous Conversation" = "@\["; }'
+
+# Messages shortcuts:
+# * Next conversation - cmd + [
+# * Previous conversation - cmd + ]
+# * Close conversation - cmd + w
+# * Clear conversation - ctrl + l
+defaults write com.apple.iChat NSUserKeyEquivalents '{ "Clear Transcript" = "^l"; "Close Conversation..." = "@w"; "Select Next Conversation" = "@]"; "Select Previous Conversation" = "@["; }'
 
