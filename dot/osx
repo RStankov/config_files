@@ -102,24 +102,17 @@ chflags nohidden ~/Library
 
 # Global shortcuts:
 # * Paste and Match style - cmd + shift + v
-# * Next tab - cmd + [
-# * Previous tab - cmd + ]
-defaults write .GlobalPreferences NSUserKeyEquivalents '{ "Paste and Match Style" = "@$v";  "Select Next Tab" = "@]"; "Select Previous Tab" = "@["; }'
+defaults write .GlobalPreferences NSUserKeyEquivalents '{ "Paste and Match Style" = "@$v"; }'
 
 # Skype shortcuts:
-# * Next conversation - cmd + [
-# * Previous conversation - cmd + ]
-defaults write com.skype.skype NSUserKeyEquivalents '{ "Next Conversation" = "@\]"; "Previous Conversation" = "@\["; }'
+# * Next conversation - cmd + shift + [
+# * Previous conversation - cmd + shift + ]
+defaults write com.skype.skype NSUserKeyEquivalents '{ "Next Conversation" = "@$]"; "Previous Conversation" = "@$["; }'
 
 # Messages shortcuts:
-# * Next conversation - cmd + [
-# * Previous conversation - cmd + ]
 # * Close conversation - cmd + w
 # * Clear conversation - ctrl + l
-defaults write com.apple.iChat NSUserKeyEquivalents '{ "Clear Transcript" = "^l"; "Close Conversation..." = "@w"; "Select Next Conversation" = "@]"; "Select Previous Conversation" = "@["; }'
+defaults write com.apple.iChat NSUserKeyEquivalents '{ "Clear Transcript" = "^l"; "Close Conversation..." = "@w"; }'
 
-# iTerm shortcuts:
-# * Next Pane - cmd + shift + ]
-# * Previous Pane - cmd + shift + [
-defaults write com.googlecode.iterm2 NSUserKeyEquivalents '{ "Next Pane" = "@$]"; "Previous Pane" = "@$["; }'
+defaults write com.googlecode.iterm2 NSUserKeyEquivalents '{}'
 
