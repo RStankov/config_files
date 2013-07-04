@@ -40,6 +40,8 @@ current() {
   fi
 }
 
+current
+
 cfg() {
   current_pwd=$(pwd)
   cd ~/Projects/config_files
@@ -47,5 +49,15 @@ cfg() {
   unset current_pwd
 }
 
-current
+function t() {
+  if [[ -f ./zeus.json ]]; then
+    prefix="zeus"
+  fi
 
+  command="rspec"
+  if [[ $1 = features* ]]; then
+    command="cucumber"
+  fi
+
+  clear && $prefix $command $1
+}
