@@ -85,3 +85,6 @@
 [submodule "dot/vim/bundle/vim-commentary"]
 	path = dot/vim/bundle/vim-commentary
 	url = git://github.com/tpope/vim-commentary.git
+[submodule "dot/vim/bundle/vim-gist"]
+	path = dot/vim/bundle/vim-gist
+	url = git@github.com:mattn/gist-vim.git
