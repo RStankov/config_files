@@ -91,3 +91,6 @@
 [submodule "dot/vim/bundle/lang-taskpaper"]
 	path = dot/vim/bundle/lang-taskpaper
 	url = git@github.com:davidoc/taskpaper.vim.git
+[submodule "dot/vim/bundle/ruby-refactoring"]
+	path = dot/vim/bundle/ruby-refactoring
+	url = git@github.com:ecomba/vim-ruby-refactoring.git
