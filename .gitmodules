@@ -94,3 +94,6 @@
 [submodule "dot/vim/bundle/ruby-refactoring"]
 	path = dot/vim/bundle/ruby-refactoring
 	url = git@github.com:ecomba/vim-ruby-refactoring.git
+[submodule "dot/vim/bundle/vim-multichange"]
+	path = dot/vim/bundle/vim-multichange
+	url = git@github.com:AndrewRadev/multichange.vim.git
