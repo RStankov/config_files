@@ -97,3 +97,9 @@
 [submodule "dot/vim/bundle/vim-multichange"]
 	path = dot/vim/bundle/vim-multichange
 	url = git@github.com:AndrewRadev/multichange.vim.git
+[submodule "dot/vim/bundle/vim-textobj-rubyblock"]
+	path = dot/vim/bundle/vim-textobj-rubyblock
+	url = git@github.com:nelstrom/vim-textobj-rubyblock.git
+[submodule "dot/vim/bundle/vim-textobj-user"]
+	path = dot/vim/bundle/vim-textobj-user
+	url = git@github.com:kana/vim-textobj-user.git
