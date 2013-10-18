@@ -103,3 +103,6 @@
 [submodule "dot/vim/bundle/vim-textobj-user"]
 	path = dot/vim/bundle/vim-textobj-user
 	url = git@github.com:kana/vim-textobj-user.git
+[submodule "dot/vim/bundle/vim-bundler"]
+	path = dot/vim/bundle/vim-bundler
+	url = git@github.com:tpope/vim-bundler.git
