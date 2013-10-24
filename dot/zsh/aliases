@@ -26,6 +26,8 @@ alias gr10="git rebase -i HEAD~10"
 alias gs="git stash"
 alias gc="git commit -m"
 alias gl="git lol"
+alias gd="git diff"
+alias gdc="git diff --cached"
 
 alias run_resque="RAILS_ENV=development QUEUE=* VERBOSE=1 rake environment resque:work"
 alias o="open ."
