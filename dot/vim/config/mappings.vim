@@ -31,7 +31,7 @@ nnoremap k gk
 imap <c-l> <space>=><space>
 
 " Tabularize equals
-nnoremap <leader>= :Tabularize /=<cr>
+nnoremap <leader>= :Tabularize /^[^=]*\zs=<cr>
 
 " Tabularize colon
 nnoremap <leader>: :Tabularize /:\zs<cr>
