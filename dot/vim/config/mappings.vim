@@ -45,6 +45,10 @@ nnoremap <leader><Left> :vertical res -5<cr>
 nnoremap <leader><Up> :res +5<cr>
 nnoremap <leader><Down> :res -5<cr>
 
+" Reorder arguments by ctrl + arrows
+nnoremap <c-Left> :SidewaysLeft<cr>
+nnoremap <c-Right> :SidewaysRight<cr>
+
 " Open BufExplorer
 nnoremap <leader>be :BufExplorer<cr>
 
