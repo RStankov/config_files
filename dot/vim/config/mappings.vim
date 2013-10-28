@@ -36,7 +36,7 @@ nnoremap <leader>= :Tabularize /=<CR>
 " Tabularize => (I use ctrl + l for inserting =>)
 nnoremap <leader>l :Tabularize /=><CR>
 
-" Stitch
+" Switch
 nnoremap <leader>- :Switch<cr>
 
 " Resize widows with <leader> + arrows
