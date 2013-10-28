@@ -31,10 +31,13 @@ nnoremap k gk
 imap <c-l> <space>=><space>
 
 " Tabularize equals
-nnoremap <leader>= :Tabularize /=<CR>
+nnoremap <leader>= :Tabularize /=<cr>
+
+" Tabularize colon
+nnoremap <leader>: :Tabularize /:\zs<cr>
 
 " Tabularize => (I use ctrl + l for inserting =>)
-nnoremap <leader>l :Tabularize /=><CR>
+nnoremap <leader>l :Tabularize /=><cr>
 
 " Switch
 nnoremap <leader>- :Switch<cr>
