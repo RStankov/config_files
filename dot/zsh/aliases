@@ -1,9 +1,3 @@
-# cucumber
-alias cc="clear && bundle exec cucumber --drb"
-alias ccw="cc -p wip"
-alias ccj="cc -p js"
-alias ccn="cc -p no-js"
-
 # bundler
 alias gemopen="bundle open"
 
@@ -13,9 +7,6 @@ alias rs="clear && rspec --drb"
 # rails
 alias r="rails"
 alias migrate="rake db:migrate db:test:prepare"
-
-# specjour
-alias spj="clear && bundle exec specjour"
 
 # git
 alias ga="git add -A"
@@ -29,7 +20,6 @@ alias gl="git lol"
 alias gd="git diff"
 alias gdc="git diff --cached"
 
-alias run_resque="RAILS_ENV=development QUEUE=* VERBOSE=1 rake environment resque:work"
 alias o="open ."
 
 # ls
