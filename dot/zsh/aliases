@@ -1,4 +1,7 @@
 # bundler
+alias bu="bundle update"
+alias bi="bundle install"
+
 alias gemopen="bundle open"
 
 # rspec
