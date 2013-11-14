@@ -1,14 +1,19 @@
 #!/usr/bin/env ruby
 
-def run cmd
+def run(cmd)
   puts cmd
   result = `#{cmd}`
   puts result
   result
 end
 
-output = run "rails generate migration #{ARGV[0]}"
+is_zeus = File.exists? '.zeus.sock'
+
+output = run "#{is_zeus ? 'zeus' : 'rails'} generate migration #{ARGV[0]}"
 
 migration_path = output.match(%r|db/migrate/.*\.rb|)[0]
 
-run "mvim #{migration_path}" unless migration_path.nil?
+if migration_path
+  run "mvim #{migration_path}"
+  run "#{'zeus' if is_zeus} rake db:migrate db:test:prepare"
+end
