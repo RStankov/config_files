@@ -9,7 +9,6 @@ alias rs="clear && rspec --drb"
 
 # rails
 alias r="rails"
-alias migrate="rake db:migrate db:test:prepare"
 
 # git
 alias ga="git add -A"
