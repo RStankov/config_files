@@ -9,6 +9,7 @@
 
 inject_into_class 'config/application.rb', 'Application', <<-RUBY
     config.autoload_paths += %W(\#{config.root}/lib)
+    config.assets.paths << Rails.root.join('vendor', 'assets', 'components')
     config.filter_parameters += [:password, :password_confirmation]
 RUBY
 
