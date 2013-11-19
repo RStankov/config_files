@@ -50,7 +50,7 @@ cfg() {
 }
 
 function t() {
-  if [[ -f ./.zeus.sock ]]; then
+  if [[ -e ./.zeus.sock ]]; then
     prefix="zeus"
   fi
 
