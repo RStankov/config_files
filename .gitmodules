@@ -106,3 +106,6 @@
 [submodule "dot/vim/bundle/vim-sideways"]
 	path = dot/vim/bundle/vim-sideways
 	url = git@github.com:AndrewRadev/sideways.vim
+[submodule "dot/vim/bundle/vim-airline"]
+	path = dot/vim/bundle/vim-airline
+	url = git@github.com:bling/vim-airline.git
