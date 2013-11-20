@@ -117,6 +117,3 @@ set ruler
 " Remove startup message
 set shortmess+=I
 
-" Remove file format and encoding from Powerline
-call Pl#Theme#RemoveSegment('fileformat')
-call Pl#Theme#RemoveSegment('fileencoding')
