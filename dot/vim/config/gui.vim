@@ -2,7 +2,8 @@
 colors rstankov
 
 " Font.
-set guifont=Monaco:h12
+set guifont=Monaco:h14
+set guifont=Inconsolata:h14
 
 " Hide toolbar and menubar.
 set guioptions-=T
