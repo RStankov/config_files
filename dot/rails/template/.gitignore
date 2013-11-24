@@ -1,9 +1,0 @@
-.DS_Store
-.bundle
-db/*.sqlite3
-config/database.yml
-log/*.log
-tmp/
-.sass-cache/
-coverage/*
-capybara-*
