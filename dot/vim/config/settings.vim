@@ -89,6 +89,7 @@ set wildignore+=*.woff,*.eof,*.otf
 set wildignore+=*.jpg,*.png,*.gif,*.jpeg,*.ico
 set wildignore+=*.swf,*.htc
 set wildignore+=*/tmp/*,*/db/migrate,*/public/stylesheets/compiled
+set wildignore+=*/node_modules/*
 
 " Show the current mode
 set showmode
