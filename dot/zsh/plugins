@@ -7,11 +7,6 @@ pg-restore() {
  pg_ctl -D /usr/local/var/postgres/ -l /usr/local/var/postgres/server.log start
 }
 
-toggle-hidden-files() {
-  defaults write com.apple.finder AppleShowAllFiles %1
-  killall Finder
-}
-
 p() { cd ~/Projects/$1; }
 _p() { _files -W ~/Projects -/; }
 compdef _p p
