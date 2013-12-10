@@ -51,6 +51,6 @@ if ARGV.length === 3
   Svg2JsonConvert.call *ARGV
   puts "#{ARGV[2]} generated succesfully"
 else
-  puts "usage: svg2js [format: array or object] [from_file: svg file] [to_file: json file]"
+  puts "usage: svg2json [format: array or object] [from_file: svg file] [to_file: json file]"
 end
 
