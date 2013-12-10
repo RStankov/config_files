@@ -1,44 +1,56 @@
 #!/usr/bin/env ruby
 
-class Svg2JsConvertor
-  def self.convert(format, from_file, to_file)
-    convertor = self.new
-    convertor.load_file(from_file)
+require 'json'
+
+class Svg2JsonConvert
+  def self.call(format, from_file, to_file)
+    convertor = new from_file
 
     File.open(to_file, 'w+') do |file|
-      file.write convertor.send(:"to_js_#{format}")
+      file.write convertor.send(:"as_json_#{format}")
     end
   end
 
   PATTERN = /\W+d=("[^"]+")/
 
-  def initialize
+  attr_reader :content
+
+  def initialize(file_name)
     @content = []
+    load file_name
   end
 
-  def load_file(file_name)
+  def as_json_object
+    index = 0
+    JSON[Hash[content.map { |line| [label_for(index += 1), line]}]]
+  end
+
+  def as_json_array
+    JSON[content]
+  end
+
+  private
+
+  def load(file_name)
     open(file_name) do |file|
       file.each do |line|
         if match = line.match(PATTERN)
-          @content << match[1]
+          content << match[1]
         end
       end
     end
   end
 
-  def to_js_object
-    index = 0
-    pad   = @content.size.to_s.size
-    "{\n    " + @content.map { |line| "\"label#{(index += 1).to_s.rjust(pad, '0')}\": #{line}" }.join("\n  , ") + "\n};"
-  end
-
-  def to_js_array
-    "[\n  " + @content.join("\n, ") + "\n];"
+  def label_for(index)
+    pad = content.size.to_s.size
+    "label#{index.to_s.rjust(pad, '0')}"
   end
 end
 
-exit "usage: svg2js [format: array or object] [from_file: svg file] [to_file: js file]" unless ARGV.length === 3
+if ARGV.length === 3
+  Svg2JsonConvert.call *ARGV
+  puts "#{ARGV[2]} generated succesfully"
+else
+  puts "usage: svg2js [format: array or object] [from_file: svg file] [to_file: json file]"
+end
 
-Svg2JsConvertor.convert(*ARGV)
-
-puts "#{ARGV[2]} generated succesfully"
