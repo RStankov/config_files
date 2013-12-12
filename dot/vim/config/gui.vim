@@ -1,9 +1,10 @@
 " Theme setup
-colors rstankov
+" colors rstankov
+set background=light
+colorscheme solarized
 
 " Font.
 set guifont=Monaco:h14
-set guifont=Inconsolata:h14
 
 " Hide toolbar and menubar.
 set guioptions-=T

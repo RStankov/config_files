@@ -122,7 +122,7 @@ set shortmess+=I
 " remove separators
 let g:airline_left_sep=''
 let g:airline_right_sep=''
-let g:airline_theme='tomorrow'
+let g:airline_theme='solarized'
 let g:airline_enable_branch=0
 let g:airline_enable_syntastic=0
 let g:airline_detect_whitespace=0
