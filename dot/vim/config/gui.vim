@@ -3,6 +3,9 @@
 set background=light
 colorscheme solarized
 
+" Hide the annoying ~ non texts
+hi NonText      guifg=bg     guibg=bg     gui=NONE
+
 " Font.
 set guifont=Monaco:h14
 
