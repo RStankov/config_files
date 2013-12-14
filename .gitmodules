@@ -109,3 +109,6 @@
 [submodule "dot/vim/bundle/vim-airline"]
 	path = dot/vim/bundle/vim-airline
 	url = git@github.com:bling/vim-airline.git
+[submodule "dot/vim/bundle/vundle"]
+	path = dot/vim/bundle/vundle
+	url = git@github.com:gmarik/vundle.git

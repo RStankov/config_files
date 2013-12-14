@@ -1,6 +1,13 @@
 " Pathogen
 call pathogen#infect()
 
+" Vundle
+set runtimepath+=~/.vim/vundle/vundle
+call vundle#rc('~/.vim/vundle')
+
+" Bundles
+Bundle 'gmarik/vundle'
+
 " Configure
 runtime config/settings.vim
 runtime config/plugins.vim
