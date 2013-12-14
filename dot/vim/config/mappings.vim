@@ -57,3 +57,6 @@ nnoremap <leader>bn :bnext<cr>
 " Insert blank lines
 map <C-Enter> m`O<Esc>``
 map <S-Enter> m`o<Esc>``
+
+" GundoToggle
+nnoremap <leader>g :GundoToggle<cr>
