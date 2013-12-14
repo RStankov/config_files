@@ -7,6 +7,7 @@ call vundle#rc('~/.vim/vundle')
 
 " Bundles
 Bundle 'gmarik/vundle'
+Bundle 'sjl/gundo.vim'
 
 " Configure
 runtime config/settings.vim
