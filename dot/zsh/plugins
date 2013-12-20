@@ -42,12 +42,12 @@ cfg() {
 
 function t() {
   if [[ -e ./.zeus.sock ]]; then
-    prefix="zeus"
+    local prefix="zeus"
   fi
 
-  command="rspec"
+  local command="rspec"
   if [[ $1 = features* ]]; then
-    command="cucumber"
+    local command="cucumber"
   fi
 
   clear && $prefix $command $1
