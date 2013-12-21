@@ -61,5 +61,3 @@ map <S-Enter> m`o<Esc>``
 " GundoToggle
 nnoremap <leader>g :GundoToggle<cr>
 
-" Search with Ack for word under cursor
-nnoremap K :Ack "\b<C-R><C-W>\b"<CR>:cw<CR>
