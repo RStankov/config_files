@@ -14,5 +14,3 @@ vnoremap <leader>rev  :RExtractLocalVariable<cr>
 vnoremap <leader>rrv  :RRenameLocalVariable<cr>
 vnoremap <leader>rriv :RRenameInstanceVariable<cr>
 
-" Shift + Enter in insert mode closes statement with 'end'
-imap <S-CR> <CR><CR>end<Esc>-cc
