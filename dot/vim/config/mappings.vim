@@ -61,3 +61,6 @@ map <S-Enter> m`o<Esc>``
 " GundoToggle
 nnoremap <leader>g :GundoToggle<cr>
 
+" Close quickfix window
+nnoremap Q :ccl<cr>
+
