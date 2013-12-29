@@ -14,3 +14,11 @@ vnoremap <leader>rev  :RExtractLocalVariable<cr>
 vnoremap <leader>rrv  :RRenameLocalVariable<cr>
 vnoremap <leader>rriv :RRenameInstanceVariable<cr>
 
+" RSpec.vim mappings
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
+
+" Rspec.vim uses dispatches via specially crafted test file
+let g:rspec_command = "Dispatch ~/bin/test {spec}"
