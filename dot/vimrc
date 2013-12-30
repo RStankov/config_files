@@ -46,6 +46,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'kana/vim-textobj-user'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'thoughtbot/vim-rspec'
+Bundle 'cakebaker/scss-syntax.vim'
 
 " Configure
 runtime config/settings.vim
