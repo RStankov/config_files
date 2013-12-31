@@ -1,2 +1,3 @@
 #!/bin/zsh
-source ~/.zshrc > /dev/null 2> /dev/null && t $@
+source ~/.zshrc
+t $@
