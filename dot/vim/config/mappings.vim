@@ -49,11 +49,6 @@ nnoremap <c-Right> :SidewaysRight<cr>
 " Open BufExplorer
 nnoremap <leader>be :BufExplorer<cr>
 
-" Open next/previous and close buffers
-nnoremap <leader>bd :bd<cr>
-nnoremap <leader>bp :bprevious<cr>
-nnoremap <leader>bn :bnext<cr>
-
 " Insert blank lines
 map <C-Enter> m`O<Esc>``
 map <S-Enter> m`o<Esc>``
