@@ -53,9 +53,6 @@ nnoremap <leader>be :BufExplorer<cr>
 map <C-Enter> m`O<Esc>``
 map <S-Enter> m`o<Esc>``
 
-" GundoToggle
-nnoremap <leader>g :GundoToggle<cr>
-
 " Close quickfix window
 nnoremap Q :ccl<cr>
 
