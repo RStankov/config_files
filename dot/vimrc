@@ -44,6 +44,7 @@ Bundle 'kana/vim-textobj-user'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'thoughtbot/vim-rspec'
 Bundle 'cakebaker/scss-syntax.vim'
+Bundle 'christoomey/vim-titlecase'
 
 " Configure
 runtime config/settings.vim
