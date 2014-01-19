@@ -31,9 +31,6 @@ alias l="ls -lahF"
 alias pg-up='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
 alias pg-down='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 
-# reload zsh
-alias reload!='. ~/.zshrc'
-
 # zeus
 alias zc="zeus console"
 alias zs="zeus server"
