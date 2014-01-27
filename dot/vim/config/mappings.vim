@@ -57,8 +57,8 @@ map <S-Enter> m`o<Esc>``
 nnoremap Q :ccl<cr>
 
 " method a1, a2, a3 -> method(a1, a2, a3)
-nmap <leader>9 mz^f<Space>xv$S)<Esc>`z
+nmap <leader>9 mz^`z2hf<Space>xv$hS)`z
 
 " method(a1, a2, a3) -> method a1, a2, a3
-nmap <leader>0 mzF(ds(i<Space><Esc>`z
+nmap <leader>0 mzlF(ds(i<Space><Esc>`z
 
