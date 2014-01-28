@@ -1,7 +1,7 @@
 " Theme setup
 " colors rstankov
 set background=light
-colorscheme solarized
+colorscheme github
 
 " Hide the annoying ~ non texts
 hi NonText      guifg=bg     guibg=bg     gui=NONE
