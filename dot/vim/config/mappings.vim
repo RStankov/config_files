@@ -57,8 +57,11 @@ map <S-Enter> m`o<Esc>``
 nnoremap Q :ccl<cr>
 
 " method a1, a2, a3 -> method(a1, a2, a3)
-nmap <leader>9 mz^`z2hf<Space>xv$hS)`z
+nmap <silent> <Plug>WrapWithParentheses mz^`z2hf<Space>xv$hS)`z
+\:call repeat#set("\<Plug>WrapWithParentheses")<CR>
+nmap <leader>9 <Plug>WrapWithParentheses
 
 " method(a1, a2, a3) -> method a1, a2, a3
-nmap <leader>0 mzlF(ds(i<Space><Esc>`z
-
+nmap <silent> <Plug>RemoveWrapingParentheses mzlF(ds(i<Space><Esc>`z
+\:call repeat#set("\<Plug>RemoveWrapingParentheses")<CR>
+nmap <leader>0 <Plug>RemoveWrapingParentheses
