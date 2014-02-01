@@ -1,5 +1,4 @@
 " Theme setup
-" colors rstankov
 set background=light
 colorscheme github
 
