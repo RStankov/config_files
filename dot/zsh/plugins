@@ -33,13 +33,6 @@ current() {
 
 current
 
-cfg() {
-  current_pwd=$(pwd)
-  cd ~/Projects/config_files
-  mvim . && cd current_pwd >> /dev/null
-  unset current_pwd
-}
-
 function t() {
   if [[ -e ./.zeus.sock ]]; then
     local prefix="zeus"
