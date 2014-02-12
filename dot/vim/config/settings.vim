@@ -118,6 +118,9 @@ set ruler
 " Remove startup message
 set shortmess+=I
 
+" Enhance the auto complete
+set completeopt=longest,menu,preview
+
 " airline settings
 " remove separators
 let g:airline_left_sep=''
