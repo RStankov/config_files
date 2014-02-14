@@ -121,16 +121,3 @@ set shortmess+=I
 " Enhance the auto complete
 set completeopt=longest,menu,preview
 
-" airline settings
-" remove separators
-let g:airline_left_sep=''
-let g:airline_right_sep=''
-let g:airline_theme='light'
-let g:airline_enable_branch=0
-let g:airline_enable_syntastic=0
-let g:airline_detect_whitespace=0
-let g:airline_section_b="%f"
-let g:airline_section_c=""
-let g:airline_section_x=""
-let g:airline_section_y="%Y"
-let g:airline_section_z="%3p%% : %3l : %3v : %3L"
