@@ -18,3 +18,8 @@ set guioptions-=r
 
 " Turn off blinking in normal mode
 set gcr=n:blinkon0
+
+if has("gui_running")
+  " Automatically resize splits when resizing MacVim window
+  autocmd VimResized * wincmd =
+endif
