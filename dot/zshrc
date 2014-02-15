@@ -28,3 +28,4 @@ source $HOME/.zsh/theme
 source $HOME/.zsh/exports
 source $HOME/.zsh/aliases
 source $HOME/.zsh/plugins
+
