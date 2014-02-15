@@ -34,14 +34,17 @@ current() {
 current
 
 function t() {
-  if [[ -e ./.zeus.sock ]]; then
-    local prefix="zeus"
-  fi
-
   local command="rspec"
   if [[ $1 = features* ]]; then
-    local command="cucumber"
+    command="cucumber"
   fi
 
-  clear && $prefix $command $1
+  if [ -f "./bin/$command" ]; then
+    command="./bin/$command"
+  elif [[ -e ./.zeus.sock ]]; then
+    command="zeus $command"
+  fi
+
+  clear
+  eval $command $1
 }
