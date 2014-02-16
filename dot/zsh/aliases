@@ -4,9 +4,6 @@ alias bi="bundle install"
 
 alias gemopen="bundle open"
 
-# rspec
-alias rs="clear && rspec --drb"
-
 # rails
 alias r="rails"
 
