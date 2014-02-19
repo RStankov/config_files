@@ -1,5 +1,4 @@
 Bundle 'AndrewRadev/splitjoin.vim'
-Bundle 'AndrewRadev/ack.vim'
 Bundle 'AndrewRadev/multichange.vim'
 Bundle 'AndrewRadev/switch.vim'
 Bundle 'AndrewRadev/sideways.vim'
