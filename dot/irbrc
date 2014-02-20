@@ -29,3 +29,19 @@ def pbcopy(string)
   `echo "#{string}" | pbcopy`
   string
 end
+
+def load_factory_girl!
+  return if defined? FactoryGirl
+
+  require 'factory_girl'
+
+  if Dir.exists?(Rails.root.join('spec/factories'))
+    Dir[Rails.root.join("spec/factories/**/*.rb")].each { |f| require f }
+    puts "Factories loaded"
+  elsif File.exists?(Rails.root.join('spec.factory.rb'))
+    require Rails.root.join('factory.rb')
+    puts "Factories loaded"
+  else
+    puts "You have to load factories manually"
+  end
+end
