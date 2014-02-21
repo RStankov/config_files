@@ -98,7 +98,7 @@ set showmode
 set history=50
 
 " Syntax coloring lines that are too long just slows down the world
-set synmaxcol=200
+set synmaxcol=360
 
 " A tab should display as "|    "
 set listchars=tab:\|\
