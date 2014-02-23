@@ -1,4 +1,0 @@
-rvm_archflags="-arch x86_64"
-rvm_project_rvmrc_default=1
-
-export rvm_path="/Users/rstankov/.rvm"
