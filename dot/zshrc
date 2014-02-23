@@ -22,7 +22,6 @@ source $ZSH/oh-my-zsh.sh
 
 source $HOME/.zsh/env
 source $HOME/.zsh/theme
-source $HOME/.zsh/exports
 source $HOME/.zsh/aliases
 source $HOME/.zsh/plugins
 source $HOME/.zsh/rbenv
