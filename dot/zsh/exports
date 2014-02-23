@@ -1,4 +1,4 @@
-export PATH="./bin:/usr/local/bin:/usr/local/sbin:$PATH:~/bin"
+export PATH="./bin:~/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 
 export EDITOR=mvim
 
