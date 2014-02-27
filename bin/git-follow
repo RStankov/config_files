@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+#
+# Follows the current git branch on a remote. If the remote is not explicitly
+# specified, it is assumed to be called origin.
+#
+# Usage:
+#   git follow [remote]
+
+REMOTE=${1:-origin}
+BRANCH=$(git symbolic-ref --short HEAD)
+
+git branch --set-upstream-to=$REMOTE/$BRANCH $BRANCH
