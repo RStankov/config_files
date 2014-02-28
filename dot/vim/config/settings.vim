@@ -122,6 +122,3 @@ set shortmess+=I
 " Enhance the auto complete
 set completeopt=longest,menu,preview
 
-" Set relative line numbers + current line
-set relativenumber
-set number
