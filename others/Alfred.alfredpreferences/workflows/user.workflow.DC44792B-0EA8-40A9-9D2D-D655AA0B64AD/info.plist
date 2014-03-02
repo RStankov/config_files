@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string></string>
+	<key>connections</key>
+	<dict>
+		<key>AAE2193C-E6C1-4A1C-8A17-774AF8868DCF</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>159A291E-3339-491E-8D3F-79091BE0319B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>CD69778A-A49B-44D1-9F54-B24359DEF8B8</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>AAE2193C-E6C1-4A1C-8A17-774AF8868DCF</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Gianni Rondini</string>
+	<key>description</key>
+	<string>tp - task or comment [sub] project_name [#] file_name</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>TaskPaper</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>tp</string>
+				<key>subtext</key>
+				<string>tp - task or comment [sub] project_name [#] file_name</string>
+				<key>text</key>
+				<string>TaskPaper</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>CD69778A-A49B-44D1-9F54-B24359DEF8B8</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>applescript</key>
+				<string>-- Releas version: 2.1
+-- Developed by Gianni Rondini
+-- more info at dropbyte.tumblr.com
+-- send bug and fix requests to
+-- giannivt [at] gmail [dot] com
+ 
+on alfred_script(evTest)
+set tpdir to "~"
+set doc to ""
+set prj to ""
+set todo to ""
+set subSep to " sub "
+set inSep to " # "
+set noDoc to 0
+set noPrj to 0
+ 
+if evTest contains subSep then
+if evTest contains inSep then -- checking specific document
+set text item delimiters to inSep
+set prj_h to text item 1 of evTest
+set doc to text item 2 of evTest --saving document name
+set text item delimiters to subSep
+set prj to text item 2 of prj_h --saving project name
+set todo to text item 1 of prj_h --saving todo
+else
+set text item delimiters to subSep
+set prj to text item 2 of evTest --saving project name
+set todo to text item 1 of evTest --saving todo
+set doc to "toSave" --saving document name
+set noDoc to 1
+end if
+else
+if evTest contains inSep then -- checking specific document
+set text item delimiters to inSep
+set todo to text item 1 of evTest --saving todo
+set doc to text item 2 of evTest --saving document name
+set prj to "Inbox" --saving project name
+set noPrj to 1
+else
+set prj to "Inbox"
+set doc to "toSave"
+set todo to evTest
+set noDoc to 1
+set noPrj to 1
+end if
+end if
+ 
+if (doc as text) contains " " then
+set AppleScript's text item delimiters to " "
+set newText to text items of doc
+set AppleScript's text item delimiters to "\\ "
+set doc to newText as text
+end if
+ 
+tell application "TaskPaper"
+activate
+if noDoc is equal to 0 then
+set p to do shell script "mdfind -onlyin " &amp; tpdir &amp; " \"kMDItemFSName=='" &amp; doc &amp; ".taskpaper'\""
+if (p as rich text) contains return then
+set AppleScript's text item delimiters to return
+set lista to text items of p
+set p to {choose from list lista}
+end if
+ 
+if p is not equal to "" then
+open p
+else
+display dialog "Error: " &amp; quote &amp; doc &amp; quote &amp; " file does not exist!" with icon 1 buttons {"Cancel"}
+return
+end if
+else
+make new document with properties {name:doc}
+tell front document
+delete entries
+end tell
+end if
+ 
+tell front document
+if not (exists project named prj) then
+make new project with properties {name:prj} at front of projects
+end if
+tell project named prj
+make new entry with properties {text line:todo}
+end tell
+end tell
+end tell
+end alfred_script</string>
+				<key>cachescript</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.applescript</string>
+			<key>uid</key>
+			<string>AAE2193C-E6C1-4A1C-8A17-774AF8868DCF</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>output</key>
+				<integer>0</integer>
+				<key>removeextension</key>
+				<false/>
+				<key>sticky</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>TaskPaper</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>159A291E-3339-491E-8D3F-79091BE0319B</string>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>Instructions for TaskPaper extension
+
+This extensions let you quickly add new task/todo in TaskPaper from Alfred, you just have to type the keyword “tp” and then add the body and some details for your activity.
+
+The script is design to manage body, projects and file through Alfred input.
+
+There is a simple syntax to follow in order to successfully add a task, but not every keyword is necessary, except for the object of the activity (of course)…some examples:
+
+	•	 tp - buy milk # list
+	•	 tp - buy eggs, water @today sub groceries
+	•	 tp remember to put limon peel in cake # list (comment)
+	•	 tp - buy new MacBook Air for dad
+
+
+As you can see, one entry misses info about project , and its task is set to the custom Inbox category; another one has no file specified, and you obtain a brand new file to save.
+If the name file entered is wrong you get an error and have to start the procedure from beginning.
+
+Note: the extension perform search inside home folder in order to retrieve the file name given in input, it is supposed that won’t exist duplicate TaskPaper file with the same name.</string>
+	<key>uidata</key>
+	<dict>
+		<key>159A291E-3339-491E-8D3F-79091BE0319B</key>
+		<dict>
+			<key>ypos</key>
+			<real>60</real>
+		</dict>
+		<key>AAE2193C-E6C1-4A1C-8A17-774AF8868DCF</key>
+		<dict>
+			<key>ypos</key>
+			<real>60</real>
+		</dict>
+		<key>CD69778A-A49B-44D1-9F54-B24359DEF8B8</key>
+		<dict>
+			<key>ypos</key>
+			<real>60</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>http://dropbyte.tumblr.com</string>
+</dict>
+</plist>

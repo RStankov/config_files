@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.mattgemmell.Alfred.Slug</string>
+	<key>connections</key>
+	<dict>
+		<key>2B55080A-F385-4A0B-BB01-AE874A286ED4</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A70A4E1E-712E-4575-967A-0AA64960904D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>D4EE04F9-1BA1-4553-8732-1EB3A627D62B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>2D38A0E4-1911-44A8-A994-D22E7106E01F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>87EB55BE-56B5-4DC2-9DFD-59BD5014F62D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>7D010094-6A0A-4D59-822B-CAA4CB6AA4EA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2D38A0E4-1911-44A8-A994-D22E7106E01F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Matt Gemmell (@mattgemmell)</string>
+	<key>description</key>
+	<string>Formats the argument string as a filename or URL slug.</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Slug</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>36</integer>
+				<key>script</key>
+				<string>require( 'workflows.php' );
+$w = new Workflows();
+
+exec( 'touch settings.plist' );
+
+$in = "{query}";
+$w-&gt;set( 'default.extension', $in, 'settings.plist' );
+
+if (strlen($in) &gt; 0) {
+	echo 'Set default file-extension to ".'.$in.'"';
+} else {
+	echo 'Removed default file-extension';
+}</string>
+				<key>type</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>2D38A0E4-1911-44A8-A994-D22E7106E01F</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>D4EE04F9-1BA1-4553-8732-1EB3A627D62B</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>output</key>
+				<integer>0</integer>
+				<key>removeextension</key>
+				<false/>
+				<key>sticky</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>Filename copied:</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>A70A4E1E-712E-4575-967A-0AA64960904D</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>output</key>
+				<integer>0</integer>
+				<key>removeextension</key>
+				<false/>
+				<key>sticky</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>Slug Extension</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>87EB55BE-56B5-4DC2-9DFD-59BD5014F62D</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>36</integer>
+				<key>keyword</key>
+				<string>slext</string>
+				<key>script</key>
+				<string>require( 'workflows.php' );
+$w = new Workflows();
+
+$ext = trim("{query}");
+
+$ext = ltrim($ext, ".");
+
+$default_exts = array("html", "htm", "txt", "markdown", "md");
+if (strlen($ext) &gt; 0) {
+	if (in_array($ext, $default_exts)) {
+		// Remove the duplicate entry.
+		$default_exts = array_diff( $default_exts, array($ext) );
+	}
+	array_splice($default_exts, 0, 0, $ext);
+}
+
+foreach ($default_exts as $this_ext) {
+	$title = ".".$this_ext;
+	$subtitle = 'Set default file-extension to ".'.$this_ext.'"';
+	$w-&gt;result( 'file-ext-'.$this_ext, $this_ext, $title, $subtitle, 'icons/icon.png', 'yes' );
+}
+
+$title = "(Remove default file-extension)";
+$subtitle = "Remove the default file-extension";
+$w-&gt;result( 'file-ext-remove', $ext, $title, $subtitle, 'icons/icon_no_ext.png', 'yes' );
+
+echo $w-&gt;toxml();</string>
+				<key>subtext</key>
+				<string>Set your default slug file-extension</string>
+				<key>title</key>
+				<string>Set Slug Extension</string>
+				<key>type</key>
+				<integer>1</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>7D010094-6A0A-4D59-822B-CAA4CB6AA4EA</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>36</integer>
+				<key>keyword</key>
+				<string>slug</string>
+				<key>script</key>
+				<string>// Configure these values to your liking.
+
+$accept_optional_extension = true; // true = you can optionally specify an extension at the end of the query
+
+
+// --- Don't change anything below here unless you know what you're doing. ---
+
+setlocale(LC_ALL, 'en_US.UTF8');
+
+require( 'workflows.php' );
+$w = new Workflows();
+
+$in = trim( "{query}" );
+if (strlen($in) == 0) {
+	return;
+}
+
+$date_prefix = @date("Y-m-d-"); // e.g. "2013-03-25"
+$time_prefix = @date("H-i-s-"); // e.g. "17:04"
+
+// Check for a saved default extension.
+$extension = $w-&gt;get( 'default.extension', 'settings.plist' );
+
+// Override extension based on query, if appropriate.
+if ($accept_optional_extension) {
+	// Check to see if there's an extension (e.g. ".txt") at end of query.
+	$len_query = strlen( $in );
+	$last_period_posn = strrpos($in, ".");
+	$last_space_posn = strrpos($in, " ");
+	if ($last_period_posn !== false &amp;&amp; $last_period_posn &lt; ($len_query - 1)) {
+		// We have a period in the query.
+		if ($last_space_posn === false || $last_space_posn &lt; $last_period_posn) {
+			// We have a valid-looking extension. Use it.
+			$extension = substr($in, $last_period_posn + 1);
+			$in = substr($in, 0, $last_period_posn);
+		}
+	}
+}
+
+// Convert query to slug.
+$slug = toAscii( $in );
+
+// Add suitable options if we have an extension to use.
+if ($extension &amp;&amp; strlen($extension) &gt; 0) {
+	$slug_ext .= $slug.".".$extension;
+	$w-&gt;result( '1slugPlainExt', $slug_ext, "Plain slug with extension", $slug_ext, 'icons/ext.png', 'yes' );
+	$w-&gt;result( '2slugDatedExt', $date_prefix.$slug_ext, "Dated slug with extension", $date_prefix.$slug_ext, 'icons/date_ext.png', 'yes' );
+	$w-&gt;result( '3slugTimedExt', $date_prefix.$time_prefix.$slug_ext, "Date &amp; Time slug with extension", $date_prefix.$time_prefix.$slug_ext, 'icons/date_time_ext.png', 'yes' );
+}
+
+$w-&gt;result( '4slugPlain', $slug, "Plain slug", $slug, 'icons/plain.png', 'yes' );
+$w-&gt;result( '5slugDated', $date_prefix.$slug, "Dated slug", $date_prefix.$slug, 'icons/date.png', 'yes' );
+$w-&gt;result( '6slugTimed', $date_prefix.$time_prefix.$slug, "Date &amp; Time slug", $date_prefix.$time_prefix.$slug, 'icons/date_time.png', 'yes' );
+
+echo $w-&gt;toxml();
+
+
+// From http://cubiq.org/the-perfect-php-clean-url-generator
+function toAscii($str, $replace=array(), $delimiter='-') {
+	if( !empty($replace) ) {
+		$str = str_replace((array)$replace, ' ', $str);
+	}
+
+	$clean = iconv('UTF-8', 'ASCII//TRANSLIT', $str);
+	$clean = preg_replace("/[^a-zA-Z0-9\/_|+ -]/", '', $clean);
+	$clean = strtolower(trim($clean, '-'));
+	$clean = preg_replace("/[\/_|+ -]+/", $delimiter, $clean);
+
+	return $clean;
+}</string>
+				<key>subtext</key>
+				<string>Copies the given string in a filename or URL-suitable format</string>
+				<key>title</key>
+				<string>Make a filename slug</string>
+				<key>type</key>
+				<integer>1</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>2B55080A-F385-4A0B-BB01-AE874A286ED4</string>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>Type 'slug' then any string to format that string as an URL-safe filename. You can also specify a file-extension to be used at the end of the string.
+
+Type 'slext' (for "slug extension") to choose a default file-extension for slugs. You can still override the extension whenever you want.</string>
+	<key>uidata</key>
+	<dict>
+		<key>2B55080A-F385-4A0B-BB01-AE874A286ED4</key>
+		<dict>
+			<key>ypos</key>
+			<real>70</real>
+		</dict>
+		<key>2D38A0E4-1911-44A8-A994-D22E7106E01F</key>
+		<dict>
+			<key>ypos</key>
+			<real>260</real>
+		</dict>
+		<key>7D010094-6A0A-4D59-822B-CAA4CB6AA4EA</key>
+		<dict>
+			<key>ypos</key>
+			<real>260</real>
+		</dict>
+		<key>87EB55BE-56B5-4DC2-9DFD-59BD5014F62D</key>
+		<dict>
+			<key>ypos</key>
+			<real>260</real>
+		</dict>
+		<key>A70A4E1E-712E-4575-967A-0AA64960904D</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>D4EE04F9-1BA1-4553-8732-1EB3A627D62B</key>
+		<dict>
+			<key>ypos</key>
+			<real>120</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>http://mattgemmell.com</string>
+</dict>
+</plist>

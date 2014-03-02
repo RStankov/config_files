@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.bitnock.alfred.ip_addr</string>
+	<key>connections</key>
+	<dict>
+		<key>2237172C-3192-41CC-887A-D3EDCD655E84</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6F9F5733-58DA-4E05-8B60-9211398BC55D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Chris Kalafarski</string>
+	<key>description</key>
+	<string>Displays your IP addresses</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>IP Addresses</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>63</integer>
+				<key>keyword</key>
+				<string>ip</string>
+				<key>runningsubtext</key>
+				<string>Finding IP addresses...</string>
+				<key>script</key>
+				<string>ifconfig = `ifconfig -a`
+
+interfaces = []
+ips = []
+
+ifconfig.scan(/(^[a-zA-Z](.*\n\t)*)/).each do |strs|
+  strs.each do |str|
+    if str &amp;&amp; str.match(/^[a-zA-Z0-9]*\:/)
+
+      if str.match(/inet \d{0,3}\.\d{0,3}\.\d{0,3}\.\d{0,3}/)
+        interfaces &lt;&lt; str.match(/^[a-zA-Z0-9]*\:/)
+        ips &lt;&lt; str.match(/inet (\d{0,3}\.\d{0,3}\.\d{0,3}\.\d{0,3})/)[1]
+      end
+    end
+  end
+end
+
+parts = ['&lt;?xml version="1.0"?&gt;', '&lt;items&gt;']
+
+interfaces.each_with_index do |i, _|
+  parts &lt;&lt; "&lt;item uid='#{ips[_]}' arg='#{ips[_]}' valid='yes'&gt;&lt;title&gt;#{ips[_]}&lt;/title&gt;&lt;subtitle&gt;#{interfaces[_]}&lt;/subtitle&gt;&lt;icon&gt;network.icns&lt;/icon&gt;&lt;/item&gt;"
+end
+
+parts &lt;&lt; ['&lt;/items&gt;']
+
+puts parts.join
+</string>
+				<key>subtext</key>
+				<string>IP addresses for all interfaces</string>
+				<key>title</key>
+				<string>IP Addresses</string>
+				<key>type</key>
+				<integer>2</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>2237172C-3192-41CC-887A-D3EDCD655E84</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>6F9F5733-58DA-4E05-8B60-9211398BC55D</string>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>2237172C-3192-41CC-887A-D3EDCD655E84</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>6F9F5733-58DA-4E05-8B60-9211398BC55D</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>http://bitnock.com</string>
+</dict>
+</plist>

@@ -1,10 +1,14 @@
 class Installer
   class << self
-    def link(files)
+    def link_each(files)
       Dir[files].each do |file_path|
         link_path = yield File.basename(file_path)
-        Link.new(file_path, link_path).ensure_link
+        link file_path, link_path
       end
+    end
+
+    def link(file_path, link_path)
+      Link.new(file_path, link_path).ensure_link
     end
   end
 

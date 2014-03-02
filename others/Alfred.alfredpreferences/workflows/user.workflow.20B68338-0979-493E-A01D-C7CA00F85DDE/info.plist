@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>org.dbader.alfred.timer</string>
+	<key>connections</key>
+	<dict>
+		<key>1E0EB256-22B6-40E2-8D60-360D4234D802</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DCBD6FFA-4D13-4247-AF98-C8DFFDAD688B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Daniel Bader</string>
+	<key>description</key>
+	<string>A countdown timer that uses Mountain Lion User Notifications.</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Timer</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>62</integer>
+				<key>script</key>
+				<string>/usr/bin/python timer.py {query} &gt; /dev/null 2&gt;&amp;1 &amp;</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>DCBD6FFA-4D13-4247-AF98-C8DFFDAD688B</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>timer</string>
+				<key>subtext</key>
+				<string>Example: timer 5:30</string>
+				<key>text</key>
+				<string>Start a countdown timer</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>1E0EB256-22B6-40E2-8D60-360D4234D802</string>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>A simple countdown timer command for Alfred.app that uses Mountain Lion User Notifications.
+
+Please note that this Workflow ***requires OS X Mountain Lion (10.8) or greater***.
+
+LICENSE:
+
+The icon is from ~MazeNL77's "nx10" icon set.
+
+The sound is "Ice" from Nitram+Nunca's awesome "Minutes" dashboard widget. Sadly, the company seems to have vanished. I love this sound and use it on all my devices as an alarm sound. So Nitram+Nunca, I hope it is okay for you that I include your sound file. If not please contact me and I will take it offline.
+
+The rest of the project is released under the MIT license.
+
+
+Copyright (c) 2013 Daniel Bader (http://dbader.org)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</string>
+	<key>uidata</key>
+	<dict>
+		<key>1E0EB256-22B6-40E2-8D60-360D4234D802</key>
+		<dict>
+			<key>ypos</key>
+			<real>130</real>
+		</dict>
+		<key>DCBD6FFA-4D13-4247-AF98-C8DFFDAD688B</key>
+		<dict>
+			<key>ypos</key>
+			<real>130</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>http://dbader.org/blog/alfred-timer-extension</string>
+</dict>
+</plist>

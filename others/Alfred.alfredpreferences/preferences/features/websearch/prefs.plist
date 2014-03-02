@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>customSites</key>
+	<dict>
+		<key>10147113-A813-4837-9E38-2357CAB22573</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>gem</string>
+			<key>plusSpaces</key>
+			<false/>
+			<key>text</key>
+			<string>RubyGems</string>
+			<key>url</key>
+			<string>http://rubygems.org/search?query={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>3F1FCC50-C4AC-414A-A3A3-BF5BE8F191C0</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>apiruby</string>
+			<key>plusSpaces</key>
+			<false/>
+			<key>text</key>
+			<string>APIDock - Ruby</string>
+			<key>url</key>
+			<string>http://apidock.com/ruby/search?query={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>928B1921-EFE8-4E51-B00E-27B3C9B3BB38</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>apirails</string>
+			<key>plusSpaces</key>
+			<false/>
+			<key>text</key>
+			<string>APIDock - Rails</string>
+			<key>url</key>
+			<string>http://apidock.com/rails/search?query={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>B2F54277-5C2A-45A6-B458-A16B09ABB84B</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>github</string>
+			<key>plusSpaces</key>
+			<false/>
+			<key>text</key>
+			<string>Github</string>
+			<key>url</key>
+			<string>https://github.com/search?q={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>D47F567C-EA7B-41F3-B785-F5EBCE877E96</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>bower</string>
+			<key>plusSpaces</key>
+			<false/>
+			<key>text</key>
+			<string>bower</string>
+			<key>url</key>
+			<string>http://bower.io/search/?q={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
