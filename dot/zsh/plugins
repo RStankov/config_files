@@ -1,8 +1,3 @@
-pg-restore() {
- rm /usr/local/var/postgres/postmaster.pid
- pg_ctl -D /usr/local/var/postgres/ -l /usr/local/var/postgres/server.log start
-}
-
 p() { cd ~/Projects/$1; }
 _p() { _files -W ~/Projects -/; }
 compdef _p p
