@@ -122,3 +122,5 @@ set shortmess+=I
 " Enhance the auto complete
 set completeopt=longest,menu,preview
 
+" Disable visual/audio bell
+set vb t_vb=
