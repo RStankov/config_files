@@ -69,6 +69,9 @@ nmap <leader>0 <Plug>RemoveWrapingParentheses
 " format the entire file
 nnoremap <leader>fef :normal! gg=G``<CR>
 
+" find merge conflict markers
+nmap <silent> <leader>fc <ESC>/\v^[<=>]{7}( .*\|$)<CR>
+
 if has("gui_macvim") && has("gui_running")
   " Map Command-# to switch tabs
   map  <D-0> 0gt
