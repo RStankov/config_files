@@ -1,19 +1,7 @@
-p() { cd ~/Projects/$1; }
-_p() { _files -W ~/Projects -/; }
-compdef _p p
-
 export CURRENT_PROJECT_PATH=$HOME/.zsh-current-project
 
 function chpwd {
   echo $(pwd) >! $CURRENT_PROJECT_PATH
-}
-
-function gci () {
-  git commit -m "$*"
-}
-
-function pkill {
-  ps ax | grep $1 | awk '{print $1}' | xargs kill -9 > /dev/null 2>&1
 }
 
 current() {
@@ -23,6 +11,18 @@ current() {
 }
 
 current
+
+p() { cd ~/Projects/$1; }
+_p() { _files -W ~/Projects -/; }
+compdef _p p
+
+function gci () {
+  git commit -m "$*"
+}
+
+function pkill {
+  ps ax | grep $1 | awk '{print $1}' | xargs kill -9 > /dev/null 2>&1
+}
 
 function t() {
   local command="rspec"
