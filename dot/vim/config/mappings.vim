@@ -72,6 +72,12 @@ nnoremap <leader>fef :normal! gg=G``<CR>
 " find merge conflict markers
 nmap <silent> <leader>fc <ESC>/\v^[<=>]{7}( .*\|$)<CR>
 
+" Emulate TextMate-style indentation shortcuts
+nmap <D-[> <<
+nmap <D-]> >>
+vmap <D-[> <gv
+vmap <D-]> >gv
+
 if has("gui_macvim") && has("gui_running")
   " Map Command-# to switch tabs
   map  <D-0> 0gt
