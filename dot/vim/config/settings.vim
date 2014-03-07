@@ -124,3 +124,11 @@ set completeopt=longest,menu,preview
 
 " Disable visual/audio bell
 set vb t_vb=
+
+" Remove annoying timeout on escape
+set ttimeoutlen=10
+augroup FastEscape
+  autocmd!
+  au InsertEnter * set timeoutlen=0
+  au InsertLeave * set timeoutlen=1000
+augroup END
