@@ -4,6 +4,9 @@ let mapleader = ","
 " Toggle NERDTree
 nmap gn :NERDTreeToggle<cr>
 
+" Toggle Tagbar
+nmap gm :TagbarToggle<cr>
+
 " Splitjoin on Shift +/-
 nmap _ :SplitjoinJoin<cr>
 nmap + :SplitjoinSplit<cr>
