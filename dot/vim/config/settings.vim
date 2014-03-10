@@ -125,6 +125,9 @@ set completeopt=longest,menu,preview
 " Disable visual/audio bell
 set vb t_vb=
 
+" Redraw only when we need to.
+set lazyredraw
+
 " Remove annoying timeout on escape
 set ttimeoutlen=10
 augroup FastEscape
