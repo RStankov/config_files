@@ -34,6 +34,8 @@ function t() {
     command="./bin/$command"
   elif [[ -e ./.zeus.sock ]]; then
     command="zeus $command"
+  elif [[ -f "./Gemfile" ]]; then
+    command="bundle exec $command"
   fi
 
   clear
