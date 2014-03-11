@@ -1,7 +1,7 @@
 ## Just my config dot files
 
-Install simply by
+Install simply by:
 
-```ruby
-rake
+```
+rake install
 ```
