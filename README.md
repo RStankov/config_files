@@ -1,7 +1,13 @@
 ## Just my config dot files
 
-Install simply by:
+### Installation
 
 ```
 rake install
+```
+
+### Symlinks update
+
+```
+rake
 ```
