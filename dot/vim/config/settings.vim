@@ -47,9 +47,6 @@ set expandtab smarttab
 set tabstop=8 softtabstop=2
 set shiftwidth=2 shiftround
 
-" Make vim work with rvm
-set shell=/bin/sh
-
 " When the page starts to scroll, keep the cursor 8 lines from the top and 8
 " lines from the bottom
 set scrolloff=8
