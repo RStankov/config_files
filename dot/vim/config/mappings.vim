@@ -19,7 +19,7 @@ nnoremap <C-l> <C-w>l
 nnoremap <C-q> :on<cr>
 
 " CtrlP clear cache
-nnoremap <D-5> :CtrlPClearCache<CR>
+nnoremap <leader>p :CtrlPClearCache<CR>
 
 " Clear search results when hitting space
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
