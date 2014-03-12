@@ -30,10 +30,10 @@ function t() {
     command="cucumber"
   fi
 
-  if [ -f "./bin/$command" ]; then
-    command="./bin/$command"
-  elif [[ -e ./.zeus.sock ]]; then
+  if [[ -e ./.zeus.sock ]]; then
     command="zeus $command"
+  elif [ -f "./bin/$command" ]; then
+    command="./bin/$command"
   elif [[ -f "./Gemfile" ]]; then
     command="bundle exec $command"
   fi
