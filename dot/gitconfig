@@ -17,7 +17,7 @@
 
 [core]
 	whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
-	excludesfile = /Users/rstankov/.gitignore
+	excludesfile = ~/.gitignore
 	editor = mvim -f
 
 [branch]
