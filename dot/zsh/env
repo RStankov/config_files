@@ -13,7 +13,19 @@ export RUBY_GC_MALLOC_LIMIT=1000000000
 export RUBY_HEAP_SLOTS_INCREMENT=1000000
 export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
 export RUBY_HEAP_FREE_MIN=500000
-#
+
+# If a command doesn't exists, but it is the name of a directory, perform the cd to that directory.
+setopt AUTO_CD
+
+# Make cd push the old directory onto the directory stack.
+setopt AUTO_PUSHD
+
+# Don’t push multiple copies of the same directory onto the directory stack.
+setopt PUSHD_IGNORE_DUPS
+
+# Keep the directory stack just to 15
+DIRSTACKSIZE=15
+
 # Do not enter command lines into the history list if they are duplicates of the previous event.
 setopt HIST_IGNORE_DUPS
 
