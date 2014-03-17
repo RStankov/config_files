@@ -30,3 +30,7 @@ alias zs="zeus server"
 alias zdb="zeus dbconsole"
 alias zr="zeus rake"
 alias zg="zeus generate"
+
+# unix
+alias ..="cd .."
+alias ...='../..'
