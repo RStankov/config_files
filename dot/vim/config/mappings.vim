@@ -75,8 +75,9 @@ nnoremap <leader>fef :normal! gg=G``<CR>
 " find merge conflict markers
 nmap <silent> <leader>fc <ESC>/\v^[<=>]{7}( .*\|$)<CR>
 
-" bind K to grep word under cursor
-nnoremap K :F "\b<C-R><C-W>\b"<CR>:cw<CR>
+" bind K to grep word under cursor (or selected content)
+nnoremap K yw:tabnew<CR>:F "\b<C-R>0\b"<CR>:cw<CR>
+vnoremap K y:tabnew<CR>:F "\b<C-R>0\b"<CR>:cw<CR>
 
 " Emulate TextMate-style indentation shortcuts
 nmap <D-[> <<
