@@ -14,3 +14,17 @@ vnoremap <leader>rev  :RExtractLocalVariable<cr>
 vnoremap <leader>rrv  :RRenameLocalVariable<cr>
 vnoremap <leader>rriv :RRenameInstanceVariable<cr>
 
+" My ruby refactoring methods
+function! RubyExtractBeforeBlock()
+  :'<,'>d
+  exec "?^\\s*\\<\\(describe\\|context\\)\\>"
+  normal $p
+  normal V=
+  normal `[v`]
+  :'<,'>s/\(\s*\)\(\w.*\)/\1before do\r\1  \2\r\1end\r/
+  normal ==
+endfunction
+
+nnoremap <leader>reb V:call RubyExtractBeforeBlock()<cr>
+vnoremap <leader>reb :call RubyExtractBeforeBlock()<cr>
+
