@@ -35,7 +35,7 @@ function! s:CreateRubySpec(name, dir_parts)
   if spec_name =~ '\<app/'
     let spec_name = s:SubstitutePathSegment(spec_name, 'app', 'spec')
   else
-    let spec_name = s:SubstitutePathSegment(spec_name, 'lib', 'spec')
+    let spec_name = s:SubstitutePathSegment(spec_name, 'lib', 'spec/lib')
   endif
 
   call s:EnsureDirectoryExists(spec_name)
