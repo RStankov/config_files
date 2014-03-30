@@ -79,6 +79,9 @@ nmap <silent> <leader>fc <ESC>/\v^[<=>]{7}( .*\|$)<CR>
 nnoremap K yw:tabnew<CR>:F "\b<C-R>0\b"<CR>:cw<CR>
 vnoremap K y:tabnew<CR>:F "\b<C-R>0\b"<CR>:cw<CR>
 
+" Remove the Windows ^M - when the encodings gets messed up
+noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
+
 " Emulate TextMate-style indentation shortcuts
 nmap <D-[> <<
 nmap <D-]> >>
