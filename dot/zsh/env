@@ -14,6 +14,9 @@ export RUBY_HEAP_SLOTS_INCREMENT=1000000
 export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
 export RUBY_HEAP_FREE_MIN=500000
 
+# Set to this to use case-sensitive completion
+CASE_SENSITIVE="true"
+
 # If a command doesn't exists, but it is the name of a directory, perform the cd to that directory.
 setopt AUTO_CD
 
