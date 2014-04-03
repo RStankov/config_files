@@ -16,8 +16,6 @@ alias gl="git lol"
 alias gd="git diff"
 alias gdc="git diff --cached"
 
-alias o="open ."
-
 # ls
 alias l="ls -lahF"
 
