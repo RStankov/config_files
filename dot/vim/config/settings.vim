@@ -10,6 +10,7 @@ set nocompatible
 
 " Spellcheck on
 set spell
+set spelllang=en,bg
 
 " Disable swap files
 set nobackup nowritebackup noswapfile
