@@ -4,12 +4,6 @@ let g:snippets_dir=$HOME . "/.vim/snippets"
 " NERDTree use minimal UI
 let NERDTreeMinimalUI = 1
 
-" Set SuperTab completion type to context
-let g:SuperTabDefaultCompletionType = "context"
-let g:SuperTabLongestEnhanced = 1
-let g:SuperTabCrMapping = 0
-let g:SuperTabCompletionContexts = ['s:ContextText']
-"
 " airline settings
 " remove separators
 let g:airline_left_sep=''
