@@ -30,9 +30,6 @@ nnoremap J mzJ`z
 nnoremap j gj
 nnoremap k gk
 
-" Insert a hash rocket
-imap <c-l> <space>=><space>
-
 " Tabularize equals
 nnoremap <leader>= :Tabularize /^[^=]*\zs=<cr>
 

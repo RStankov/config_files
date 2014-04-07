@@ -28,3 +28,6 @@ vnoremap <leader>rev  :RExtractLocalVariable<cr>
 vnoremap <leader>rrv  :RRenameLocalVariable<cr>
 vnoremap <leader>rriv :RRenameInstanceVariable<cr>
 
+" Insert a hash rocket
+imap <c-l> <space>=><space>
+
