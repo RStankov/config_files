@@ -26,7 +26,9 @@ function pkill {
 
 function t() {
   local command="rspec"
-  if [[ $1 = features* ]]; then
+  if [[ $* = *spec* ]]; then
+    command="rspec"
+  elif [[ $* = *features* ]]; then
     command="cucumber"
   fi
 
@@ -39,5 +41,5 @@ function t() {
   fi
 
   clear
-  eval $command $1
+  eval $command $*
 }
