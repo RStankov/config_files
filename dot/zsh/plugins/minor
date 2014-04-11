@@ -1,0 +1,7 @@
+function gci () {
+  git commit -m "$*"
+}
+
+function pkill {
+  ps ax | grep $1 | awk '{print $1}' | xargs kill -9 > /dev/null 2>&1
+}
