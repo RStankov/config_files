@@ -19,8 +19,6 @@ source $HOME/.zsh/theme
 source $HOME/.zsh/aliases
 source $HOME/.zsh/rbenv
 
-source $HOME/.zsh/plugins/minor
-source $HOME/.zsh/plugins/current
-source $HOME/.zsh/plugins/project
-source $HOME/.zsh/plugins/testing
-
+for file in $HOME/.zsh/plugins/*; do
+  source $file
+done
