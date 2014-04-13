@@ -97,6 +97,9 @@ defaults write com.apple.Terminal NSQuitAlwaysKeepsWindows -bool false
 defaults write nl.frim.GitX NSQuitAlwaysKeepsWindows -bool false
 defaults write org.vim.MacVim NSQuitAlwaysKeepsWindows -bool false
 
+# Disable the sudden motion sensor as its not useful for SSDs
+sudo pmset -a sms 0
+
 # Show the ~/Library folder
 chflags nohidden ~/Library
 
