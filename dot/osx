@@ -116,3 +116,20 @@ defaults write com.apple.iChat NSUserKeyEquivalents '{ "Clear Transcript" = "^l"
 
 defaults write com.googlecode.iterm2 NSUserKeyEquivalents '{}'
 
+
+# Transmission: use `~/Torrents` to store incomplete downloads
+defaults write org.m0k.transmission UseIncompleteDownloadFolder -bool true
+defaults write org.m0k.transmission IncompleteDownloadFolder -string "${HOME}/Torrents"
+
+# Transmission: don’t prompt for confirmation before downloading
+defaults write org.m0k.transmission DownloadAsk -bool false
+
+# Transmission: trash original torrent files
+defaults write org.m0k.transmission DeleteOriginalTorrent -bool true
+
+# Transmission: hide the donate message
+defaults write org.m0k.transmission WarningDonate -bool false
+
+# Transmission: hide the legal disclaimer
+defaults write org.m0k.transmission WarningLegal -bool false
+
