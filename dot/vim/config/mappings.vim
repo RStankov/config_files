@@ -74,7 +74,7 @@ nmap <silent> <leader>fc <ESC>/\v^[<=>]{7}( .*\|$)<CR>
 
 " bind K to grep word under cursor (or selected content)
 nnoremap K yw:tabnew<CR>:F "\b<C-R>0\b"<CR>:cw<CR>
-vnoremap K y:tabnew<CR>:F "\b<C-R>0\b"<CR>:cw<CR>
+vnoremap K y:<C-U>tabnew<CR>:F "\b<C-R>0\b"<CR>:cw<CR>
 
 " Remove the Windows ^M - when the encodings gets messed up
 noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
@@ -105,8 +105,8 @@ if has("gui_macvim") && has("gui_running")
   imap <D-7> <Esc>7gt
   map  <D-8> 8gt
   imap <D-8> <Esc>8gt
-  map  <D-9> 9gt
-  imap <D-9> <Esc>9gt
+  map  <D-9> :tablast<CR>
+  imap <D-9> <Esc>:tablast<CR>
 else
   " Map Control-# to switch tabs
   map  <C-0> 0gt
@@ -127,6 +127,6 @@ else
   imap <C-7> <Esc>7gt
   map  <C-8> 8gt
   imap <C-8> <Esc>8gt
-  map  <C-9> 9gt
-  imap <C-9> <Esc>9gt
+  map  <C-9> :tablast<CR>
+  imap <C-9> <Esc>:tablast<CR>
 endif
