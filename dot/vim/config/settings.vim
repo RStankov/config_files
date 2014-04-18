@@ -42,6 +42,9 @@ set incsearch
 " Fix backspace in insert mode
 set backspace=indent,eol,start
 
+" Disable scroll following between splits
+set noscrollbind
+
 " Autoindent options
 set autoindent
 set expandtab smarttab
