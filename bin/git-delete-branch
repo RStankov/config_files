@@ -1,0 +1,2 @@
+#!/bin/bash
+git push origin :refs/heads/$1 && git remote prune origin && git branch -D $1
