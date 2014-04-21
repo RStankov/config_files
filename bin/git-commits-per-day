@@ -1,0 +1,2 @@
+#!/bin/bash
+git log | grep Date | awk '{print " : "$4" "$3" "$6}' | uniq -c
