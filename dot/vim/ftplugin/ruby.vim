@@ -4,6 +4,9 @@ autocmd User Rails/lib/* let b:rails_alternate = 'spec/' . rails#buffer().name()
 " Rails.vim :A on spec/lib/foo_spec.rb -> lib/foo.rb
 autocmd User Rails/spec/lib/* let b:rails_alternate = rails#buffer().name()[5:-9] . '.rb'
 
+" Word selection for ruby should include ? and !
+autocmd FileType ruby set iskeyword+=?,!
+
 " My ruby refactoring methods
 function! RubyExtractBeforeBlock()
   :'<,'>d
