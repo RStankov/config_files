@@ -1,4 +1,6 @@
 # bundler
+alias bi="bundle install"
+alias bu="bundle update"
 alias gemopen="bundle open"
 
 # rails
@@ -29,3 +31,4 @@ alias zg="zeus generate"
 # unix
 alias ..="cd .."
 alias ...='../..'
+
