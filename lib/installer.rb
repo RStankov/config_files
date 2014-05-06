@@ -19,13 +19,13 @@ class Installer
     end
 
     def ensure_link
-      remove if already_exists?
+      remove if exists?
       create
     end
 
     private
 
-    def already_exists?
+    def exists?
       File.exist? @link_path
     end
 
