@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>dk.simonbs.Alfred.Movies</string>
+	<key>connections</key>
+	<dict>
+		<key>0D8FF8B8-71F7-4D0A-8438-FF256A03B104</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>FF9B1948-1A7D-4F22-AA83-7483A0480731</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>FF9B1948-1A7D-4F22-AA83-7483A0480731</key>
+		<array/>
+	</dict>
+	<key>createdby</key>
+	<string>Simon Støvring (@simonbs)</string>
+	<key>description</key>
+	<string>Lookup movies on IMDb and OMDb</string>
+	<key>name</key>
+	<string>Movies</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>from movies_helper import action
+
+action("{query}")</string>
+				<key>type</key>
+				<integer>3</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>FF9B1948-1A7D-4F22-AA83-7483A0480731</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>m</string>
+				<key>script</key>
+				<string>from movies_helper import helper
+
+print(helper("{query}"))</string>
+				<key>title</key>
+				<string>Lookup movie, TV series or actor</string>
+				<key>type</key>
+				<integer>3</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>0D8FF8B8-71F7-4D0A-8438-FF256A03B104</string>
+		</dict>
+	</array>
+	<key>uidata</key>
+	<dict>
+		<key>0D8FF8B8-71F7-4D0A-8438-FF256A03B104</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>FF9B1948-1A7D-4F22-AA83-7483A0480731</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>http://simonbs.dk/</string>
+</dict>
+</plist>
