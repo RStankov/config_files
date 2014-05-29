@@ -79,6 +79,10 @@ vnoremap K y:<C-U>tabnew<CR>:F "\b<C-R>0\b"<CR>:cw<CR>
 " Remove the Windows ^M - when the encodings gets messed up
 noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 
+" Open ctag definition in new split/tab
+noremap { :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+noremap } :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+
 " Emulate TextMate-style indentation shortcuts
 nmap <D-[> <<
 nmap <D-]> >>
