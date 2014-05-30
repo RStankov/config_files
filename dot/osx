@@ -117,9 +117,6 @@ defaults write com.skype.skype NSUserKeyEquivalents '{ "Next Conversation" = "@$
 # * Clear conversation - ctrl + l
 defaults write com.apple.iChat NSUserKeyEquivalents '{ "Clear Transcript" = "^l"; "Close Conversation..." = "@w"; }'
 
-defaults write com.googlecode.iterm2 NSUserKeyEquivalents '{}'
-
-
 # Transmission: use `~/Torrents` to store incomplete downloads
 defaults write org.m0k.transmission UseIncompleteDownloadFolder -bool true
 defaults write org.m0k.transmission IncompleteDownloadFolder -string "${HOME}/Torrents"
