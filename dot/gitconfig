@@ -4,7 +4,6 @@
 
 [alias]
 	st = status
-	ci = commit -m
 	br = branch
 	co = checkout
 	ls = ls-files
