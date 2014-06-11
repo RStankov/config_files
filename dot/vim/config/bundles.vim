@@ -1,4 +1,5 @@
 Bundle 'gmarik/vundle'
+
 Bundle 'AndrewRadev/splitjoin.vim'
 Bundle 'AndrewRadev/multichange.vim'
 Bundle 'AndrewRadev/switch.vim'

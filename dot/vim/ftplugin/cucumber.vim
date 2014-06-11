@@ -12,6 +12,5 @@ function! s:align()
   endif
 endfunction
 
-
 " convert regexp to string (promote to string) /^matching step$/ => 'matching step'
 nnoremap <leader>ps :.s/\/^\([^$]*\)$\//'\1'/g<CR>:nohlsearch<CR>:echo<CR>
