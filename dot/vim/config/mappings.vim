@@ -42,6 +42,9 @@ nnoremap <leader>l :Tabularize /=><cr>
 " Switch
 nnoremap <leader>- :Switch<cr>
 
+" Multicange
+nnoremap <leader>m :Multichange<cr>
+
 " Reorder arguments by ctrl + arrows
 nnoremap <c-Left> :SidewaysLeft<cr>
 nnoremap <c-Right> :SidewaysRight<cr>
