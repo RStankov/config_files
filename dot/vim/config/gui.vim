@@ -1,6 +1,6 @@
 " Theme setup
 set background=light
-colorscheme github
+colorscheme solarized
 
 " Hide the annoying ~ non texts
 hi NonText      guifg=bg     guibg=bg     gui=NONE
