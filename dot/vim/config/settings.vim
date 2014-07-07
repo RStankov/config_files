@@ -41,6 +41,9 @@ set incsearch
 " Fix backspace in insert mode
 set backspace=indent,eol,start
 
+" Disable folding
+set nofoldenable
+
 " Disable scroll following between splits
 set noscrollbind
 
