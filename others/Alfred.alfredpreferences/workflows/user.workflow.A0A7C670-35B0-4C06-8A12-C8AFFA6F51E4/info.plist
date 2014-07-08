@@ -127,6 +127,17 @@
 				<string></string>
 			</dict>
 		</array>
+		<key>72A3EDB2-9095-444B-8A82-8CEBD3E29573</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>93F7A067-A613-4F70-99D8-7522C3F1DC37</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 		<key>763E9013-2E4A-44B3-BF66-36BF12877C8C</key>
 		<array>
 			<dict>
@@ -263,13 +274,15 @@
 				<false/>
 				<key>modsmode</key>
 				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
 			<string>FE07FB7A-2793-4821-AF73-930844D4A08F</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -322,13 +335,15 @@
 				<false/>
 				<key>modsmode</key>
 				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
 			<string>09B36308-DBB3-40B8-95AF-8F5CC94D5EC4</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -869,6 +884,35 @@
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>lodash</string>
+				<key>runningsubtext</key>
+				<string>Searching for "{query}"</string>
+				<key>script</key>
+				<string>./dashAlfredWorkflow "lodash:{query}"</string>
+				<key>subtext</key>
+				<string>Search Lo-Dash.js for "{query}"</string>
+				<key>title</key>
+				<string>Search Lo-Dash.js</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>72A3EDB2-9095-444B-8A82-8CEBD3E29573</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>Usage:
@@ -936,6 +980,11 @@ You can edit this extension to always include a keyword by editing the Script Fi
 		<dict>
 			<key>ypos</key>
 			<real>150</real>
+		</dict>
+		<key>72A3EDB2-9095-444B-8A82-8CEBD3E29573</key>
+		<dict>
+			<key>ypos</key>
+			<real>2260</real>
 		</dict>
 		<key>763E9013-2E4A-44B3-BF66-36BF12877C8C</key>
 		<dict>
