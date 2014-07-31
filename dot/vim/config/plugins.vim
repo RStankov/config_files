@@ -8,33 +8,6 @@ let NERDTreeMinimalUI = 1
 let g:nerdtree_tabs_open_on_new_tab=0
 let g:nerdtree_tabs_focus_on_files=1
 
-function! CloseNERDTreeInTab(i)
-  let l:me = tabpagenr()
-  let l:previous_ei = &ei
-  set ei=all
-
-  exec 'tabnext ' . a:i
-  call nerdtree#closeTreeIfOpen()
-  exec 'tabnext ' . l:me
-
-  let &ei = l:previous_ei
-endfunction
-
-function! ToggleNERDTree()
-  let l:me = tabpagenr()
-  for i in range(1, tabpagenr('$'))
-    if i != l:me
-      call CloseNERDTreeInTab(i)
-    endif
-  endfor
-
-  " If NERDTree is visible and inactive in the current tab, focus.
-  if (nerdtree#treeExistsForTab() && nerdtree#getTreeWinNum() != -1) && ! nerdtree#treeExistsForBuf()
-    execute 'silent! NERDTreeFocus'
-  else
-    execute 'silent! NERDTreeMirrorToggle'
-  endif
-endfunction
 " Make sure a NERDTree instance is mirrored for all tabs.
 " This is needed as if the buffer with the only NERDTree instance is closed,
 " the state is reset for the next mirror.
