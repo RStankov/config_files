@@ -24,6 +24,8 @@
 	<string>Simon Støvring (@simonbs)</string>
 	<key>description</key>
 	<string>Lookup movies on IMDb and OMDb</string>
+	<key>disabled</key>
+	<false/>
 	<key>name</key>
 	<string>Movies</string>
 	<key>objects</key>
@@ -44,6 +46,8 @@ action("{query}")</string>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>FF9B1948-1A7D-4F22-AA83-7483A0480731</string>
+			<key>version</key>
+			<integer>0</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -53,7 +57,7 @@ action("{query}")</string>
 				<key>escaping</key>
 				<integer>0</integer>
 				<key>keyword</key>
-				<string>m</string>
+				<string>mov</string>
 				<key>script</key>
 				<string>from movies_helper import helper
 
@@ -69,6 +73,8 @@ print(helper("{query}"))</string>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>0D8FF8B8-71F7-4D0A-8438-FF256A03B104</string>
+			<key>version</key>
+			<integer>0</integer>
 		</dict>
 	</array>
 	<key>uidata</key>
