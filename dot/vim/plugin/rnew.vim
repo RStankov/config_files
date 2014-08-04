@@ -41,8 +41,12 @@ function! s:CreateRubySpec(name, dir_parts)
   call s:EnsureDirectoryExists(spec_name)
 
   exe 'vsplit '.spec_name
+  call append(0, [
+        \ 'require ''spec_helper''',
+        \ '',
+        \ ])
   $delete _
-  normal! gg
+  normal! G
   write
 endfunction
 
