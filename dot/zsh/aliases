@@ -1,7 +1,7 @@
 # bundler
 alias bi="bundle install"
 alias bu="bundle update"
-alias gemopen="bundle open"
+alias bo="bundle open"
 
 # rails
 alias r="rails"
