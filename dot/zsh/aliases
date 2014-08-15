@@ -2,6 +2,7 @@
 alias bi="bundle install"
 alias bu="bundle update"
 alias bo="bundle open"
+alias be="bundle exec"
 
 # rails
 alias r="rails"
