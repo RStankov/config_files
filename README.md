@@ -1,4 +1,4 @@
-## Just my config dot files
+## Config files
 
 ### Installation
 
