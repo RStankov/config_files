@@ -9,6 +9,8 @@ let NERDTreeAutoDeleteBuffer = 1
 
 " Track NERDTree state in tabs (credits @StanAngeloff and @gsamokovarov)
 let g:nerdtree_tabs_open_on_new_tab=0
+let g:nerdtree_tabs_open_on_gui_startup=0
+let g:nerdtree_tabs_open_on_console_startup=0
 let g:nerdtree_tabs_focus_on_files=1
 
 " Make sure a NERDTree instance is mirrored for all tabs.
