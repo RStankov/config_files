@@ -56,23 +56,23 @@ map <S-Enter> m`o<Esc>``
 " Close quickfix window
 nnoremap Q :ccl<cr>
 
-" method a1, a2, a3 -> method(a1, a2, a3)
+" Surround with parentheses: method a1, a2, a3 -> method(a1, a2, a3)
 nmap <silent> <Plug>WrapWithParentheses mz^`z2hf<Space>xv$hS)`z
 \:call repeat#set("\<Plug>WrapWithParentheses")<CR>
 nmap <leader>9 <Plug>WrapWithParentheses
 
-" method(a1, a2, a3) -> method a1, a2, a3
+" Delete surrounding parentheses: method(a1, a2, a3) -> method a1, a2, a3
 nmap <silent> <Plug>RemoveWrapingParentheses mzlF(ds(i<Space><Esc>`z
 \:call repeat#set("\<Plug>RemoveWrapingParentheses")<CR>
 nmap <leader>0 <Plug>RemoveWrapingParentheses
 
-" format the entire file
+" Reformat the entire file
 nnoremap <leader>fef :normal! gg=G``<CR>
 
-" find merge conflict markers
+" Find merge conflict markers
 nmap <silent> <leader>fc <ESC>/\v^[<=>]{7}( .*\|$)<CR>
 
-" bind K to grep word under cursor (or selected content)
+" Bind K to grep word under cursor (or selected content)
 nnoremap K yw:tabnew<CR>:F "\b<C-R>0\b"<CR>:cw<CR>
 vnoremap K y:<C-U>tabnew<CR>:F "\b<C-R>0\b"<CR>:cw<CR>
 
