@@ -26,8 +26,7 @@ if has('autocmd')
 
 endif
 
-" airline settings
-" remove separators
+" Airline settings
 let g:airline_left_sep=''
 let g:airline_right_sep=''
 let g:airline_theme='solarized'
