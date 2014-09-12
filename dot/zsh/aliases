@@ -23,9 +23,6 @@ alias gdc="git diff --cached"
 # ls
 alias l="ls -lahF"
 
-# zeus
-alias zs="zeus start"
-
 # unix
 alias ..="cd .."
 alias ...='../..'
