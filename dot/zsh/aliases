@@ -27,3 +27,6 @@ alias l="ls -lahF"
 alias ..="cd .."
 alias ...='../..'
 
+# redis
+alias redis-start="launchctl stop homebrew.mxcl.redis"
+alias redis-stop="launchctl start  homebrew.mxcl.redis"
