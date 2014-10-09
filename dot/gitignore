@@ -6,3 +6,5 @@ tmp
 *~
 dump.rdb
 tags
+custom_plan.rb
+zeus.json
