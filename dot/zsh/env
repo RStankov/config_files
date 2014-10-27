@@ -14,6 +14,9 @@ export RUBY_HEAP_SLOTS_INCREMENT=1000000
 export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
 export RUBY_HEAP_FREE_MIN=500000
 
+# Point rbenv to GCC
+export CC=/usr/bin/gcc
+
 # Set to this to use case-sensitive completion
 CASE_SENSITIVE="true"
 
