@@ -14,7 +14,7 @@ end
 desc 'Links config files'
 task :link do
   Installer.link_each('dot/*') { |file_name| ".#{file_name}" }
-  Installer.link_each('bin/*') { |file_name| File.join 'bin', file_name }
+  Installer.link('bin', 'bin')
   Installer.link('others/Alfred.alfredpreferences', 'Dropbox/Alfred/Alfred.alfredpreferences')
 end
 
