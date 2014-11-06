@@ -1,18 +1,8 @@
-# Path to your oh-my-zsh configuration.
-ZSH=$HOME/.oh-my-zsh
-
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git gem brew bower zsh-syntax-highlighting heroku)
-
-source $ZSH/oh-my-zsh.sh
-
 source $HOME/.zsh/env
 source $HOME/.zsh/theme
 source $HOME/.zsh/aliases
 source $HOME/.zsh/rbenv
 
-for file in $HOME/.zsh/plugins/*; do
+for file in $HOME/.zsh/plugins/**/*; do
   source $file
 done

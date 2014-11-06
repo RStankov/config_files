@@ -10,6 +10,26 @@ export EDITOR=mvim
 # Point rbenv to GCC
 export CC=/usr/bin/gcc
 
+# Initialize zsh completion
+autoload compinit
+
+unsetopt menu_complete   # do not autoselect the first completion entry
+unsetopt flowcontrol
+
+setopt auto_menu         # show completion menu on succesive tab press
+setopt complete_in_word
+setopt always_to_end
+
+zmodload -i zsh/complist
+
+compinit
+
+# Initialize colors
+autoload -U colors
+colors
+setopt prompt_subst
+setopt transient_rprompt
+
 # Set to this to use case-sensitive completion
 CASE_SENSITIVE="true"
 
