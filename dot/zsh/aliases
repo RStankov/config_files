@@ -19,6 +19,7 @@ alias gco="git checkout"
 alias gl="git lol"
 alias gd="git diff"
 alias gdc="git diff --cached"
+alias gst="git status"
 
 # ls
 alias l="ls -lahF"
