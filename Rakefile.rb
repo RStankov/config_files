@@ -1,5 +1,10 @@
 require_relative 'lib/installer.rb'
 
+desc 'OS X settings'
+task :osx do
+  sh 'bash ~/.osx'
+end
+
 desc 'Download submodules'
 task :submodule do
   sh 'git submodule init'
@@ -19,6 +24,6 @@ task :link do
 end
 
 desc 'Install config files'
-task install: [:submodule, :link, :vim_bundles]
+task install: [:submodule, :link, :vim_bundles, :osx]
 
 task default: :link
