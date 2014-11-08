@@ -68,3 +68,6 @@ HISTFILE=~/.zsh_history
 SAVEHIST=10000
 HISTSIZE=10000
 
+# Enable Ctrl+A / Ctrl+B
+bindkey -e
+
