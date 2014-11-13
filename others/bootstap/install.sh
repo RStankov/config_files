@@ -14,6 +14,7 @@ brew install the_silver_searcher
 brew install ctags
 brew install redis
 brew install tree
+brew install highlight
 
 # Cask
 brew install caskroom/cask/brew-cask
