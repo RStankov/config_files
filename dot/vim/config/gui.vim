@@ -1,5 +1,5 @@
 " Theme setup
-set background=dark
+set background=light
 colorscheme solarized
 
 " Hide the annoying ~ non texts
