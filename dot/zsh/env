@@ -10,6 +10,9 @@ export EDITOR=mvim
 # Point rbenv to GCC
 export CC=/usr/bin/gcc
 
+# Point to phantomjs
+export PHANTOMJS_BIN=/usr/local/Cellar/phantomjs/1.9.8/bin/phantomjs
+
 # Initialize zsh completion
 autoload compinit
 
