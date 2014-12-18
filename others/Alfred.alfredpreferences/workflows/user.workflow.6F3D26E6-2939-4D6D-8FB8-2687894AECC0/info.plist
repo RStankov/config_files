@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.targumanu.icloudtabs</string>
+	<key>connections</key>
+	<dict>
+		<key>1874385D-7840-403A-96B6-1A98A2A33D97</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>EDB2CA64-67FC-4227-A27E-4CC647B54544</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>52EAA9EA-BF96-4013-B675-235883205309</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>79C6F5C4-2037-443E-98AC-D44083BFBACB</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Michael Matochkin</string>
+	<key>description</key>
+	<string>Browse iCloud tabs from all your devices</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>iCloud Tabs</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>plusspaces</key>
+				<false/>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>79C6F5C4-2037-443E-98AC-D44083BFBACB</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>4</integer>
+				<key>keyword</key>
+				<string>itabs</string>
+				<key>runningsubtext</key>
+				<string>Loading iCloud tabs...</string>
+				<key>script</key>
+				<string>./iCloudTabsSearch "{query}"</string>
+				<key>subtext</key>
+				<string>Browse iCloud tabs from all your devices</string>
+				<key>title</key>
+				<string>iCloud Tabs</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>52EAA9EA-BF96-4013-B675-235883205309</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>4</integer>
+				<key>script</key>
+				<string>./iCloudTabsSearch -openall</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>EDB2CA64-67FC-4227-A27E-4CC647B54544</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>alltabs</string>
+				<key>subtext</key>
+				<string>Open iCloud tabs from all your devices</string>
+				<key>text</key>
+				<string>Open all iCloud tabs</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>1874385D-7840-403A-96B6-1A98A2A33D97</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>1874385D-7840-403A-96B6-1A98A2A33D97</key>
+		<dict>
+			<key>ypos</key>
+			<real>130</real>
+		</dict>
+		<key>52EAA9EA-BF96-4013-B675-235883205309</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>79C6F5C4-2037-443E-98AC-D44083BFBACB</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>EDB2CA64-67FC-4227-A27E-4CC647B54544</key>
+		<dict>
+			<key>ypos</key>
+			<real>130</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string></string>
+</dict>
+</plist>
