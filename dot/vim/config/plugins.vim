@@ -38,3 +38,11 @@ let g:airline_section_c=""
 let g:airline_section_x=""
 let g:airline_section_y="%Y"
 let g:airline_section_z="%3p%% : %3l : %3v : %3L"
+
+" Vim-Test settings
+let g:test#strategy = 'iterm'
+
+let g:test#rspec#options = {
+  \ 'nearest': '--format documentation',
+  \ 'file':    '--format documentation',
+\}

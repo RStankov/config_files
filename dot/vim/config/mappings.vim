@@ -89,6 +89,12 @@ nmap <D-]> >>
 vmap <D-[> <gv
 vmap <D-]> >gv
 
+" Test running
+nmap <silent> <leader>t :TestNearest<CR>
+nmap <silent> <leader>T :TestFile<CR>
+nmap <silent> <leader>a :TestSuite<CR>
+nmap <silent> <leader>l :TestLast<CR>
+
 if has("gui_macvim") && has("gui_running")
   " Map Command-# to switch tabs
   map  <D-0> 0gt
