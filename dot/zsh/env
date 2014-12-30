@@ -74,3 +74,7 @@ HISTSIZE=10000
 # Enable Ctrl+A / Ctrl+B
 bindkey -e
 
+# Use [UP] [DOWN] for backward and forward search
+bindkey "\e[A" history-beginning-search-backward
+bindkey "\e[B" history-beginning-search-forward
+
