@@ -149,3 +149,7 @@ defaults write org.m0k.transmission WarningLegal -bool false
 
 # Scroll direction: natural
 defaults write -g com.apple.swipescrolldirection -bool true
+
+# Sketch 3 svg export improvements
+defaults write com.bohemiancoding.sketch3 exportCompactSVG -bool yes
+defaults write com.bohemiancoding.sketch3 svgExportSkipAssignIdToLayerName -bool yes
