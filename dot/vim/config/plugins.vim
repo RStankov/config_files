@@ -46,3 +46,6 @@ let g:test#rspec#options = {
   \ 'nearest': '--format documentation',
   \ 'file':    '--format documentation',
 \}
+
+" ConoLine
+let g:conoline_auto_enable = 1
