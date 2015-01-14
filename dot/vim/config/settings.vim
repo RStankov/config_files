@@ -28,6 +28,7 @@ set autoread
 
 " Set default encoding to UTF-8
 set encoding=utf-8
+scriptencoding utf-8
 
 " Set file formats to Unix
 set ffs=unix
