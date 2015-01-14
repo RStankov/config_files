@@ -39,6 +39,7 @@ brew cask install postgres
 brew cask install little-snitch
 brew cask install skype
 brew cask install virtualbox
+brew cask install omnipresence
 
 # Quick look
 brew cask install betterzipql
