@@ -40,6 +40,7 @@ brew cask install little-snitch
 brew cask install skype
 brew cask install virtualbox
 brew cask install omnipresence
+brew cask install bartender
 
 # Quick look
 brew cask install betterzipql
