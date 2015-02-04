@@ -5,11 +5,14 @@
 	<key>pages</key>
 	<array>
 		<string>A7588528-D59B-40E8-8956-757E6E0469D7</string>
-		<string>FC37818D-0F87-4202-93DA-62BE692CE9E3</string>
-		<string>75F7D877-075E-4257-80DF-078410A3FC25</string>
-		<string>8C894241-1F9F-449A-8BA5-459693FF559F</string>
+		<dict>
+			<key>pageuid</key>
+			<string>a564d9896c6b7f619790f829f32eae2d1ee5cb45::BF8D740B-C9D0-4622-8695-FC0CCA97B37F</string>
+			<key>referencefolder</key>
+			<string>workflows/user.workflow.1135D138-CECC-45CE-8352-B6598612A8A3/_remote/</string>
+		</dict>
 	</array>
 	<key>uid</key>
-	<string>7BEC8FD0-2802-457D-A479-C3A7F251E271</string>
+	<string>E14ADD4A-589D-4CAA-8083-98603CDB45B2</string>
 </dict>
 </plist>
