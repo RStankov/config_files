@@ -6,3 +6,5 @@ source $HOME/.zsh/rbenv
 for file in $HOME/.zsh/plugins/**/*; do
   source $file
 done
+
+[ -f .zshrc.local ] && source .zshrc.local
