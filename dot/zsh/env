@@ -2,7 +2,7 @@
 # ./bin - project specific executables
 # ~/bin - executables from config files
 # ~/.rbenv/shims - rbenv gem exectuables
-export PATH="./bin:${HOME}/bin:${HOME}/.rbenv/shims:/usr/local/bin:${PATH}"
+export PATH="./bin:${HOME}/bin:${HOME}/.rbenv/shims:/usr/local/bin:${HOME}/go/bin:${PATH}"
 
 # Use vim as editor
 export EDITOR=mvim
@@ -12,6 +12,9 @@ export CC=/usr/bin/gcc
 
 # Point to phantomjs
 export PHANTOMJS_BIN=/usr/local/Cellar/phantomjs/1.9.8/bin/phantomjs
+
+# Google go setup
+export GOPATH=$HOME/go
 
 # Initialize zsh completion
 autoload compinit
