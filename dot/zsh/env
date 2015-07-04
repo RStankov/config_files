@@ -2,7 +2,7 @@
 # ./bin - project specific executables
 # ~/bin - executables from config files
 # ~/.rbenv/shims - rbenv gem exectuables
-export PATH="./bin:${HOME}/bin:${HOME}/.rbenv/shims:/usr/local/bin:${HOME}/go/bin:${PATH}"
+export PATH="./bin:${HOME}/bin:${HOME}/.rbenv/shims:/usr/local/bin:${HOME}/go/bin:${PATH}:/Applications/Postgres.app/Contents/Versions/9.4/bin/"
 
 # Use vim as editor
 export EDITOR=mvim
