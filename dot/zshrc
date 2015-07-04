@@ -8,3 +8,6 @@ for file in $HOME/.zsh/plugins/**/*; do
 done
 
 [ -f .zshrc.local ] && source .zshrc.local
+
+export NVM_DIR="/Users/rstankov/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
