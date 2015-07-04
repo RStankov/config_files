@@ -49,3 +49,6 @@ let g:test#rspec#options = {
 
 " ConoLine
 let g:conoline_auto_enable = 1
+
+" Threat every JavaScript file as JSX
+let g:jsx_ext_required = 0
