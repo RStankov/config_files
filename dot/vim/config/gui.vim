@@ -6,7 +6,7 @@ colorscheme solarized
 hi NonText      guifg=bg     guibg=bg     gui=NONE
 
 " Font.
-set guifont=Monaco:h12
+set guifont=Hack:h12
 
 " Hide toolbar and menubar.
 set guioptions-=T
