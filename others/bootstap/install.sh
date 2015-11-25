@@ -41,6 +41,7 @@ brew cask install skype
 brew cask install virtualbox
 brew cask install omnipresence
 brew cask install bartender
+brew cask install dockertoolbox
 
 # Quick look
 brew cask install betterzipql
