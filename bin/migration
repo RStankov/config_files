@@ -7,13 +7,11 @@ def run(cmd)
   result
 end
 
-is_zeus = File.exists? '.zeus.sock'
-
-output = run "#{is_zeus ? 'zeus' : 'rails'} generate migration #{ARGV[0]}"
+output = run "rails generate migration #{ARGV[0]}"
 
 migration_path = output.match(%r|db/migrate/.*\.rb|)[0]
 
 if migration_path
   run "mvim #{migration_path}"
-  run "#{'zeus' if is_zeus} rake db:migrate db:test:prepare"
+  run "bundle exec rake db:migrate db:test:prepare"
 end
