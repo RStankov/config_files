@@ -49,6 +49,21 @@
 			<key>utf8</key>
 			<true/>
 		</dict>
+		<key>AEAAAAC9-B1E5-4C5C-A5B3-3A478FA5E5C3</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>npm</string>
+			<key>plusSpaces</key>
+			<false/>
+			<key>text</key>
+			<string>npm</string>
+			<key>url</key>
+			<string>https://www.npmjs.com/package/{query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
 		<key>B2F54277-5C2A-45A6-B458-A16B09ABB84B</key>
 		<dict>
 			<key>enabled</key>
