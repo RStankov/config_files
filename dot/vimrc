@@ -1,5 +1,6 @@
 " Pathogen
-call pathogen#infect()
+" runtime autoload/pathogen.vim
+" call pathogen#infect()
 
 " Vundle
 set runtimepath+=~/.vim/vundle/vundle
