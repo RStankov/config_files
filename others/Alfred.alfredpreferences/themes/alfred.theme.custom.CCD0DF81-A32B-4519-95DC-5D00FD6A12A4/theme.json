@@ -1,0 +1,61 @@
+{
+  "alfredtheme" : {
+    "result" : {
+      "textSpacing" : 4,
+      "subtext" : {
+        "size" : 11,
+        "colorSelected" : "#D4D4D4FF",
+        "font" : "Helvetica Neue",
+        "color" : "#0000007F"
+      },
+      "shortcut" : {
+        "size" : 13,
+        "colorSelected" : "#FFFFFFFF",
+        "font" : "Helvetica Neue Light",
+        "color" : "#0069D9FF"
+      },
+      "backgroundSelected" : "#4278F5FF",
+      "text" : {
+        "size" : 16,
+        "colorSelected" : "#FFFFFFFF",
+        "font" : "Helvetica Neue Light",
+        "color" : "#353535FF"
+      },
+      "iconPaddingHorizontal" : 5,
+      "paddingVertical" : 4,
+      "iconSize" : 40
+    },
+    "search" : {
+      "paddingVertical" : 2,
+      "background" : "#00000000",
+      "spacing" : 10,
+      "text" : {
+        "size" : 32,
+        "colorSelected" : "#FFFFFFFF",
+        "font" : "Helvetica Neue Light",
+        "color" : "#000000FF"
+      },
+      "backgroundSelected" : "#4278F5FF"
+    },
+    "window" : {
+      "color" : "#FFFFFFC4",
+      "paddingHorizontal" : 10,
+      "width" : 680,
+      "borderPadding" : 10,
+      "borderColor" : "#C24D5900",
+      "blur" : 0,
+      "roundness" : 3,
+      "paddingVertical" : 10
+    },
+    "credit" : "Florian Pellet",
+    "separator" : {
+      "color" : "#00000000",
+      "thickness" : 1
+    },
+    "scrollbar" : {
+      "color" : "#AAAAAAFF",
+      "thickness" : 2
+    },
+    "name" : "OS X Yosemite (Light & Blue) (v2)"
+  }
+}

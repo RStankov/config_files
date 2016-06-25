@@ -1,0 +1,61 @@
+{
+  "alfredtheme" : {
+    "result" : {
+      "textSpacing" : 4,
+      "subtext" : {
+        "size" : 14,
+        "colorSelected" : "#00000047",
+        "font" : "Helvetica Neue Light",
+        "color" : "#00000047"
+      },
+      "shortcut" : {
+        "size" : 13,
+        "colorSelected" : "#424242FF",
+        "font" : "Helvetica",
+        "color" : "#00000047"
+      },
+      "backgroundSelected" : "#FFFFFF00",
+      "text" : {
+        "size" : 24,
+        "colorSelected" : "#424242FF",
+        "font" : "Helvetica Neue",
+        "color" : "#00000047"
+      },
+      "iconPaddingHorizontal" : 5,
+      "paddingVertical" : 2,
+      "iconSize" : 40
+    },
+    "search" : {
+      "paddingVertical" : 2,
+      "background" : "#FFFFFF00",
+      "spacing" : 10,
+      "text" : {
+        "size" : 36,
+        "colorSelected" : "#000000FF",
+        "font" : "Helvetica Neue Light",
+        "color" : "#262626FF"
+      },
+      "backgroundSelected" : "#B5D5FFFF"
+    },
+    "window" : {
+      "color" : "#FFFFFFE5",
+      "paddingHorizontal" : 10,
+      "width" : 680,
+      "borderPadding" : 10,
+      "borderColor" : "#1B1B1B00",
+      "blur" : 0,
+      "roundness" : 3,
+      "paddingVertical" : 10
+    },
+    "credit" : "Josh Helfferich",
+    "separator" : {
+      "color" : "#00000000",
+      "thickness" : 1
+    },
+    "scrollbar" : {
+      "color" : "#00000047",
+      "thickness" : 2
+    },
+    "name" : "8 (v2)"
+  }
+}
