@@ -56,3 +56,11 @@ let g:conoline_auto_enable = 1
 
 " Threat every JavaScript file as JSX
 let g:jsx_ext_required = 0
+
+" Create alternative file
+function! s:CreateAlternative()
+  let related = rails#buffer().alternate_candidates()[0]
+  exec('vsplit ' . related)
+endfunction
+
+command! AC :call <SID>CreateAlternative()
