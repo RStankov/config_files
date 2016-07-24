@@ -125,7 +125,7 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>313 421 606 456 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 13 1438 864 0 0 1440 877 </string>
+	<string>0 25 1438 852 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>0 395 570 452 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -954,7 +954,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-06-16T08:46:16Z</date>
+	<date>2016-07-18T08:22:43Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Secure Input</key>
@@ -962,6 +962,8 @@
 	<key>Show Toolbelt</key>
 	<false/>
 	<key>ShowBookmarkName</key>
+	<false/>
+	<key>ShowFullScreenTabBar</key>
 	<false/>
 	<key>ShowPaneTitles</key>
 	<true/>
@@ -1006,6 +1008,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.2</string>
+	<string>3.0.4</string>
 </dict>
 </plist>
