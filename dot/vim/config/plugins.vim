@@ -43,13 +43,13 @@ let g:airline#extensions#whitespaces#enabled = 0
 " Vim-Test settings
 let g:test#strategy = 'iterm'
 
-let g:test#rspec#options = {
+let g:test#ruby#rspec#options = {
   \ 'nearest': '--format documentation',
   \ 'file':    '--format documentation',
 \}
 
 let g:test#javascript#mocha#file_pattern = '.*\.test\.js$'
-let test#javascript#mocha#executable = 'npm run mocha'
+let g:test#javascript#mocha#executable = 'npm run mocha'
 
 " ConoLine
 let g:conoline_auto_enable = 1
