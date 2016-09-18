@@ -47,5 +47,7 @@ Plugin 'isRuslan/vim-es6'
 Plugin 'othree/es.next.syntax.vim'
 Plugin 'othree/javascript-libraries-syntax.vim'
 
+Plugin 'RStankov/vim-node'
+
 call vundle#end()
 filetype plugin indent on
