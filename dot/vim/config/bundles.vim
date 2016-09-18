@@ -36,4 +36,6 @@ Bundle 'tpope/vim-surround'
 Bundle 'vim-airline/vim-airline'
 Bundle 'vim-airline/vim-airline-themes'
 Bundle 'vim-scripts/Auto-Pairs'
-
+Bundle 'isRuslan/vim-es6'
+Bundle 'othree/es.next.syntax.vim'
+Bundle 'othree/javascript-libraries-syntax.vim'

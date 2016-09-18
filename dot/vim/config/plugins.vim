@@ -51,6 +51,9 @@ let g:test#ruby#rspec#options = {
 let g:test#javascript#mocha#file_pattern = '.*\.test\.js$'
 let g:test#javascript#mocha#executable = 'npm run mocha'
 
+" JavasScript libraries
+let g:used_javascript_libs = 'underscore,react,chai,jasmine'
+
 " ConoLine
 let g:conoline_auto_enable = 1
 
