@@ -27,7 +27,6 @@ brew cask install firefox
 brew cask install google-chrome
 brew cask install backblaze
 brew cask install slack
-brew cask install transmission
 brew cask install spotify
 brew cask install iTerm2
 brew cask install omnidisksweeper
@@ -41,7 +40,6 @@ brew cask install skype
 brew cask install virtualbox
 brew cask install omnipresence
 brew cask install bartender
-brew cask install dockertoolbox
 
 # Quick look
 brew cask install betterzipql
