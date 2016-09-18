@@ -1,4 +1,11 @@
-Plugin 'gmarik/vundle'
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+
+call vundle#begin('~/.vim/vundle')
+
+Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'AndrewRadev/sideways.vim'
 Plugin 'AndrewRadev/splitjoin.vim'
@@ -39,3 +46,6 @@ Plugin 'vim-scripts/Auto-Pairs'
 Plugin 'isRuslan/vim-es6'
 Plugin 'othree/es.next.syntax.vim'
 Plugin 'othree/javascript-libraries-syntax.vim'
+
+call vundle#end()
+filetype plugin indent on

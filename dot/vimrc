@@ -1,11 +1,3 @@
-" Pathogen
-" runtime autoload/pathogen.vim
-" call pathogen#infect()
-
-" Vundle
-set runtimepath+=~/.vim/vundle/vundle
-call vundle#rc('~/.vim/vundle')
-
 " Configure
 runtime config/bundles.vim
 runtime config/settings.vim
