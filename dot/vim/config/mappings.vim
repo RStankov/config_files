@@ -27,20 +27,8 @@ nnoremap J mzJ`z
 nnoremap j gj
 nnoremap k gk
 
-" Tabularize equals
-nnoremap <leader>= :Tabularize /^[^=]*\zs=<cr>
-
-" Tabularize colon
-nnoremap <leader>: :Tabularize /:\zs<cr>
-
-" Tabularize => (I use ctrl + l for inserting =>)
-nnoremap <leader>l :Tabularize /=><cr>
-
 " Switch
 nnoremap <leader>- :Switch<cr>
-
-" Multicange
-nnoremap <leader>m :Multichange<cr>
 
 " Reorder arguments by ctrl + arrows
 nnoremap <c-Left> :SidewaysLeft<cr>

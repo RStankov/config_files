@@ -23,13 +23,14 @@ vnoremap <leader>reb :call RubyExtractBeforeBlock()<cr>
 
 " Ruby refactoring plugin mappings
 nnoremap <leader>rap  :RAddParameter<cr>
+nnoremap <leader>rcpc :RConvertPostConditional<cr>
 nnoremap <leader>rel  :RExtractLet<cr>
 nnoremap <leader>riv  :RInlineTemp<cr>
 vnoremap <leader>rec  :RExtractConstant<cr>
 vnoremap <leader>rem  :RExtractMethod<cr>
 vnoremap <leader>rev  :RExtractLocalVariable<cr>
-vnoremap <leader>rrv  :RRenameLocalVariable<cr>
 vnoremap <leader>rriv :RRenameInstanceVariable<cr>
+vnoremap <leader>rrv  :RRenameLocalVariable<cr>
 
 " Insert a hash rocket
 imap <c-l> <space>=><space>
