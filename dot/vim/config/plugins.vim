@@ -51,14 +51,18 @@ let g:test#ruby#rspec#options = {
 let g:test#javascript#mocha#file_pattern = '.*\.test\.js$'
 let g:test#javascript#mocha#executable = 'npm run mocha'
 
-" JavasScript libraries
-let g:used_javascript_libs = 'underscore,react,chai,jasmine'
-
 " ConoLine
 let g:conoline_auto_enable = 1
 
 " Threat every JavaScript file as JSX
 let g:jsx_ext_required = 0
+let g:xml_syntax_folding = 0
+
+" Enable jsdocs
+let g:javascript_plugin_jsdoc = 1
+
+" Enable flow
+let g:javascript_plugin_flow = 1
 
 " Create alternative file
 function! s:CreateAlternative()
