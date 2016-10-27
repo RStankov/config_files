@@ -1,3 +1,9 @@
 function gci () {
   git commit -m "$*"
 }
+
+function kill_ruby () {
+  pkill -9 ruby
+  pkill -9 puma
+  pkill -9 spring
+}
