@@ -43,6 +43,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'vim-scripts/Auto-Pairs'
 Plugin 'elixir-lang/vim-elixir'
+Plugin 'joshdick/onedark.vim'
 
 Plugin 'RStankov/vim-node'
 
