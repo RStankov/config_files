@@ -29,7 +29,6 @@ endif
 " Airline settings
 let g:airline_left_sep=''
 let g:airline_right_sep=''
-let g:airline_theme='github'
 let g:airline_section_b="%f"
 let g:airline_section_c=""
 let g:airline_section_x=""

@@ -1,6 +1,7 @@
 " Theme setup
 set background=light
 colorscheme github
+let g:airline_theme='github'
 
 " Hide the annoying ~ non texts
 hi NonText      guifg=bg     guibg=bg     gui=NONE
