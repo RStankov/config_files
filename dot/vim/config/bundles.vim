@@ -19,6 +19,10 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'fatih/vim-go'
 Plugin 'RStankov/vim-node'        " my fork have proper support for `gf`
 
+" Themes
+
+Plugin 'joshdick/onedark.vim'
+
 " Other
 Plugin 'AndrewRadev/sideways.vim'
 Plugin 'AndrewRadev/splitjoin.vim'
@@ -52,7 +56,6 @@ Plugin 'tpope/vim-surround'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'vim-scripts/Auto-Pairs'
-Plugin 'joshdick/onedark.vim'
 
 call vundle#end()
 filetype plugin indent on
