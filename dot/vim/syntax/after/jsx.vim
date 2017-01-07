@@ -1,0 +1,5 @@
+syntax keyword jsRequire require containedin=ALLBUT,javascriptComment,javascriptLineComment,javascriptString,javascriptTemplate,javascriptTemplateSubstitution
+syntax keyword flowtype type containedin=ALLBUT,javascriptComment,javascriptLineComment,javascriptString,javascriptTemplate,javascriptTemplateSubstitution
+
+hi link jsRequire Include
+hi link flowtype  Keyword

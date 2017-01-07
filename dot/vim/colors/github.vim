@@ -119,3 +119,9 @@ hi rubyConstant     guifg=#0086B3
 
 hi jsGlobalObjects guifg=#0086B3
 hi jsNull          guifg=#0086B3
+
+
+hi def link jsxTag Identifier
+hi def link jsxTagName Identifier
+hi def link jsxCloseTag Identifier
+hi def link jsxCloseString Identifier

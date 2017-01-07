@@ -55,8 +55,8 @@ let g:test#javascript#mocha#executable = 'npm run mocha'
 let g:conoline_auto_enable = 1
 
 " Threat every JavaScript file as JSX
-let g:jsx_ext_required = 0
-let g:xml_syntax_folding = 0
+let g:vim_jsx_pretty_enable_jsx_highlight = 1
+let g:vim_jsx_pretty_colorful_config = 1
 
 " Enable jsdocs
 let g:javascript_plugin_jsdoc = 1
