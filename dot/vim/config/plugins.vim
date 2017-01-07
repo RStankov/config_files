@@ -64,10 +64,6 @@ let g:javascript_plugin_jsdoc = 1
 " Enable flow
 let g:javascript_plugin_flow = 1
 
-" Disable languages:
-" elixir - it breaks endwise and autoindent
-let g:polyglot_disabled = ['elixir']
-
 " Create alternative file
 function! s:CreateAlternative()
   let related = rails#buffer().alternate_candidates()[0]
