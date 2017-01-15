@@ -1,7 +1,20 @@
 " Theme setup
-set background=light
-colorscheme github
-let g:airline_theme='github'
+
+" set background=light
+" colorscheme github
+" let g:airline_theme='github'
+
+colorscheme onedark
+
+let g:airline_theme='onedark'
+
+" Adjust onedark theme
+hi VertSplit guibg=#3E4452 guifg=#3E4452 gui=none
+
+hi def link jsxTag Identifier
+hi def link jsxTagName Identifier
+hi def link jsxCloseTag Identifier
+hi def link jsxCloseString Identifier
 
 " Hide the annoying ~ non texts
 hi NonText      guifg=bg     guibg=bg     gui=NONE
