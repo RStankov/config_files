@@ -2,11 +2,23 @@ snippet desc
 	describe('${1}', () => {
 	  ${2}
 	});
-
 snippet it
 	it('${1}', () => {
 	  ${2}
 	});
-
 snippet log
 	console.log(${1});
+snippet note
+	// NOTE(rstankov): ${1}
+snippet todo
+	// TODO(rstankov): ${1}
+snippet flow
+	/* @flow */
+snippet exp
+	export ${1}
+snippet expd
+	export default ${1}
+snippet expdf
+	export default function ${1}
+snippet imp
+	import ${1} from '${2}';
