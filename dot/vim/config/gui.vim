@@ -16,8 +16,12 @@ hi def link jsxTagName Identifier
 hi def link jsxCloseTag Identifier
 hi def link jsxCloseString Identifier
 
+" onedark coloring for bad spelling is annoing
+hi clear SpellBad
+hi SpellBad gui=underline cterm=underline
+
 " Hide the annoying ~ non texts
-hi NonText      guifg=bg     guibg=bg     gui=NONE
+hi NonText      guifg=bg     guibg=bg     gui=none
 
 " Font.
 set guifont=Hack:h12
