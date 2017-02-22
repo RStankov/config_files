@@ -9,6 +9,8 @@
 		<string>features.websearch.amazon.fallback</string>
 		<string>features.websearch.wiki.fallback</string>
 	</array>
+	<key>showBookmarks</key>
+	<true/>
 	<key>showContacts</key>
 	<false/>
 </dict>
