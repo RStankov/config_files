@@ -13,6 +13,7 @@
 --type-add=js=.coffee
 --type-set=slim=.slim
 --type-set=bin=.pdf
+--type-set=graphql=.graphql
 --nobin
 --ignore-dir=.bundle
 --ignore-dir=log
