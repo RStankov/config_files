@@ -1,22 +1,21 @@
 " Theme setup
 
-" set background=light
-" colorscheme github
-" let g:airline_theme='github'
+set background=light
+colorscheme github
+let g:airline_theme='github'
 
-colorscheme onedark
-
-let g:airline_theme='onedark'
+" colorscheme onedark
+" let g:airline_theme='onedark'
 
 " Adjust onedark theme
-hi VertSplit guibg=#3E4452 guifg=#3E4452 gui=none
+" hi VertSplit guibg=#3E4452 guifg=#3E4452 gui=none
 
 hi def link jsxTag Identifier
 hi def link jsxTagName Identifier
 hi def link jsxCloseTag Identifier
 hi def link jsxCloseString Identifier
 
-" onedark coloring for bad spelling is annoing
+" onedark coloring for bad spelling is annoying
 hi clear SpellBad
 hi SpellBad gui=underline cterm=underline
 
