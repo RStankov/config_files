@@ -15,6 +15,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 	</dict>
@@ -25,12 +27,14 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>caniuse (v1.7)</string>
+	<string>caniuse (v1.9)</string>
 	<key>objects</key>
 	<array>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
@@ -50,6 +54,10 @@
 				<key>script</key>
 				<string>$query = urlencode( "{query}" );
 require_once("caniuse.php");</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
 				<key>subtext</key>
 				<string>Compatibility tables for support of HTML5, CSS3, SVG and more in desktop and mobile browsers.</string>
 				<key>title</key>
@@ -64,13 +72,15 @@ require_once("caniuse.php");</string>
 			<key>uid</key>
 			<string>301619E5-54AF-4C4C-B344-2E7C086C272F</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>plusspaces</key>
-				<false/>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
 				<key>url</key>
 				<string>{query}</string>
 				<key>utf8</key>
@@ -81,7 +91,7 @@ require_once("caniuse.php");</string>
 			<key>uid</key>
 			<string>74157FF6-C4FA-487C-8CAD-E93EB4FE2F66</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 	</array>
 	<key>readme</key>
@@ -90,11 +100,15 @@ require_once("caniuse.php");</string>
 	<dict>
 		<key>301619E5-54AF-4C4C-B344-2E7C086C272F</key>
 		<dict>
+			<key>xpos</key>
+			<integer>300</integer>
 			<key>ypos</key>
 			<real>10</real>
 		</dict>
 		<key>74157FF6-C4FA-487C-8CAD-E93EB4FE2F66</key>
 		<dict>
+			<key>xpos</key>
+			<integer>500</integer>
 			<key>ypos</key>
 			<real>10</real>
 		</dict>
