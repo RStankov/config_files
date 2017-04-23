@@ -3,6 +3,7 @@ let mapleader = ","
 
 " Toggle NERDTree
 nmap gn :NERDTreeToggle<cr>
+nmap gnn :NERDTreeFind<cr>
 
 " Splitjoin on Shift +/-
 nmap _ :SplitjoinJoin<cr>
