@@ -78,6 +78,9 @@ nmap <D-]> >>
 vmap <D-[> <gv
 vmap <D-]> >gv
 
+" Go to file in vertical split
+nmap gff :vertical wincmd f<cr>
+
 " Test running
 nmap <silent> <leader>t :TestNearest<CR>
 nmap <silent> <leader>T :TestFile<CR>
