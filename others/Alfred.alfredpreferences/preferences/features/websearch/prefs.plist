@@ -19,36 +19,6 @@
 			<key>utf8</key>
 			<true/>
 		</dict>
-		<key>3F1FCC50-C4AC-414A-A3A3-BF5BE8F191C0</key>
-		<dict>
-			<key>enabled</key>
-			<true/>
-			<key>keyword</key>
-			<string>apiruby</string>
-			<key>plusSpaces</key>
-			<false/>
-			<key>text</key>
-			<string>APIDock - Ruby</string>
-			<key>url</key>
-			<string>http://apidock.com/ruby/search?query={query}</string>
-			<key>utf8</key>
-			<true/>
-		</dict>
-		<key>928B1921-EFE8-4E51-B00E-27B3C9B3BB38</key>
-		<dict>
-			<key>enabled</key>
-			<true/>
-			<key>keyword</key>
-			<string>apirails</string>
-			<key>plusSpaces</key>
-			<false/>
-			<key>text</key>
-			<string>APIDock - Rails</string>
-			<key>url</key>
-			<string>http://apidock.com/rails/search?query={query}</string>
-			<key>utf8</key>
-			<true/>
-		</dict>
 		<key>AEAAAAC9-B1E5-4C5C-A5B3-3A478FA5E5C3</key>
 		<dict>
 			<key>enabled</key>
