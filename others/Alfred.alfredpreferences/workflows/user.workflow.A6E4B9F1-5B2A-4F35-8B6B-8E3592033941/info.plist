@@ -55,33 +55,6 @@
 				<string>Copy</string>
 			</dict>
 		</array>
-		<key>dash_keyword_angularjs</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>dash_action_normal</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>dash_action_cmd</string>
-				<key>modifiers</key>
-				<integer>1048576</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>dash_action_alt</string>
-				<key>modifiers</key>
-				<integer>524288</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-			</dict>
-		</array>
 		<key>dash_keyword_apple</key>
 		<array>
 			<dict>
@@ -1911,17 +1884,19 @@ That said, you can edit anything else within this workflow (including adding new
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
-				<integer>110</integer>
-				<key>keyword</key>
-				<string>angularjs</string>
+				<integer>0</integer>
 				<key>runningsubtext</key>
-				<string>Searching for "{query}"</string>
+				<string>Please read what's in the "Script:" section below</string>
 				<key>script</key>
-				<string>./dashAlfredWorkflow "angularjs:{query}"</string>
+				<string>Dash dynamically updates this workflow with docset and search profile keywords.
+
+Do not try to change the keywords from within Alfred, as Dash will overwrite your changes. If you want to change a keyword, change it from within Dash (in Preferences &gt; Docsets).
+
+That said, you can edit anything else within this workflow (including adding new triggers/actions/hotkeys).</string>
 				<key>subtext</key>
-				<string>Search AngularJS for "{query}"</string>
+				<string>Please read what's in the "Script:" section below</string>
 				<key>title</key>
-				<string>Search AngularJS</string>
+				<string>PLEASE README</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -1930,7 +1905,7 @@ That said, you can edit anything else within this workflow (including adding new
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>dash_keyword_angularjs</string>
+			<string>dash_note_readme</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
@@ -3684,305 +3659,300 @@ The keyword is either a docset keyword (defined in Preferences &gt; Docsets) or 
 			<key>ypos</key>
 			<real>10</real>
 		</dict>
-		<key>dash_keyword_angularjs</key>
+		<key>dash_keyword_apple</key>
 		<dict>
 			<key>ypos</key>
 			<integer>930</integer>
 		</dict>
-		<key>dash_keyword_apple</key>
+		<key>dash_keyword_backbone</key>
 		<dict>
 			<key>ypos</key>
 			<integer>1050</integer>
 		</dict>
-		<key>dash_keyword_backbone</key>
+		<key>dash_keyword_bootstrap</key>
 		<dict>
 			<key>ypos</key>
 			<integer>1170</integer>
 		</dict>
-		<key>dash_keyword_bootstrap</key>
+		<key>dash_keyword_bourbon</key>
 		<dict>
 			<key>ypos</key>
 			<integer>1290</integer>
 		</dict>
-		<key>dash_keyword_bourbon</key>
+		<key>dash_keyword_capybara</key>
 		<dict>
 			<key>ypos</key>
 			<integer>1410</integer>
 		</dict>
-		<key>dash_keyword_capybara</key>
+		<key>dash_keyword_chai</key>
 		<dict>
 			<key>ypos</key>
 			<integer>1530</integer>
 		</dict>
-		<key>dash_keyword_chai</key>
+		<key>dash_keyword_chrome</key>
 		<dict>
 			<key>ypos</key>
 			<integer>1650</integer>
 		</dict>
-		<key>dash_keyword_chrome</key>
+		<key>dash_keyword_clojure</key>
 		<dict>
 			<key>ypos</key>
 			<integer>1770</integer>
 		</dict>
-		<key>dash_keyword_clojure</key>
+		<key>dash_keyword_coffee</key>
 		<dict>
 			<key>ypos</key>
 			<integer>1890</integer>
 		</dict>
-		<key>dash_keyword_coffee</key>
+		<key>dash_keyword_color</key>
 		<dict>
 			<key>ypos</key>
 			<integer>2010</integer>
 		</dict>
-		<key>dash_keyword_color</key>
+		<key>dash_keyword_compass</key>
 		<dict>
 			<key>ypos</key>
 			<integer>2130</integer>
 		</dict>
-		<key>dash_keyword_compass</key>
+		<key>dash_keyword_css</key>
 		<dict>
 			<key>ypos</key>
 			<integer>2250</integer>
 		</dict>
-		<key>dash_keyword_css</key>
+		<key>dash_keyword_docker</key>
 		<dict>
 			<key>ypos</key>
 			<integer>2370</integer>
 		</dict>
-		<key>dash_keyword_docker</key>
+		<key>dash_keyword_elasticsearch</key>
 		<dict>
 			<key>ypos</key>
 			<integer>2490</integer>
 		</dict>
-		<key>dash_keyword_elasticsearch</key>
+		<key>dash_keyword_elixir</key>
 		<dict>
 			<key>ypos</key>
 			<integer>2610</integer>
 		</dict>
-		<key>dash_keyword_elixir</key>
+		<key>dash_keyword_express</key>
 		<dict>
 			<key>ypos</key>
 			<integer>2730</integer>
 		</dict>
-		<key>dash_keyword_express</key>
+		<key>dash_keyword_git</key>
 		<dict>
 			<key>ypos</key>
 			<integer>2850</integer>
 		</dict>
-		<key>dash_keyword_git</key>
+		<key>dash_keyword_go</key>
 		<dict>
 			<key>ypos</key>
 			<integer>2970</integer>
 		</dict>
-		<key>dash_keyword_go</key>
+		<key>dash_keyword_grunt</key>
 		<dict>
 			<key>ypos</key>
 			<integer>3090</integer>
 		</dict>
-		<key>dash_keyword_grunt</key>
+		<key>dash_keyword_hex</key>
 		<dict>
 			<key>ypos</key>
 			<integer>3210</integer>
 		</dict>
-		<key>dash_keyword_hex</key>
+		<key>dash_keyword_html</key>
 		<dict>
 			<key>ypos</key>
 			<integer>3330</integer>
 		</dict>
-		<key>dash_keyword_html</key>
+		<key>dash_keyword_htmle</key>
 		<dict>
 			<key>ypos</key>
 			<integer>3450</integer>
 		</dict>
-		<key>dash_keyword_htmle</key>
+		<key>dash_keyword_http</key>
 		<dict>
 			<key>ypos</key>
 			<integer>3570</integer>
 		</dict>
-		<key>dash_keyword_http</key>
+		<key>dash_keyword_ios</key>
 		<dict>
 			<key>ypos</key>
 			<integer>3690</integer>
 		</dict>
-		<key>dash_keyword_ios</key>
+		<key>dash_keyword_iosd</key>
 		<dict>
 			<key>ypos</key>
 			<integer>3810</integer>
 		</dict>
-		<key>dash_keyword_iosd</key>
+		<key>dash_keyword_iterm</key>
 		<dict>
 			<key>ypos</key>
 			<integer>3930</integer>
 		</dict>
-		<key>dash_keyword_iterm</key>
+		<key>dash_keyword_jasmine</key>
 		<dict>
 			<key>ypos</key>
 			<integer>4050</integer>
 		</dict>
-		<key>dash_keyword_jasmine</key>
+		<key>dash_keyword_javascript</key>
 		<dict>
 			<key>ypos</key>
 			<integer>4170</integer>
 		</dict>
-		<key>dash_keyword_javascript</key>
+		<key>dash_keyword_jquery</key>
 		<dict>
 			<key>ypos</key>
 			<integer>4290</integer>
 		</dict>
-		<key>dash_keyword_jquery</key>
+		<key>dash_keyword_lodash</key>
 		<dict>
 			<key>ypos</key>
 			<integer>4410</integer>
 		</dict>
-		<key>dash_keyword_lodash</key>
+		<key>dash_keyword_manpages</key>
 		<dict>
 			<key>ypos</key>
 			<integer>4530</integer>
 		</dict>
-		<key>dash_keyword_manpages</key>
+		<key>dash_keyword_markdown</key>
 		<dict>
 			<key>ypos</key>
 			<integer>4650</integer>
 		</dict>
-		<key>dash_keyword_markdown</key>
+		<key>dash_keyword_media</key>
 		<dict>
 			<key>ypos</key>
 			<integer>4770</integer>
 		</dict>
-		<key>dash_keyword_media</key>
+		<key>dash_keyword_mongodb</key>
 		<dict>
 			<key>ypos</key>
 			<integer>4890</integer>
 		</dict>
-		<key>dash_keyword_mongodb</key>
+		<key>dash_keyword_nodejs</key>
 		<dict>
 			<key>ypos</key>
 			<integer>5010</integer>
 		</dict>
-		<key>dash_keyword_nodejs</key>
+		<key>dash_keyword_objc</key>
 		<dict>
 			<key>ypos</key>
 			<integer>5130</integer>
 		</dict>
-		<key>dash_keyword_objc</key>
+		<key>dash_keyword_osx</key>
 		<dict>
 			<key>ypos</key>
 			<integer>5250</integer>
 		</dict>
-		<key>dash_keyword_osx</key>
+		<key>dash_keyword_psql</key>
 		<dict>
 			<key>ypos</key>
 			<integer>5370</integer>
 		</dict>
-		<key>dash_keyword_psql</key>
+		<key>dash_keyword_rails</key>
 		<dict>
 			<key>ypos</key>
 			<integer>5490</integer>
 		</dict>
-		<key>dash_keyword_rails</key>
+		<key>dash_keyword_railscli</key>
 		<dict>
 			<key>ypos</key>
 			<integer>5610</integer>
 		</dict>
-		<key>dash_keyword_railscli</key>
+		<key>dash_keyword_react</key>
 		<dict>
 			<key>ypos</key>
 			<integer>5730</integer>
 		</dict>
-		<key>dash_keyword_react</key>
+		<key>dash_keyword_redis</key>
 		<dict>
 			<key>ypos</key>
 			<integer>5850</integer>
 		</dict>
-		<key>dash_keyword_redis</key>
+		<key>dash_keyword_regex</key>
 		<dict>
 			<key>ypos</key>
 			<integer>5970</integer>
 		</dict>
-		<key>dash_keyword_regex</key>
+		<key>dash_keyword_ruby</key>
 		<dict>
 			<key>ypos</key>
 			<integer>6090</integer>
 		</dict>
-		<key>dash_keyword_ruby</key>
+		<key>dash_keyword_rubygems</key>
 		<dict>
 			<key>ypos</key>
 			<integer>6210</integer>
 		</dict>
-		<key>dash_keyword_rubygems</key>
+		<key>dash_keyword_rust</key>
 		<dict>
 			<key>ypos</key>
 			<integer>6330</integer>
 		</dict>
-		<key>dash_keyword_rust</key>
+		<key>dash_keyword_sinon</key>
 		<dict>
 			<key>ypos</key>
 			<integer>6450</integer>
 		</dict>
-		<key>dash_keyword_sinon</key>
+		<key>dash_keyword_sketch</key>
 		<dict>
 			<key>ypos</key>
 			<integer>6570</integer>
 		</dict>
-		<key>dash_keyword_sketch</key>
+		<key>dash_keyword_sqlite</key>
 		<dict>
 			<key>ypos</key>
 			<integer>6690</integer>
 		</dict>
-		<key>dash_keyword_sqlite</key>
+		<key>dash_keyword_svg</key>
 		<dict>
 			<key>ypos</key>
 			<integer>6810</integer>
 		</dict>
-		<key>dash_keyword_svg</key>
+		<key>dash_keyword_swift</key>
 		<dict>
 			<key>ypos</key>
 			<integer>6930</integer>
 		</dict>
-		<key>dash_keyword_swift</key>
+		<key>dash_keyword_tmux</key>
 		<dict>
 			<key>ypos</key>
 			<integer>7050</integer>
 		</dict>
-		<key>dash_keyword_tmux</key>
+		<key>dash_keyword_tvos</key>
 		<dict>
 			<key>ypos</key>
 			<integer>7170</integer>
 		</dict>
-		<key>dash_keyword_tvos</key>
+		<key>dash_keyword_underscore</key>
 		<dict>
 			<key>ypos</key>
 			<integer>7290</integer>
 		</dict>
-		<key>dash_keyword_underscore</key>
+		<key>dash_keyword_vagrant</key>
 		<dict>
 			<key>ypos</key>
 			<integer>7410</integer>
 		</dict>
-		<key>dash_keyword_vagrant</key>
+		<key>dash_keyword_vim</key>
 		<dict>
 			<key>ypos</key>
 			<integer>7530</integer>
 		</dict>
-		<key>dash_keyword_vim</key>
+		<key>dash_keyword_vimc</key>
 		<dict>
 			<key>ypos</key>
 			<integer>7650</integer>
 		</dict>
-		<key>dash_keyword_vimc</key>
+		<key>dash_keyword_watchos</key>
 		<dict>
 			<key>ypos</key>
 			<integer>7770</integer>
 		</dict>
-		<key>dash_keyword_watchos</key>
-		<dict>
-			<key>ypos</key>
-			<integer>7890</integer>
-		</dict>
 		<key>dash_keyword_xcode</key>
 		<dict>
 			<key>ypos</key>
-			<integer>8010</integer>
+			<integer>7890</integer>
 		</dict>
 		<key>dash_note_readme</key>
 		<dict>

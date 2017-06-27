@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>fm.fastmail.dfay.case</string>
+	<key>connections</key>
+	<dict>
+		<key>2EC21243-05AA-4A34-9C8F-CBEC0F704C98</key>
+		<array/>
+		<key>7DD3BDE5-A157-42E5-9376-F681FB50A4EE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2EC21243-05AA-4A34-9C8F-CBEC0F704C98</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>BADA612E-B2CD-4B01-8E22-E244FCEE3FBA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>89DD44BD-9E29-45BE-A321-957D4505DA61</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Derick Fay</string>
+	<key>description</key>
+	<string></string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Case Converter</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>echo {query}
+
+case {query} in
+	t) pbpaste | tr '[:upper:]' '[:lower:]' | perl titlecase.pl | pbcopy
+	;;
+	c) pbpaste | tr '[:upper:]' '[:lower:]' | awk '{for(i=1;i&lt;=NF;i++)sub(/./,toupper(substr($i,1,1)),$i)}1' | pbcopy
+	;;
+	u) pbpaste | tr '[:lower:]' '[:upper:]' | pbcopy
+	;;
+	l) pbpaste | tr '[:upper:]' '[:lower:]' | pbcopy
+	;;
+	s) pbpaste | tr '[:upper:]' '[:lower:]' | python -c 'print raw_input().capitalize()' | pbcopy
+	;;
+esac
+</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>2EC21243-05AA-4A34-9C8F-CBEC0F704C98</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>6</integer>
+				<key>keyword</key>
+				<string>case</string>
+				<key>script</key>
+				<string>osascript xml.scpt "{query}"</string>
+				<key>title</key>
+				<string>Convert text on clipboard....</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>7DD3BDE5-A157-42E5-9376-F681FB50A4EE</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>keyword</key>
+				<string>casep</string>
+				<key>script</key>
+				<string>osascript xml-paste.scpt "{query}"</string>
+				<key>title</key>
+				<string>Convert text on clipboard and paste....</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>BADA612E-B2CD-4B01-8E22-E244FCEE3FBA</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>echo {query}
+
+case {query} in
+	t) pbpaste | tr '[:upper:]' '[:lower:]' | perl titlecase.pl | pbcopy
+	;;
+	c) pbpaste | tr '[:upper:]' '[:lower:]' | awk '{for(i=1;i&lt;=NF;i++)sub(/./,toupper(substr($i,1,1)),$i)}1' | pbcopy
+	;;
+	u) pbpaste | tr '[:lower:]' '[:upper:]' | pbcopy
+	;;
+	l) pbpaste | tr '[:upper:]' '[:lower:]' | pbcopy
+	;;
+	s) pbpaste | tr '[:upper:]' '[:lower:]' | python -c 'print raw_input().capitalize()' | pbcopy
+	;;
+esac
+
+osascript -e 'tell application "System Events" to keystroke "v" using {command down}'</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>89DD44BD-9E29-45BE-A321-957D4505DA61</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>Based on: http://www.johneday.com/617/generate-feedback-in-alfred-2-workflows
+
+incorporates the Title Case perl script found at https://raw.github.com/ap/titlecase/master/titlecase</string>
+	<key>uidata</key>
+	<dict>
+		<key>2EC21243-05AA-4A34-9C8F-CBEC0F704C98</key>
+		<dict>
+			<key>ypos</key>
+			<real>60</real>
+		</dict>
+		<key>7DD3BDE5-A157-42E5-9376-F681FB50A4EE</key>
+		<dict>
+			<key>ypos</key>
+			<real>60</real>
+		</dict>
+		<key>89DD44BD-9E29-45BE-A321-957D4505DA61</key>
+		<dict>
+			<key>ypos</key>
+			<real>180</real>
+		</dict>
+		<key>BADA612E-B2CD-4B01-8E22-E244FCEE3FBA</key>
+		<dict>
+			<key>ypos</key>
+			<real>180</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>http://dfay.fastmail.fm/alfred/</string>
+</dict>
+</plist>
