@@ -9,7 +9,6 @@ brew install ruby-build
 brew install rbenv
 brew install node
 brew install imagemagick
-brew install phantomjs
 brew install the_silver_searcher
 brew install ctags
 brew install redis
@@ -38,7 +37,6 @@ brew cask install postgres
 brew cask install little-snitch
 brew cask install skype
 brew cask install virtualbox
-brew cask install omnipresence
 brew cask install bartender
 
 # Quick look
