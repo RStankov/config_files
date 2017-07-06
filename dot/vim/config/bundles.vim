@@ -58,6 +58,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'vim-scripts/Auto-Pairs'
 Plugin 'jparise/vim-graphql'
 Plugin 'kana/vim-textobj-indent'
+Plugin 'mitermayer/vim-prettier'
 
 call vundle#end()
 filetype plugin indent on
