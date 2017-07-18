@@ -8,19 +8,19 @@ brew install macvim
 brew install ruby-build
 brew install rbenv
 brew install node
+brew install nvm
 brew install imagemagick
 brew install the_silver_searcher
 brew install ctags
-brew install redis
 brew install tree
-brew install highlight
+brew install elixir
+brew install erlang
 
 # Cask
 brew install caskroom/cask/brew-cask
 
 # Apps
 brew cask install alfred
-brew cask install fantastical
 brew cask install dropbox
 brew cask install firefox
 brew cask install google-chrome
@@ -33,10 +33,24 @@ brew cask install vlc
 brew cask install rowanj-gitx
 brew cask install karabiner
 brew cask install cleanmymac
-brew cask install postgres
 brew cask install little-snitch
 brew cask install skype
 brew cask install virtualbox
+brew cask install bartender
+brew cask install parallels-desktop
+brew cask install atom
+brew cask install timing
+brew cask install cloudapp
+brew cask install dash
+brew cask install paw
+brew cask install zoomus
+brew cask install vlc
+brew cask install slack
+brew cask install sketch
+brew cask install skype
+brew cask install caffeine
+brew cask install karabiner
+brew cask install docker
 brew cask install bartender
 
 # Quick look
