@@ -49,7 +49,6 @@ brew cask install slack
 brew cask install sketch
 brew cask install skype
 brew cask install caffeine
-brew cask install karabiner
 brew cask install docker
 brew cask install bartender
 
@@ -61,7 +60,7 @@ brew cask install qlprettypatch
 brew cask install qlstephen
 brew cask install quicklook-csv
 brew cask install quicklook-json
-brew cask install webp-quicklook
+brew cask install webpquicklook
 
 # Link Cask Apps to Alfred
 brew cask alfred link
