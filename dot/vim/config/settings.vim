@@ -134,10 +134,5 @@ set vb t_vb=
 " Redraw only when we need to.
 set lazyredraw
 
-" Remove annoying timeout on escape
+" set timeout
 set ttimeoutlen=10
-augroup FastEscape
-  autocmd!
-  au InsertEnter * set timeoutlen=0
-  au InsertLeave * set timeoutlen=1000
-augroup END
