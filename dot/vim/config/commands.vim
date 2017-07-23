@@ -2,5 +2,5 @@
 command! CRefresh source $MYVIMRC
 
 " Shortcut for the Ag (or something else in the future)
-command! -nargs=* -complete=dir F :exe "Ag" <q-args>
+command! -nargs=* -complete=dir F :exe "Ag --nobreak" <q-args>
 
