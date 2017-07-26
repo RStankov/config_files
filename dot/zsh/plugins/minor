@@ -2,8 +2,12 @@ function gci () {
   git commit -m "$*"
 }
 
-function kill_ruby () {
+function kill_dev_processes() {
   pkill -9 ruby
   pkill -9 puma
   pkill -9 spring
+  pkill -9 node
+  lsof -i -P | grep 3000
+  lsof -i -P | grep 5000
+  lsof -i -P | grep 5001
 }
