@@ -6,9 +6,7 @@ function t() {
     command="cucumber"
   fi
 
-  if [[ -e ./.zeus.sock ]]; then
-    command="zeus $command"
-  elif [ -f "./bin/$command" ]; then
+  if [ -f "./bin/$command" ]; then
     command="./bin/$command"
   elif [[ -f "./Gemfile" ]]; then
     command="bundle exec $command"
