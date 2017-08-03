@@ -35,3 +35,5 @@ vnoremap <leader>rrv  :RRenameLocalVariable<cr>
 " Insert a hash rocket
 imap <c-l> <space>=><space>
 
+" Reformat the entire file
+nnoremap <leader>fef :normal! gg=G``<CR>
