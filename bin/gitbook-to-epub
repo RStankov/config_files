@@ -1,0 +1,28 @@
+#!/bin/bash
+
+
+# Make sure you have:
+#
+# 1. [Gitbook](https://toolchain.gitbook.com/setup.html)
+#
+# ```
+# yarn global add gitbook-cli
+# ```
+#
+# 2. [ebook-convert](https://toolchain.gitbook.com/ebook.html)
+#
+# 2.1 Download [Calibre](installed https://calibre-ebook.com/download)
+#
+# 2.2 Run
+#
+# ```
+# sudo ln -s /Applications/calibre.app/Contents/MacOS/ebook-convert /usr/local/bin
+# ```
+
+cd ~/Downloads
+
+git clone $1 $2
+
+gitbook epub $2 ./$2.epub
+
+rm -rf $2
