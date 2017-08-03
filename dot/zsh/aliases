@@ -13,15 +13,11 @@ alias gp="git pull --rebase"
 alias grc="git add .; git rebase --continue"
 alias gr="git rebase -i"
 alias gs="git stash"
-alias gc="git commit"
 alias gco="git checkout"
 alias gl="git lol"
 alias gd="git diff"
 alias gdc="git diff --cached"
 alias gst="git status"
-
-# ls
-alias l="ls -lahF"
 
 # unix
 alias ..="cd .."
