@@ -10,11 +10,11 @@ brew install rbenv
 brew install node
 brew install nvm
 brew install imagemagick
-brew install the_silver_searcher
 brew install ctags
 brew install tree
 brew install elixir
 brew install erlang
+brew install rust
 
 # Cask
 brew install caskroom/cask/brew-cask
@@ -68,3 +68,6 @@ brew cask alfred link
 # cleanup
 brew cleanup --force
 rm -f -r /Library/Caches/Homebrew/*
+
+# Install libraries
+cargo install ripgrep

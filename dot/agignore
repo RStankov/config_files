@@ -1,9 +1,0 @@
-.bundle
-log
-db
-tmp
-tags
-doc
-coverage
-*.pdf
-*.svg
