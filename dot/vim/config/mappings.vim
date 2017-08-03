@@ -31,10 +31,6 @@ nnoremap k gk
 " Switch
 nnoremap <leader>- :Switch<cr>
 
-" Reorder arguments by ctrl + arrows
-nnoremap <c-Left> :SidewaysLeft<cr>
-nnoremap <c-Right> :SidewaysRight<cr>
-
 " Open BufExplorer
 nnoremap <leader>be :BufExplorer<cr>
 
