@@ -7,8 +7,8 @@ function kill_dev_processes() {
   pkill -9 puma
   pkill -9 spring
   pkill -9 node
-  kill -9 $(lsof -wni tcp:3000 -t)
-  kill -9 $(lsof -wni tcp:5000 -t)
-  kill -9 $(lsof -wni tcp:5000 -t)
-  kill -9 $(lsof -wni tcp:5051 -t)
+  kill -9 $(lsof -wni tcp:3000 -t) 2> /dev/null
+  kill -9 $(lsof -wni tcp:5000 -t) 2> /dev/null
+  kill -9 $(lsof -wni tcp:5000 -t) 2> /dev/null
+  kill -9 $(lsof -wni tcp:5051 -t) 2> /dev/null
 }
