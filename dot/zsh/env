@@ -60,8 +60,8 @@ setopt APPEND_HISTORY
 # Automatically use menu completion after the second consecutive request for completion
 setopt AUTO_MENU
 
-# Try to correct the spelling of commands.
-setopt CORRECT
+# Don't try to correct the spelling of commands.
+unsetopt CORRECT
 
 # Do not exit on end-of-file. Require the use of exit or logout instead.
 setopt IGNORE_EOF
