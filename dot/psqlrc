@@ -1,0 +1,8 @@
+-- Credits: http://robots.thoughtbot.com/improving-the-command-line-postgres-experience
+
+-- Don't display the "helpful" message on startup.
+\set QUIET 1
+\pset null '[NULL]'
+
+-- Show how long each query takes to execute
+\timing
