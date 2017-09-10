@@ -1,0 +1,6 @@
+#!/bin/bash
+git checkout master
+git delete-merged
+git remote prune origin
+git prune
+git gc
