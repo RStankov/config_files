@@ -22,8 +22,10 @@ hi SpellBad gui=underline cterm=underline
 " Hide the annoying ~ non texts
 hi NonText      guifg=bg     guibg=bg     gui=none
 
-" Font.
-set guifont=Inconsolata:h14
+" Font:
+" SF Mono can be fond in `/Applications/Utilities/Terminal.app/Contents/Resources/Fonts`
+" Hack can be fond in `http://sourcefoundry.org/hack/`
+set guifont=SF\ Mono\ Regular:h12,Hack:h12,Inconsolata:h14
 
 " Hide toolbar and menubar.
 set guioptions-=T
