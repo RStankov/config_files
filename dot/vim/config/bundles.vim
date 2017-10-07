@@ -18,7 +18,7 @@ Plugin 'MaxMEllon/vim-jsx-pretty'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'fatih/vim-go'
 Plugin 'jparise/vim-graphql'
-Plugin 'RStankov/vim-node'        " my fork have proper support for `gf`
+Plugin 'moll/vim-node'
 
 " Other
 Plugin 'AndrewRadev/splitjoin.vim'
