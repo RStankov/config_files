@@ -27,6 +27,10 @@ hi NonText      guifg=bg     guibg=bg     gui=none
 " Hack can be fond in `http://sourcefoundry.org/hack/`
 set guifont=SF\ Mono\ Regular:h12,Hack:h12,Inconsolata:h14
 
+" Colors for ale lint markers
+hi ALEErrorSign guibg=#ff6961 guifg=#ff6961 gui=none
+hi ALEWarningSign guibg=#fdfd96 guifg=#fdfd96 gui=none
+
 " Hide toolbar and menubar.
 set guioptions-=T
 set guioptions-=m
