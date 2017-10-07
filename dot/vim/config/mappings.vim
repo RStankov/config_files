@@ -77,6 +77,10 @@ vmap <D-]> >gv
 " Go to file in vertical split
 nmap gff :vertical wincmd f<cr>
 
+" Move between ale linter markers
+nnoremap ]r :ALENextWrap<CR>
+nnoremap [r :ALEPreviousWrap<CR>
+
 " Test running
 nmap <silent> <leader>t :TestNearest<CR>
 nmap <silent> <leader>T :TestFile<CR>
