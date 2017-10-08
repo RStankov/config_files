@@ -55,7 +55,7 @@ nmap <leader>0 <Plug>RemoveWrapingParentheses
 nnoremap <leader>fef :normal! gg=G``<CR>
 
 " Find merge conflict markers
-nmap <silent> <leader>fc <ESC>/\v^[<=>]{7}( .*\|$)<CR>
+nmap <silent> <leader>cm <ESC>/\v^[<=>]{7}( .*\|$)<CR>
 
 " Bind K to grep word under cursor (or selected content)
 nnoremap K yw:tabnew<CR>:F "\b<C-R>0\b"<CR>:cw<CR>
