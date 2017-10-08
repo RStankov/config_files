@@ -1,37 +1,38 @@
-" Theme setup
+" Access colors present in 256 colorspace
+let base16colorspace=256
 
-set background=light
-colorscheme github
-let g:airline_theme='github'
+" Editor theme
+colorscheme base16-onedark
 
-" colorscheme onedark
-" let g:airline_theme='onedark'
+" Airline theme
+let g:airline_theme='onedark'
 
-" Adjust onedark theme
-" hi VertSplit guibg=#3E4452 guifg=#3E4452 gui=none
+" Hide the annoying ~ non texts
+hi NonText guifg=bg guibg=bg gui=none
 
+" JSX styling
 hi def link jsxTag Identifier
 hi def link jsxTagName Identifier
 hi def link jsxCloseTag Identifier
 hi def link jsxCloseString Identifier
 
-" onedark coloring for bad spelling is annoying
+" Todo comment styling
+hi! link Todo Comment
+
+" Bad spelling styling
 hi clear SpellBad
 hi SpellBad gui=underline cterm=underline
 
-" Hide the annoying ~ non texts
-hi NonText      guifg=bg     guibg=bg     gui=none
-
-" Font:
-" SF Mono can be fond in `/Applications/Utilities/Terminal.app/Contents/Resources/Fonts`
-" Hack can be fond in `http://sourcefoundry.org/hack/`
-set guifont=SF\ Mono\ Regular:h12,Hack:h12,Inconsolata:h14
-
-" Colors for ale lint markers
+" ALE markers styling
 hi ALEErrorSign guibg=#ff6961 guifg=#ff6961 gui=none
 hi ALEWarningSign guibg=#fdfd96 guifg=#fdfd96 gui=none
 
-" Hide toolbar and menubar.
+" Fonts
+" - SF Mono can be fond in `/Applications/Utilities/Terminal.app/Contents/Resources/Fonts`
+" - Hack can be fond in `http://sourcefoundry.org/hack/`
+set guifont=SF\ Mono\ Regular:h12,Hack:h12,Inconsolata:h14
+
+" Hide toolbar and menubar
 set guioptions-=T
 set guioptions-=m
 

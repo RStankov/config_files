@@ -53,6 +53,7 @@ Plugin 'kana/vim-textobj-indent'
 Plugin 'mitermayer/vim-prettier'
 Plugin 'jremmen/vim-ripgrep'
 Plugin 'w0rp/ale'
+Plugin 'chriskempson/base16-vim'
 
 call vundle#end()
 filetype plugin indent on
