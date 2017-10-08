@@ -54,6 +54,11 @@ nmap <leader>0 <Plug>RemoveWrapingParentheses
 " Reformat the entire file
 nnoremap <leader>fef :normal! gg=G``<CR>
 
+" Show highlight group under cursor
+nmap <leader>hi :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
+\ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
+\ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
+
 " Find merge conflict markers
 nmap <silent> <leader>cm <ESC>/\v^[<=>]{7}( .*\|$)<CR>
 
