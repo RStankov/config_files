@@ -18,7 +18,7 @@ Plugin 'MaxMEllon/vim-jsx-pretty'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'fatih/vim-go'
 Plugin 'jparise/vim-graphql'
-Plugin 'moll/vim-node'
+" Plugin 'moll/vim-node'
 
 " Other
 Plugin 'AndrewRadev/splitjoin.vim'
