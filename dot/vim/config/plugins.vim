@@ -101,4 +101,9 @@ let g:prettier#config#parser = 'flow'
 " Use ag over grep
 set grepprg=ag\ --nogroup\ --nocolor
 
+" Turn on Ale only per-project basis
+let g:ale_linters = {}
+let g:ale_lint_on_save = 0
+let g:ale_lint_on_text_changed = 0
+let g:ale_lint_on_enter = 0
 
