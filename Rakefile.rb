@@ -13,7 +13,7 @@ end
 
 desc 'Installs vim bundles'
 task :vim_bundles do
-  sh 'vim +BundleInstall +qall'
+  sh 'vim +PlugInstall +qall'
 end
 
 desc 'Links config files'

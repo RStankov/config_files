@@ -1,59 +1,58 @@
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/Vundle.vim
+call plug#begin('~/.vim/plugged')
 
-call vundle#begin('~/.vim/vundle')
+" " Vundle plugin system
+Plug 'VundleVim/Vundle.vim'
 
-" Vundle plugin system
-Plugin 'VundleVim/Vundle.vim'
+" " Languages
+Plug 'ekalinin/Dockerfile.vim'
+Plug 'hail2u/vim-css3-syntax'
+Plug 'elixir-lang/vim-elixir'
+Plug 'kchmck/vim-coffee-script'
+Plug 'pangloss/vim-javascript'
+Plug 'MaxMEllon/vim-jsx-pretty'
+Plug 'vim-ruby/vim-ruby'
+Plug 'fatih/vim-go'
+Plug 'jparise/vim-graphql'
+" Plug 'moll/vim-node'
 
-" Languages
-Plugin 'ekalinin/Dockerfile.vim'
-Plugin 'hail2u/vim-css3-syntax'
-Plugin 'elixir-lang/vim-elixir'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'pangloss/vim-javascript'
-Plugin 'MaxMEllon/vim-jsx-pretty'
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'fatih/vim-go'
-Plugin 'jparise/vim-graphql'
-" Plugin 'moll/vim-node'
+" " Other
+Plug 'AndrewRadev/splitjoin.vim'
+Plug 'AndrewRadev/switch.vim'
+Plug 'AndrewRadev/writable_search.vim'
+Plug 'corntrace/bufexplorer'
+Plug 'ecomba/vim-ruby-refactoring'
+Plug 'janko-m/vim-test'
+Plug 'jistr/vim-nerdtree-tabs'
+Plug 'kien/ctrlp.vim'
+Plug 'mileszs/ack.vim'
+Plug 'miyakogi/conoline.vim'
+Plug 'msanders/snipmate.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'thinca/vim-visualstar'
+Plug 'tpope/vim-bundler'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-eunuch'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-projectionist'
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-surround'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'vim-scripts/Auto-Pairs'
+Plug 'nelstrom/vim-textobj-rubyblock'
+Plug 'michaeljsmith/vim-indent-object'
+Plug 'kana/vim-textobj-user'
+Plug 'kana/vim-textobj-indent'
+Plug 'mitermayer/vim-prettier'
+Plug 'jremmen/vim-ripgrep'
+Plug 'w0rp/ale'
+Plug 'chriskempson/base16-vim'
 
-" Other
-Plugin 'AndrewRadev/splitjoin.vim'
-Plugin 'AndrewRadev/switch.vim'
-Plugin 'AndrewRadev/writable_search.vim'
-Plugin 'corntrace/bufexplorer'
-Plugin 'ecomba/vim-ruby-refactoring'
-Plugin 'janko-m/vim-test'
-Plugin 'jistr/vim-nerdtree-tabs'
-Plugin 'kien/ctrlp.vim'
-Plugin 'mileszs/ack.vim'
-Plugin 'miyakogi/conoline.vim'
-Plugin 'msanders/snipmate.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'thinca/vim-visualstar'
-Plugin 'tpope/vim-bundler'
-Plugin 'tpope/vim-commentary'
-Plugin 'tpope/vim-endwise'
-Plugin 'tpope/vim-eunuch'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-projectionist'
-Plugin 'tpope/vim-rails'
-Plugin 'tpope/vim-repeat'
-Plugin 'tpope/vim-surround'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'vim-scripts/Auto-Pairs'
-Plugin 'nelstrom/vim-textobj-rubyblock'
-Plugin 'michaeljsmith/vim-indent-object'
-Plugin 'kana/vim-textobj-user'
-Plugin 'kana/vim-textobj-indent'
-Plugin 'mitermayer/vim-prettier'
-Plugin 'jremmen/vim-ripgrep'
-Plugin 'w0rp/ale'
-Plugin 'chriskempson/base16-vim'
+call plug#end()
 
-call vundle#end()
 filetype plugin indent on
