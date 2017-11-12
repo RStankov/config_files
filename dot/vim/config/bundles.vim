@@ -16,7 +16,7 @@ Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'vim-ruby/vim-ruby'
 Plug 'fatih/vim-go'
 Plug 'jparise/vim-graphql'
-" Plug 'moll/vim-node'
+Plug 'moll/vim-node'
 
 " " Other
 Plug 'AndrewRadev/splitjoin.vim'
