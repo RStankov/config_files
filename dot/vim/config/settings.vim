@@ -135,4 +135,4 @@ set vb t_vb=
 set lazyredraw
 
 " set timeout
-set ttimeoutlen=10
+set ttimeoutlen=50
