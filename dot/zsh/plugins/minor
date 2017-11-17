@@ -12,4 +12,5 @@ function kill_dev_processes() {
   pkill -9 puma
   pkill -9 spring
   pkill -9 node
+  pkill -9 flow
 }
