@@ -8,3 +8,5 @@ au BufReadPost *
 au BufEnter *.json set filetype=javascript
 
 au BufNewFile,BufRead *.ruby set filetype=ruby
+
+autocmd BufEnter * if &filetype == "" | setlocal ft=ruby | endif
