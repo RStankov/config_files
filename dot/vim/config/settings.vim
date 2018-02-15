@@ -93,6 +93,7 @@ set wildignore+=*.woff,*.eof,*.otf
 set wildignore+=*.jpg,*.png,*.gif,*.jpeg,*.ico
 set wildignore+=*.swf,*.htc
 set wildignore+=*/tmp/*,*/db/migrate,*/public/stylesheets/compiled
+set wildignore+=*/storage
 set wildignore+=*/node_modules/*
 set wildignore+=*/flow-typed/*
 set wildignore+=*/deps/*
