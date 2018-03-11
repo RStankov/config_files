@@ -3,11 +3,12 @@
 ### Installation
 
 ```
-rake install
+bundle install
+bundle exec rake install
 ```
 
 ### Symlinks update
 
 ```
-rake
+bundle exec rake
 ```
