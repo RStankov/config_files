@@ -3,10 +3,10 @@ filetype off
 
 call plug#begin('~/.vim/plugged')
 
-" " Vundle plugin system
+" Vundle plugin system
 Plug 'VundleVim/Vundle.vim'
 
-" " Languages
+" Languages
 Plug 'ekalinin/Dockerfile.vim'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'elixir-lang/vim-elixir'
@@ -18,7 +18,7 @@ Plug 'fatih/vim-go'
 Plug 'jparise/vim-graphql'
 Plug 'moll/vim-node'
 
-" " Other
+" Other
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'AndrewRadev/switch.vim'
 Plug 'AndrewRadev/writable_search.vim'
@@ -52,6 +52,7 @@ Plug 'mitermayer/vim-prettier'
 Plug 'jremmen/vim-ripgrep'
 Plug 'w0rp/ale'
 Plug 'chriskempson/base16-vim'
+Plug 'c-brenn/phoenix.vim'
 
 call plug#end()
 
