@@ -3,11 +3,11 @@ function gci () {
 }
 
 function kill_dev_processes() {
-  kill -9 $(lsof -wni tcp:3000 -t) 2> /dev/null
-  kill -9 $(lsof -wni tcp:3001 -t) 2> /dev/null
-  kill -9 $(lsof -wni tcp:5000 -t) 2> /dev/null
-  kill -9 $(lsof -wni tcp:5001 -t) 2> /dev/null
-  kill -9 $(lsof -wni tcp:5051 -t) 2> /dev/null
+  npx kill-port 3000
+  npx kill-port 3001
+  npx kill-port 5000
+  npx kill-port 5001
+  npx kill-port 5051
   pkill -9 ruby
   pkill -9 puma
   pkill -9 spring
