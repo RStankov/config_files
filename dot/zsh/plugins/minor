@@ -3,11 +3,14 @@ function gci () {
 }
 
 function kill_dev_processes() {
-  npx kill-port 3000
-  npx kill-port 3001
-  npx kill-port 5000
-  npx kill-port 5001
-  npx kill-port 5051
+  if ! which kill-port &> /dev/null; then
+    npm install -g kill-port
+  fi
+  kill-port 3000
+  kill-port 3001
+  kill-port 5000
+  kill-port 5001
+  kill-port 5051
   pkill -9 ruby
   pkill -9 puma
   pkill -9 spring
