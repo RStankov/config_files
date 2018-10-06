@@ -16,4 +16,5 @@ function kill_dev_processes() {
   pkill -9 spring
   pkill -9 node
   pkill -9 flow
+  docker kill $(docker ps -q) 2>/dev/null
 }
