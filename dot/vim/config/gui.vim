@@ -21,7 +21,7 @@ hi NonText guifg=bg guibg=bg gui=none
 
 if has("gui_running")
   " Font.
-  set guifont=Inconsolata:h14
+  set guifont=SFMono-Regular:h12
 
   " Hide toolbar and menubar.
   set guioptions-=T
