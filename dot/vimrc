@@ -5,10 +5,7 @@ runtime config/plugins.vim
 runtime config/commands.vim
 runtime config/autocmd.vim
 runtime config/mappings.vim
-
-if has("gui_running")
-  runtime config/gui.vim
-endif
+runtime config/gui.vim
 
 if filereadable(glob(".vimrc.local"))
     source .vimrc.local

@@ -137,3 +137,6 @@ set lazyredraw
 
 " set timeout
 set ttimeoutlen=50
+
+" Turn off blinking in normal mode
+set gcr=n:blinkon0
