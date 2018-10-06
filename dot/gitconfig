@@ -12,7 +12,6 @@
   undo = reset --soft HEAD^
   amend = commit --amend
   unstage = reset HEAD
-  ctags = !.git/hooks/ctags
   commits-per-user = shortlog -s -n
 
 [core]

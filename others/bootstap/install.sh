@@ -10,7 +10,6 @@ brew install rbenv
 brew install node
 brew install nvm
 brew install imagemagick
-brew install ctags
 brew install tree
 brew install elixir
 brew install erlang

@@ -54,24 +54,12 @@ nmap <leader>0 <Plug>RemoveWrapingParentheses
 " Reformat the entire file
 nnoremap <leader>fef :normal! gg=G``<CR>
 
-" Show highlight group under cursor
-nmap <leader>hi :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
-\ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
-\ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
-
 " Find merge conflict markers
-nmap <silent> <leader>cm <ESC>/\v^[<=>]{7}( .*\|$)<CR>
+nmap <silent> <leader>mc <ESC>/\v^[<=>]{7}( .*\|$)<CR>
 
 " Bind K to grep word under cursor (or selected content)
 nnoremap K yw:tabnew<CR>:F "\b<C-R>0\b"<CR>:cw<CR>
 vnoremap K y:<C-U>tabnew<CR>:F "\b<C-R>0\b"<CR>:cw<CR>
-
-" Remove the Windows ^M - when the encodings gets messed up
-noremap <Leader>~ mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
-
-" Open ctag definition in new split/tab
-noremap { :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
-noremap } :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 
 " Emulate TextMate-style indentation shortcuts
 nmap <D-[> <<
@@ -83,8 +71,8 @@ vmap <D-]> >gv
 nmap gff :vertical wincmd f<cr>
 
 " Move between ale linter markers
-nnoremap ]r :ALENextWrap<CR>
-nnoremap [r :ALEPreviousWrap<CR>
+nnoremap ]e :ALENextWrap<CR>
+nnoremap [e :ALEPreviousWrap<CR>
 
 " Test running
 nmap <silent> <leader>t :TestNearest<CR>

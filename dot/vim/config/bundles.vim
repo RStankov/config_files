@@ -51,7 +51,6 @@ Plug 'kana/vim-textobj-indent'
 Plug 'mitermayer/vim-prettier'
 Plug 'jremmen/vim-ripgrep'
 Plug 'w0rp/ale'
-Plug 'chriskempson/base16-vim'
 Plug 'c-brenn/phoenix.vim'
 
 call plug#end()
