@@ -23,7 +23,7 @@ hi SpellBad gui=underline cterm=underline
 hi NonText      guifg=bg     guibg=bg     gui=none
 
 " Font.
-set guifont=Hack:h12
+set guifont=Inconsolata:h14
 
 " Hide toolbar and menubar.
 set guioptions-=T
