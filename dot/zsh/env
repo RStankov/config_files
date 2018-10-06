@@ -78,3 +78,6 @@ bindkey -e
 bindkey "\e[A" history-beginning-search-backward
 bindkey "\e[B" history-beginning-search-forward
 
+
+# Fixes - `__NSPlaceholderDate initialize] may have been in progress in another thread when fork() was called`
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
