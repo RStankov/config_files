@@ -19,7 +19,7 @@ autoload compinit
 unsetopt menu_complete   # do not autoselect the first completion entry
 unsetopt flowcontrol
 
-setopt auto_menu         # show completion menu on succesive tab press
+setopt auto_menu         # show completion menu on successive tab press
 setopt complete_in_word
 setopt always_to_end
 
@@ -81,3 +81,6 @@ bindkey "\e[B" history-beginning-search-forward
 
 # Fixes - `__NSPlaceholderDate initialize] may have been in progress in another thread when fork() was called`
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+
+# Set language
+export LANG=en_US
