@@ -29,7 +29,7 @@ brew cask install spotify
 brew cask install iTerm2
 brew cask install omnidisksweeper
 brew cask install vlc
-brew cask install rowanj-gitx
+brew cask install fork
 brew cask install karabiner
 brew cask install cleanmymac
 brew cask install little-snitch
