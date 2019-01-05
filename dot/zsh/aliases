@@ -22,6 +22,3 @@ alias gst="git status"
 # unix
 alias ..="cd .."
 alias ...='../..'
-
-# others
-alias tower="gittower ."
