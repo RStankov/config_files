@@ -32,13 +32,10 @@ brew cask install vlc
 brew cask install fork
 brew cask install karabiner
 brew cask install cleanmymac
-brew cask install little-snitch
 brew cask install skype
 brew cask install virtualbox
 brew cask install bartender
-brew cask install parallels-desktop
 brew cask install atom
-brew cask install timing
 brew cask install cloudapp
 brew cask install dash
 brew cask install paw
