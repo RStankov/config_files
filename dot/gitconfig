@@ -1,6 +1,6 @@
 [user]
-	name = Radoslav Stankov
-	email = rstankov@gmail.com
+  name = Radoslav Stankov
+  email = rstankov@gmail.com
 
 [alias]
   st = status
@@ -13,6 +13,7 @@
   amend = commit --amend
   unstage = reset HEAD
   commits-per-user = shortlog -s -n
+  cleanup = !git remote prune origin && git gc && git clean -df && git stash clear
 
 [core]
   whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
@@ -27,6 +28,9 @@
 
 [push]
   default = tracking
+
+[fetch]
+  prune = true
 
 [color]
   ui = auto
@@ -54,8 +58,12 @@
 [filter "media"]
   clean = git-media-clean %f
   smudge = git-media-smudge %f
+
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
+
+[github]
+  user = rstankov
