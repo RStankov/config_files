@@ -30,10 +30,10 @@ def pbcopy(string)
   string
 end
 
-def load_factory_girl!
+def load_factory_bot!
   return if defined? FactoryGirl
 
-  require 'factory_girl'
+  require 'factory_bot'
 
   if Dir.exists?(Rails.root.join('spec/factories'))
     Dir[Rails.root.join("spec/factories/**/*.rb")].each { |f| require f }
