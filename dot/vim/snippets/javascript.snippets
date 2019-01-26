@@ -48,3 +48,28 @@ snippet impl
 	import { Link } from 'found';
 snippet impc
 	import classNames from 'classnames';
+snippet react
+	function ${1}(${2}: Props) {
+	  return (
+	    ${3}
+	  );
+	}
+snippet reactc
+	class ${1} extends React.Component<Props> {
+	  render() {
+	    return (
+	      ${2}
+	    );
+	  }
+	}
+snippet reactcs
+	class ${1} extends React.Component<Props, State> {
+	  state = {
+	    ${2}
+	  };
+	  render() {
+	    return (
+
+	    );
+	  }
+	}
