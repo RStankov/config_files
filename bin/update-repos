@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+Dir.glob('*').each do |directory|
+  next unless File.directory? directory
+
+  system "cd #{directory}; pwd; git pull --rebase;"
+end
