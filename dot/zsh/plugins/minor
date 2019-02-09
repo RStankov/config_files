@@ -18,3 +18,7 @@ function kill_dev_processes() {
   pkill -9 flow
   docker kill $(docker ps -q) 2>/dev/null
 }
+
+function nvmuse() {
+  nvm use $(cat .nvmrc)
+}
