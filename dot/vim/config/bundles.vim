@@ -52,7 +52,6 @@ Plug 'mitermayer/vim-prettier'
 Plug 'jremmen/vim-ripgrep'
 Plug 'w0rp/ale'
 Plug 'c-brenn/phoenix.vim'
-Plug 'vim-scripts/DeleteTrailingWhitespace'
 Plug 'HerringtonDarkholme/yats.vim'
 
 call plug#end()
