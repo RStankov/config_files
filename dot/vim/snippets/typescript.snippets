@@ -1,0 +1,76 @@
+snippet desc
+	describe('${1}', () => {
+	  ${2}
+	});
+snippet it
+	it('${1}', () => {
+	  ${2}
+	});
+snippet log
+	console.log(${1});
+snippet note
+	// NOTE(rstankov): ${1}
+snippet todo
+	// TODO(rstankov): ${1}
+snippet flow
+	/* @flow */
+snippet exp
+	export ${1}
+snippet expd
+	export default ${1}
+snippet expdf
+	export default function ${1}
+snippet typep
+	interface IProps {
+	  ${1}
+	}
+snippet types
+	interface IState {
+	  ${1}
+	}
+snippet imp
+	import ${1} from '${2}';
+snippet impr
+	import * as React from 'react';
+snippet imps
+	import styles from './styles.css';
+snippet impq
+	import QUERY from './Query.graphql';
+snippet impm
+	import MUTATION from './Mutation.graphql';
+snippet impp
+	import paths from '~/paths.js';
+snippet impb
+	import Button from '~/components/Button';
+snippet impf
+	import Font from '~/components/Font';
+snippet impl
+	import Link from '~/components/Link';
+snippet impc
+	import classNames from 'classnames';
+snippet react
+	function ${1}(${2}: IProps) {
+	  return (
+	    ${3}
+	  );
+	}
+snippet reactc
+	class ${1} extends React.Component<IProps> {
+	  render() {
+	    return (
+	      ${2}
+	    );
+	  }
+	}
+snippet reactcs
+	class ${1} extends React.Component<IProps, IState> {
+	  state = {
+	    ${2}
+	  };
+
+	  render() {
+	    return (
+
+	    );
+	  }
+	}
