@@ -31,9 +31,6 @@ nnoremap k gk
 " Switch
 nnoremap <leader>- :Switch<cr>
 
-" Open BufExplorer
-nnoremap <leader>be :BufExplorer<cr>
-
 " Insert blank lines
 map <C-Enter> m`O<Esc>``
 map <S-Enter> m`o<Esc>``
@@ -66,9 +63,6 @@ nmap <D-[> <<
 nmap <D-]> >>
 vmap <D-[> <gv
 vmap <D-]> >gv
-
-" Go to file in vertical split
-nmap gff :vertical wincmd f<cr>
 
 " Move between ale linter markers
 nnoremap ]e :ALENextWrap<CR>
@@ -160,11 +154,11 @@ if has('gui_vimr')
   " Save file with Cmd + s.
   nnoremap <d-s> :w<CR>
   inoremap <d-s> <C-o>:w<CR>
-  
+
   " Close current buffer/file with Cmd + w.
   nnoremap <d-w> :tabclose<CR>
   inoremap <d-w> <C-o>:tabclose<CR>
- 
+
   " Map Cmd + z and Cmd + Shift + z to undo/redo.
   nnoremap <C-z> u
   inoremap <C-z> <C-o>u
