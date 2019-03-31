@@ -10,8 +10,8 @@ command! Vquery :exe "vsplit ".expand('%:h')."/Query.graphql"
 command! Emutation :exe "edit ".expand('%:h')."/Mutation.graphql"
 command! Vmutation :exe "vsplit ".expand('%:h')."/Mutation.graphql"
 
-command! Eutils :exe "edit ".expand('%:h')."/utils.graphql"
-command! Vutils :exe "vsplit ".expand('%:h')."/utils.graphql"
+command! Eutils :exe "edit ".expand('%:h')."/utils.js"
+command! Vutils :exe "vsplit ".expand('%:h')."/utils.js"
 
 command! Eindex :exe "edit ".expand('%:h')."/index.js"
 command! Vindex :exe "vsplit ".expand('%:h')."/index.js"
