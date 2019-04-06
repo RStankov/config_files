@@ -29,7 +29,6 @@ Plug 'janko-m/vim-test'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'kien/ctrlp.vim'
 Plug 'miyakogi/conoline.vim'
-Plug 'msanders/snipmate.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'thinca/vim-visualstar'
 Plug 'tpope/vim-bundler'
@@ -53,8 +52,10 @@ Plug 'w0rp/ale'
 Plug 'c-brenn/phoenix.vim'
 Plug 'tweekmonster/startuptime.vim'
 Plug 'mattn/gist-vim'
-Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
+Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}} " :CocInstall coc-ultisnips
 Plug 'ervandew/supertab'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 
 
 call plug#end()
