@@ -53,6 +53,9 @@ Plug 'w0rp/ale'
 Plug 'c-brenn/phoenix.vim'
 Plug 'tweekmonster/startuptime.vim'
 Plug 'mattn/gist-vim'
+Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
+Plug 'ervandew/supertab'
+
 
 call plug#end()
 
