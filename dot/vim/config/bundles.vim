@@ -56,6 +56,7 @@ Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}} " :CocInstall coc-ult
 Plug 'ervandew/supertab'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
+Plug 'alvan/vim-closetag'
 
 
 call plug#end()
