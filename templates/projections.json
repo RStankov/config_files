@@ -1,0 +1,13 @@
+{
+  "backend/app/models/*.rb": { "type": "model" },
+  "backend/app/services/*.rb": { "type": "service" },
+  "backend/app/graphql/types/*_type.rb": { "type": "type" },
+  "backend/app/graphql/mutations/*.rb": { "type": "mutation" },
+  "backend/app/graphal/resolvers/*.rb": { "type": "resolver" },
+  "backend/spec/factories/*.rb": { "type": "factory" },
+  "frontend/*.ts": { "alternate": "frontend/{}.test.ts" },
+  "frontend/*.tsx": { "alternate": "frontend/{}.test.tsx" },
+  "frontend/*.test.ts": { "alternate": "frontend/{}.ts" },
+  "frontend/*.test.tsx": { "alternate": "frontend/{}.tsx" }
+  "frontend/*.js": { "alternate": "frontend/{}.test.js" },
+}
