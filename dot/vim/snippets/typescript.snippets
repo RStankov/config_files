@@ -39,7 +39,7 @@ snippet impq
 snippet impm
 	import MUTATION from './Mutation
 snippet impp
-	import paths from '~/paths;
+	import paths from '~/paths';
 snippet impb
 	import Button from '~/components/Button';
 snippet impf
@@ -74,3 +74,38 @@ snippet reactcs
 	    );
 	  }
 	}
+snippet graphf
+	import gql from 'graphql-tag';
+
+	export default gql\`
+	  fragment ${1}Fragment on ${2} {
+	    ${3}
+	  }
+	\`;
+snippet graphq
+	import gql from 'graphql-tag';
+
+	export default gql\`
+	  fragment ${1}Page {
+	    ${2}
+	  }
+	\`;
+snippet graphqa
+	import gql from 'graphql-tag';
+
+	export default gql\`
+	  fragment ${1}Page(${2}) {
+	    ${3}
+	  }
+	\`;
+snippet graphm
+	import gql from 'graphql-tag';
+
+	export default gql\`
+	  mutation ${1}($input: ${2}Input!) {
+	    ${3}(input: $input) {
+	      ${4}
+	    }
+	  }
+	  ${Fragment}
+	\`;
