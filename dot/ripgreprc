@@ -1,0 +1,4 @@
+# Documentation: https://github.com/BurntSushi/ripgrep/blob/master/GUIDE.md#configuration-file
+
+ --type-add 'ts:*.{ts,tsx}'
+ --type-add 'graphql:*.{graphql}'
