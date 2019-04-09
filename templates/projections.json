@@ -1,4 +1,5 @@
 {
+  "backend/app/admin/*.rb": { "type": "admin" },
   "backend/app/models/*.rb": { "type": "model" },
   "backend/app/services/*.rb": { "type": "service" },
   "backend/app/graphql/types/*_type.rb": { "type": "type" },

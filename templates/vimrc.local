@@ -10,9 +10,9 @@ let g:ale_lint_on_enter = 0
 " let g:ale_ruby_rubocop_executable = 'bundle exec rubocop'
 
 " Don't search in db and flow-typed
-command! -nargs=* -complete=dir F :exe "Rg --type-add 'ts:*.{ts,tsx} --type-add 'graphql:*.{graphql}' --glob !backend/db --glob !frontend/graphql" <q-args>
+command! -nargs=* -complete=dir F :exe "Rg --glob !backend/db --glob !frontend/graphql" <q-args>
 
-" React file switches
+" React component shortcuts
 command! Efragment :exe "edit ".expand('%:h')."/Fragment.ts"
 command! Vfragment :exe "vsplit ".expand('%:h')."/Fragment.ts"
 
@@ -27,3 +27,7 @@ command! Vutils :exe "vsplit ".expand('%:h')."/utils.ts"
 
 command! Eindex :exe "edit ".expand('%:h')."/index.tsx"
 command! Vindex :exe "vsplit ".expand('%:h')."/index.tsx"
+
+" Commands
+command! Graph2ts :AsyncRun yarn graphql2flow
+command! Rubocop :AsyncRun bundle exec rubocop -a

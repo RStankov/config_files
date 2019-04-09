@@ -134,17 +134,15 @@ let g:UltiSnipsSnippetDirectories = ['UltiSnips']
 let g:UltiSnipsEnableSnipMate = 1
 
 " Auto close
-let g:closetag_filenames = '*.html,*.jsx,*.js,*.tsx,*erb'
-let g:closetag_xhtml_filenames = '*.html,*.jsx,*.js,*.tsx,*erb'
-" let g:closetag_filetypes = 'html,erb,js,jsx,tsx'
-" let g:closetag_xhtml_filetypes = 'html,erb,,jsx,tsx'
+let g:closetag_shortcut = '>'
+let g:closetag_close_shortcut = '<leader>>'
+let g:closetag_filenames = '*.html,*.jsx,*.js,*.tsx,*erb,*.md'
+let g:closetag_xhtml_filenames = '*.html,*.jsx,*.js,*.tsx,*erb,*.md'
 let g:closetag_emptyTags_caseSensitive = 1
 let g:closetag_regions = {
     \ 'typescript.tsx': 'jsxRegion,tsxRegion',
     \ 'javascript.jsx': 'jsxRegion',
     \ }
-let g:closetag_shortcut = '>'
-let g:closetag_close_shortcut = '<leader>>'
 
 
 " Replace underscored identifier names with their camelCased versions
