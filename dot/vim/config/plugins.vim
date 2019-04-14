@@ -144,6 +144,9 @@ let g:closetag_regions = {
     \ 'javascript.jsx': 'jsxRegion',
     \ }
 
+" Open quickfix window automatically at 8 lines height after command starts
+" Docs: https://github.com/skywind3000/asyncrun.vim#quickfix-window
+let g:asyncrun_open = 8
 
 " Replace underscored identifier names with their camelCased versions
 let b:switch_custom_definitions = [
