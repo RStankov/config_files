@@ -9,6 +9,6 @@
   "frontend/*.ts": { "alternate": "frontend/{}.test.ts" },
   "frontend/*.tsx": { "alternate": "frontend/{}.test.tsx" },
   "frontend/*.test.ts": { "alternate": "frontend/{}.ts" },
-  "frontend/*.test.tsx": { "alternate": "frontend/{}.tsx" }
-  "frontend/*.js": { "alternate": "frontend/{}.test.js" },
+  "frontend/*.test.tsx": { "alternate": "frontend/{}.tsx" },
+  "frontend/*.js": { "alternate": "frontend/{}.test.js" }
 }
