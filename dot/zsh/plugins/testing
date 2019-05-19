@@ -15,9 +15,3 @@ function t() {
   clear
   eval $command $*
 }
-
-function tjs() {
-  command="npm run mocha"
-  clear
-  eval $command $*
-}
