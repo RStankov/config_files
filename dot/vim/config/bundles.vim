@@ -55,7 +55,6 @@ Plug 'mattn/gist-vim'
 Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}} " :CocInstall coc-ultisnips
 Plug 'ervandew/supertab'
 Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
 Plug 'alvan/vim-closetag'
 Plug 'skywind3000/asyncrun.vim'
 
