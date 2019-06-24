@@ -22,3 +22,11 @@ function kill_dev_processes() {
 function nvmuse() {
   nvm use $(cat .nvmrc)
 }
+
+function y() {
+  if [ -f "./bin/$command" ]; then
+    ./bin/yarn $*
+  else
+    yarn $*
+  fi
+}
