@@ -24,7 +24,7 @@ function nvmuse() {
 }
 
 function y() {
-  if [ -f "./bin/$command" ]; then
+  if [ -f "./bin/yarn" ]; then
     ./bin/yarn $*
   else
     yarn $*
