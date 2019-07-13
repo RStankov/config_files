@@ -8,6 +8,7 @@ alias be="bundle exec"
 alias r="rails"
 
 # git
+alias g="g"
 alias ga="git add -A"
 alias gp="git pull --rebase"
 alias grc="git add .; git rebase --continue"
