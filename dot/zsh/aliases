@@ -20,9 +20,5 @@ alias gd="git diff"
 alias gdc="git diff --cached"
 alias gst="git status"
 
-# unix
-alias ..="cd .."
-alias ...='../..'
-
 # tools
 alias svgoo="svgo --enable=removeTitle"
