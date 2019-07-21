@@ -57,6 +57,9 @@ setopt HIST_IGNORE_SPACE
 # Append their history list to the history file, rather than overwrite it
 setopt APPEND_HISTORY
 
+# Move the cursor to the end of the word after accepting a completion.
+setopt always_to_end
+
 # Automatically use menu completion after the second consecutive request for completion
 setopt AUTO_MENU
 
