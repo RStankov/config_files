@@ -15,10 +15,12 @@ snippet frozens
 snippet spec_helper
 	require 'spec_helper'
 
-	${1}
+	describe ${1} do
+	end
 snippet features_helper
 	require 'features_helper'
 
-	${1}
+	describe ${1} do
+	end
 snippet rubocopd
 	# rubocop:disable ${1}
