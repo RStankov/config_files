@@ -1,4 +1,4 @@
-## Configuration files
+# Configuration files
 
 ### Installation
 
