@@ -70,7 +70,7 @@ set smartcase
 set magic
 
 " A buffer becomes hidden when it is abandoned
-set hid
+set hidden
 
 " Auto and Smart indent
 set ai si
