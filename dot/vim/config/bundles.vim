@@ -18,6 +18,7 @@ Plug 'fatih/vim-go'
 Plug 'jparise/vim-graphql'
 Plug 'moll/vim-node'
 Plug 'HerringtonDarkholme/yats.vim'
+Plug 'hashivim/vim-terraform'
 
 " Other
 Plug 'AndrewRadev/splitjoin.vim'
