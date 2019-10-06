@@ -5,7 +5,6 @@
 .log
 .projections.json
 .vimrc.local
-custom_plan.rb
 dump.rdb
 tags
 tmp
