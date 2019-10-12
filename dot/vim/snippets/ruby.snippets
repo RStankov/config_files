@@ -1,3 +1,8 @@
+snippet log
+	Rails.logger.info ${1}
+snippet logline
+	Rails.logger.info '~ '* 30
+	Rails.logger.info ${1}
 snippet note
 	# NOTE(rstankov): ${1}
 snippet todo
@@ -24,3 +29,29 @@ snippet features_helper
 	end
 snippet rubocopd
 	# rubocop:disable ${1}
+snippet create_table
+	create_table ${1} do |t|
+	  t.belongs_to :name, null: false, index: false, foreign_key: true
+	  t.belongs_to :name, null: false, index: true, foreign_key: { to_table: :profiles }
+	  t.string :name, null: false
+	  t.integer :name, null: false, default: 0
+	  t.timestamps
+	end
+snippet add_index_unique
+	add_index :team_members, %i(${1}), unique: true
+snippet factory
+	factory ${1}, class_name: Class do
+	  association :name, factory: :other_factory
+
+	  sequence(:name) { |i| "name-#{i}" }
+	end
+snippet factory_trait
+	trait ${1} do
+	  transient do
+	    values { [] }
+	  end
+
+	  before(:create) do |topic, evaluator|
+	    ealuator.values.first
+	  end
+	end
