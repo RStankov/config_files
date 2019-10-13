@@ -58,6 +58,7 @@ Plug 'ervandew/supertab'
 Plug 'SirVer/ultisnips'
 Plug 'alvan/vim-closetag'
 Plug 'skywind3000/asyncrun.vim'
+Plug 'zerowidth/vim-copy-as-rtf'
 
 
 call plug#end()
