@@ -1,33 +1,6 @@
-# Set terminal theme to Pro
-defaults write com.apple.Terminal "Default Window Settings" "Pro"
-defaults write com.apple.Terminal "Startup Window Settings" "Pro"
-defaults write com.apple.Terminal "FocusFollowsMouse" -bool true
-
-# Set Dock to auto-hide and remove the auto-hiding delay
-defaults write com.apple.dock autohide -bool true
-
-# Use magnification for the Dock
-defaults write com.apple.dock magnification -bool true
-
-# Disable Safari’s thumbnail cache for History and Top Sites
-defaults write com.apple.Safari DebugSnapshotsUpdatePolicy -int 2
-
-# Enable Safari’s debug menu
-defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
-
-# Make Safari’s search banners default to Contains instead of Starts With
-defaults write com.apple.Safari FindOnPageMatchesWordStartsOnly -bool false
-
-# Remove icons from Safari’s bookmarks bar
-defaults write com.apple.Safari ProxiesInBookmarksBar "()"
-
-# Targeted clicks create tabs
-defaults write com.apple.Safari TargetedClicksCreateTabs -bool true
-
-# Enabling the Develop menu and the Web Inspector in Safari
-defaults write com.apple.Safari IncludeDevelopMenu -bool true
-defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
-defaults write com.apple.Safari "com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled" -bool true
+###############################################################################
+# System
+###############################################################################
 
 # Disable smart quotes as they’re annoying when typing code
 defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
@@ -49,28 +22,6 @@ defaults write NSGlobalDomain InitialKeyRepeat 15
 defaults write NSGlobalDomain KeyRepeat 0
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
-# Don't add .DS everywhere
-defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
-
-# Enable text selection in preview windows
-defaults write com.apple.finder QLEnableTextSelection -bool TRUE; killall Finder
-
-# Automatically open a new Finder window when a volume is mounted
-defaults write com.apple.frameworks.diskimages auto-open-ro-root -bool true
-defaults write com.apple.frameworks.diskimages auto-open-rw-root -bool true
-defaults write OpenWindowForNewRemovableDisk -bool true
-
-# No Ping
-defaults write com.apple.iTunes disablePingSidebar -bool true
-defaults write com.apple.iTunes disablePing -bool true
-
-# Make ⌘ + F focus the search input in iTunes
-defaults write com.apple.iTunes NSUserKeyEquivalents -dict-add "Target Search Field" "@F"
-
-# Require password immediately after sleep or screen saver begins
-defaults write com.apple.screensaver askForPassword -int 1
-defaults write com.apple.screensaver askForPasswordDelay -int 0
-
 # Enable full keyboard access for all controls (e.g. enable Tab in modal dialogs)
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
@@ -80,34 +31,25 @@ defaults write NSGlobalDomain AppleFontSmoothing -int 2
 # Expand save panel by default
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 
-# Disable the “Are you sure you want to open this application?” dialog
-defaults write com.apple.LaunchServices LSQuarantine -bool false
-
 # Increase window resize speed for Cocoa applications
 defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
-
-# Only use UTF-8 in Terminal.app
-defaults write com.apple.terminal StringEncodings -array 4
-
-# Always open everything in Finder's list view. This is important.
-defaults write com.apple.Finder FXPreferredViewStyle Nlsv
-
-# Show status bar in Finder by default
-defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
-
-# Disable the warning when changing a file extension
-defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
-
-# Copy email addresses as `foo@example.com` instead of `Foo Bar <foo@example.com>` in Mail.app
-defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
 
 # Disable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
-# Turn off Resume
-defaults write com.apple.Preview NSQuitAlwaysKeepsWindows -bool false
-defaults write com.apple.Terminal NSQuitAlwaysKeepsWindows -bool false
-defaults write org.vim.MacVim NSQuitAlwaysKeepsWindows -bool false
+# Scroll direction: natural
+defaults write -g com.apple.swipescrolldirection -bool true
+
+# Global shortcuts:
+# * Paste and Match style - cmd + shift + v
+defaults write .GlobalPreferences NSUserKeyEquivalents '{ "Paste and Match Style" = "@$v"; }'
+
+# Disable the “Are you sure you want to open this application?” dialog
+defaults write com.apple.LaunchServices LSQuarantine -bool false
+
+###############################################################################
+# Disk
+###############################################################################
 
 # Disable the sudden motion sensor as its not useful for SSDs
 sudo pmset -a sms 0
@@ -115,9 +57,139 @@ sudo pmset -a sms 0
 # Show the ~/Library folder
 chflags nohidden ~/Library
 
-# Global shortcuts:
-# * Paste and Match style - cmd + shift + v
-defaults write .GlobalPreferences NSUserKeyEquivalents '{ "Paste and Match Style" = "@$v"; }'
+# Don't add .DS everywhere
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
+
+# Automatically open a new Finder window when a volume is mounted
+defaults write com.apple.frameworks.diskimages auto-open-ro-root -bool true
+defaults write com.apple.frameworks.diskimages auto-open-rw-root -bool true
+defaults write OpenWindowForNewRemovableDisk -bool true
+
+###############################################################################
+# Terminal
+###############################################################################
+
+# Set terminal theme to Pro
+defaults write com.apple.Terminal "Default Window Settings" "Pro"
+defaults write com.apple.Terminal "Startup Window Settings" "Pro"
+defaults write com.apple.Terminal "FocusFollowsMouse" -bool true
+
+# Only use UTF-8 in Terminal.app
+defaults write com.apple.terminal StringEncodings -array 4
+
+###############################################################################
+# Dock
+###############################################################################
+
+# Set Dock to auto-hide and remove the auto-hiding delay
+defaults write com.apple.dock autohide -bool true
+
+# Use magnification for the Dock
+defaults write com.apple.dock magnification -bool true
+
+###############################################################################
+# Finder
+###############################################################################
+
+# Enable text selection in preview windows
+defaults write com.apple.finder QLEnableTextSelection -bool TRUE; killall Finder
+
+# Always open everything in Finder's list view. This is important.
+defaults write com.apple.finder FXPreferredViewStyle Nlsv
+
+# Show status bar in Finder by default
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
+
+# Keep folders on top when sorting by name
+defaults write com.apple.finder _FXSortFoldersFirst -bool true
+
+# Disable the warning when changing a file extension
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+
+# Finder: show status bar
+defaults write com.apple.finder ShowStatusBar -bool true
+
+# Finder: show path bar
+defaults write com.apple.finder ShowPathbar -bool true
+
+# Show icons for hard drives, servers, and removable media on the desktop
+defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
+defaults write com.apple.finder ShowHardDrivesOnDesktop -bool false
+defaults write com.apple.finder ShowMountedServersOnDesktop -bool true
+defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
+
+# Finder: disable window animations and Get Info animations
+defaults write com.apple.finder DisableAllAnimations -bool true
+
+###############################################################################
+# Safari
+###############################################################################
+
+# Disable Safari’s thumbnail cache for History and Top Sites
+defaults write com.apple.Safari DebugSnapshotsUpdatePolicy -int 2
+
+# Enable Safari’s debug menu
+defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
+
+# Make Safari’s search banners default to Contains instead of Starts With
+defaults write com.apple.Safari FindOnPageMatchesWordStartsOnly -bool false
+
+# Remove icons from Safari’s bookmarks bar
+defaults write com.apple.Safari ProxiesInBookmarksBar "()"
+
+# Targeted clicks create tabs
+defaults write com.apple.Safari TargetedClicksCreateTabs -bool true
+
+# Enabling the Develop menu and the Web Inspector in Safari
+defaults write com.apple.Safari IncludeDevelopMenu -bool true
+defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
+defaults write com.apple.Safari "com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled" -bool true
+
+# Privacy: don’t send search queries to Apple
+defaults write com.apple.Safari UniversalSearchEnabled -bool false
+defaults write com.apple.Safari SuppressSearchSuggestions -bool true
+
+###############################################################################
+# Sketch
+###############################################################################
+
+# Sketch 3 svg export improvements
+defaults write com.bohemiancoding.sketch3 exportCompactSVG -bool yes
+defaults write com.bohemiancoding.sketch3 svgExportSkipAssignIdToLayerName -bool yes
+
+###############################################################################
+# Activity Monitor                                                            #
+###############################################################################
+
+# Show the main window when launching Activity Monitor
+defaults write com.apple.ActivityMonitor OpenMainWindow -bool true
+
+# Visualize CPU usage in the Activity Monitor Dock icon
+defaults write com.apple.ActivityMonitor IconType -int 5
+
+# Show all processes in Activity Monitor
+defaults write com.apple.ActivityMonitor ShowCategory -int 0
+
+# Sort Activity Monitor results by CPU usage
+defaults write com.apple.ActivityMonitor SortColumn -string "CPUUsage"
+defaults write com.apple.ActivityMonitor SortDirection -int 0
+
+###############################################################################
+# Others
+###############################################################################
+
+# Require password immediately after sleep or screen saver begins
+defaults write com.apple.screensaver askForPassword -int 1
+defaults write com.apple.screensaver askForPasswordDelay -int 0
+
+# Copy email addresses as `foo@example.com` instead of `Foo Bar <foo@example.com>` in Mail.app
+defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
+
+# Turn off Resume
+defaults write com.apple.Preview NSQuitAlwaysKeepsWindows -bool false
+defaults write com.apple.Terminal NSQuitAlwaysKeepsWindows -bool false
+defaults write org.vim.MacVim NSQuitAlwaysKeepsWindows -bool false
 
 # Skype shortcuts:
 # * Next conversation - cmd + shift + [
@@ -128,10 +200,3 @@ defaults write com.skype.skype NSUserKeyEquivalents '{ "Next Conversation" = "@$
 # * Close conversation - cmd + w
 # * Clear conversation - ctrl + l
 defaults write com.apple.iChat NSUserKeyEquivalents '{ "Clear Transcript" = "^l"; "Close Conversation..." = "@w"; }'
-
-# Scroll direction: natural
-defaults write -g com.apple.swipescrolldirection -bool true
-
-# Sketch 3 svg export improvements
-defaults write com.bohemiancoding.sketch3 exportCompactSVG -bool yes
-defaults write com.bohemiancoding.sketch3 svgExportSkipAssignIdToLayerName -bool yes
