@@ -47,8 +47,8 @@ let g:test#ruby#rspec#options = {
   \ 'file':    '--format documentation',
 \}
 
-let g:test#javascript#mocha#file_pattern = '.*\.test\.js$'
-let g:test#javascript#mocha#executable = 'npm run mocha'
+" let g:test#javascript#mocha#file_pattern = '.*\.test\.js$'
+" let g:test#javascript#mocha#executable = 'npm run mocha'
 
 " ConoLine
 let g:conoline_auto_enable = 1

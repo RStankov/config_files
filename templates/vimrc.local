@@ -31,3 +31,9 @@ command! Vindex :exe "vsplit ".expand('%:h')."/index.tsx"
 " Commands
 command! Graph2ts :AsyncRun yarn graphql2flow
 command! Rubocop :AsyncRun bundle exec rubocop -a
+
+" Test runner
+let g:test#javascript#jest#executable = './bin/jest'
+let g:test#javascript#jest#file_pattern = '.test\.ts'
+let g:test#javascript#karma#file_pattern = '_disable_'
+let g:test#javascript#mocha#file_pattern = '_disable_'
