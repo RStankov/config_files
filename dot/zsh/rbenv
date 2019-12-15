@@ -1,4 +1,4 @@
-source "/usr/local/Cellar/rbenv/1.1.1/libexec/../completions/rbenv.zsh"
+source "/usr/local/Cellar/rbenv/1.1.2/libexec/../completions/rbenv.zsh"
 rbenv rehash 2>/dev/null
 
 rbenv() {
