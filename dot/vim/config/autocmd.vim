@@ -8,3 +8,6 @@ au BufReadPost *
 au BufEnter *.json set filetype=javascript
 
 autocmd BufEnter * if &filetype == "" | setlocal ft=ruby | endif
+
+
+autocmd BufNewFile,BufRead *.tsx setlocal filetype=typescript
