@@ -1,4 +1,6 @@
-require "rubygems"
+# frozen_string_literal: true
+
+require 'rubygems'
 
 # print SQL to STDOUT
 if ENV.include?('RAILS_ENV') && !Object.const_defined?('RAILS_DEFAULT_LOGGER')
@@ -10,12 +12,14 @@ end
 require 'irb/completion'
 
 # Prompt behavior
-ARGV.concat [ "--readline", "--prompt-mode", "simple" ]
+ARGV.concat ['--readline', '--prompt-mode', 'simple']
 
 # History
 require 'irb/ext/save-history'
 IRB.conf[:SAVE_HISTORY] = 100
 IRB.conf[:HISTORY_FILE] = "#{ENV['HOME']}/.irb-save-history"
+
+IRB.conf[:AUTO_INDENT] = true
 
 # Easily print methods local to an object's class
 class Object
@@ -35,13 +39,13 @@ def load_factory_bot!
 
   require 'factory_bot'
 
-  if Dir.exists?(Rails.root.join('spec/factories'))
-    Dir[Rails.root.join("spec/factories/**/*.rb")].each { |f| require f }
-    puts "Factories loaded"
-  elsif File.exists?(Rails.root.join('spec.factory.rb'))
+  if Dir.exist?(Rails.root.join('spec/factories'))
+    Dir[Rails.root.join('spec/factories/**/*.rb')].each { |f| require f }
+    puts 'Factories loaded'
+  elsif File.exist?(Rails.root.join('spec.factory.rb'))
     require Rails.root.join('factory.rb')
-    puts "Factories loaded"
+    puts 'Factories loaded'
   else
-    puts "You have to load factories manually"
+    puts 'You have to load factories manually'
   end
 end
