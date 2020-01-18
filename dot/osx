@@ -197,3 +197,7 @@ defaults write com.skype.skype NSUserKeyEquivalents '{ "Next Conversation" = "@$
 # * Close conversation - cmd + w
 # * Clear conversation - ctrl + l
 defaults write com.apple.iChat NSUserKeyEquivalents '{ "Clear Transcript" = "^l"; "Close Conversation..." = "@w"; }'
+
+# Allow Fantastical to connect to GSuit accounts
+# Source: https://flexibits.com/support/kb/149
+defaults write com.flexibits.fantastical2.mac ReduceGoogleScopes -bool YES
