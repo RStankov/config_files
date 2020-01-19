@@ -24,7 +24,6 @@ brew cask install virtualbox
 
 # Quick look
 brew cask install betterzipql
-brew cask install qlcolorcode
 brew cask install qlmarkdown
 brew cask install qlprettypatch
 brew cask install qlstephen
