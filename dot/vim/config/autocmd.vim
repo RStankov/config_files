@@ -5,9 +5,9 @@ au BufReadPost *
   \ endif
 
 " JSON -> JavaScript
-au BufEnter *.json set filetype=javascript
+autocmd BufNewFile,BufRead *.json set filetype=javascript
 
-autocmd BufEnter * if &filetype == "" | setlocal ft=ruby | endif
+autocmd BufNewFile * if &filetype == "" | setlocal ft=ruby | endif
 
 " TSX files are just TypeScript
 autocmd BufNewFile,BufRead *.tsx setlocal filetype=typescript
