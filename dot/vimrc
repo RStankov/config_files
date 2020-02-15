@@ -8,5 +8,5 @@ runtime config/mappings.vim
 runtime config/gui.vim
 
 if filereadable(glob(".vimrc.local"))
-    source .vimrc.local
+  source .vimrc.local
 endif
