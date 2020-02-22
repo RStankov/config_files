@@ -26,12 +26,10 @@ command! Eutils :exe "edit ".expand('%:h')."/utils.ts"
 command! Vutils :exe "vsplit ".expand('%:h')."/utils.ts"
 
 command! Eindex :exe "edit ".expand('%:h')."/index.tsx"
-command! Vindex :exe "vspli
+command! Vindex :exe "vsplit ".expand('%:h')."/index.tsx"
 
 command! Estyles :exe "edit ".expand('%:h')."/styles.css"
 command! Vstyles :exe "vsplit ".expand('%:h')."/styles.css"
-
-".expand('%:h')."/index.tsx"
 
 " Commands
 command! Graph2ts :AsyncRun yarn graphql2flow
