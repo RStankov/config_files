@@ -32,7 +32,7 @@ command! Estyles :exe "edit ".expand('%:h')."/styles.css"
 command! Vstyles :exe "vsplit ".expand('%:h')."/styles.css"
 
 " Commands
-command! Graph2ts :AsyncRun yarn graphql2flow
+command! Graph2ts :AsyncRun ./bin/graphql2ts
 command! Rubocop :AsyncRun bundle exec rubocop -a
 
 " Test runner
