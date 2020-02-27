@@ -18,7 +18,7 @@ end
 
 desc 'Links config files'
 task :link do
-  Installer.link_each('dot/*') do |file_name| 
+  Installer.link_each('dot/*') do |file_name|
     if file_name == 'nvim'
       ".config/#{file_name}"
     else
@@ -29,6 +29,6 @@ task :link do
 end
 
 desc 'Install config files'
-task install: [:submodule, :link, :vim_bundles, :osx]
+task install: %i(submodule link vim_bundles osx)
 
 task default: :link
