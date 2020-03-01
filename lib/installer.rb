@@ -3,7 +3,8 @@ module Installer
 
   def link_each(files)
     Dir[files].each do |file_path|
-      link_path = yield File.basename(file_path)
+      file_name = File.basename(file_path)
+      link_path = block_given? ? yield(file_name) : ".#{file_name}"
       link(file_path, link_path)
     end
   end

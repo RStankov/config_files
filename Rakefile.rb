@@ -18,13 +18,7 @@ end
 
 desc 'Links config files'
 task :link do
-  Installer.link_each('dot/*') do |file_name|
-    if file_name == 'nvim'
-      ".config/#{file_name}"
-    else
-      ".#{file_name}"
-    end
-  end
+  Installer.link_each('dot/*')
   Installer.link('bin', 'bin')
 end
 
