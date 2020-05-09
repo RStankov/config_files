@@ -8,6 +8,3 @@ au BufReadPost *
 autocmd BufNewFile,BufRead *.json set filetype=javascript
 
 autocmd BufNewFile * if &filetype == "" | setlocal ft=ruby | endif
-
-" TSX files are just TypeScript
-autocmd BufNewFile,BufRead *.tsx setlocal filetype=typescript
