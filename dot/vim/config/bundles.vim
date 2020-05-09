@@ -19,6 +19,9 @@ Plug 'jparise/vim-graphql'
 Plug 'moll/vim-node'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'hashivim/vim-terraform'
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
+Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 
 " Other
 Plug 'AndrewRadev/splitjoin.vim'
