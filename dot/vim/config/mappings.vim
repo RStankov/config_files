@@ -74,6 +74,12 @@ nmap <silent> <leader>T :TestFile<CR>
 nmap <silent> <leader>a :TestSuite<CR>
 nmap <silent> <leader>L :TestLast<CR>
 
+" Show information about content under cursor
+nnoremap <silent> K :call CocAction('doHover')<CR>
+
+" Do suggested auto-fix action (like imports)
+nmap <leader>do <Plug>(coc-codeaction)
+
 if has("gui_macvim") && has("gui_running")
   " Map Command-# to switch tabs
   map  <D-0> 0gt
