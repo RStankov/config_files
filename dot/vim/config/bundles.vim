@@ -63,6 +63,8 @@ Plug 'alvan/vim-closetag'
 Plug 'skywind3000/asyncrun.vim'
 Plug 'zerowidth/vim-copy-as-rtf'
 
+" Themes
+Plug 'altercation/vim-colors-solarized'
 
 call plug#end()
 
