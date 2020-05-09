@@ -9,8 +9,9 @@ hi def link jsxCloseString Identifier
 hi clear SpellBad
 hi SpellBad gui=underline cterm=underline
 
-" Hide the annoying ~ non texts
+" Hide the annoying tilde (~)
 hi NonText guifg=bg guibg=bg gui=none
+hi EndOfBuffer guibg=bg guifg=bg gui=none
 
 if has("gui_running")
   " Font.
