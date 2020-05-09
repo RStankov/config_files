@@ -98,6 +98,7 @@ set wildignore+=*/node_modules/*
 set wildignore+=*/flow-typed/*
 set wildignore+=*/deps/*
 set wildignore+=*/log/*
+set wildignore+=*/dist/*
 
 " Show the current mode
 set showmode
