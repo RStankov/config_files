@@ -31,7 +31,7 @@ endi
 " Spell errors
 hi clear SpellBad
 hi SpellBad gui=underline cterm=underline
-"
+
 " Hide the annoying tilde (~)
-hi NonText ctermbg=bg ctermfg=bg guifg=bg guibg=bg gui=none
-hi EndOfBuffer ctermbg=bg ctermfg=bg guibg=bg guifg=bg gui=none
+hi NonText ctermbg=0 ctermfg=0 guifg=bg guibg=bg gui=none
+hi EndOfBuffer ctermbg=0 ctermfg=0 guifg=bg guibg=bg gui=none
