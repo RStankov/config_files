@@ -1,0 +1,5 @@
+{
+  "diagnostic.messageTarget": "echo",
+  "diagnostic.virtualText": false,
+  "diagnostic.enable": false
+}
