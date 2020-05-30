@@ -1,11 +1,11 @@
 if has("gui_running")
   set background=light
 
-  " colorscheme github
-  " let g:airline_theme='github'
+  colorscheme github
+  let g:airline_theme='github'
 
-  colorscheme solarized
-  let g:airline_theme='solarized'
+  " colorscheme solarized
+  " let g:airline_theme='solarized'
 
   " Font
   set guifont=JetBrains\ Mono:h13
