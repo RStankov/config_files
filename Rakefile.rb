@@ -14,7 +14,7 @@ end
 desc 'Installs vim bundles'
 task :vim_bundles do
   sh 'vim +PlugInstall +qall'
-  sh "vim -c 'CocInstall coc-tsserver' +qall"
+  # sh "vim -c 'CocInstall coc-tsserver' +qall"
 end
 
 desc 'Links config files'
