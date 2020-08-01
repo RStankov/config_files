@@ -8,7 +8,7 @@ if has("gui_running")
   " let g:airline_theme='solarized'
 
   " Font
-  set guifont=JetBrains\ Mono:h13
+  set guifont=JetBrains\ Mono:h15
 
   " Hide toolbar and menubar
   set guioptions-=T
