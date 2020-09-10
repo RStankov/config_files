@@ -66,3 +66,5 @@
 
 [github]
   user = rstankov
+[url "git@github.com:"]
+	insteadOf = https://github.com/
