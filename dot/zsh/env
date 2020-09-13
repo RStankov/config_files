@@ -4,6 +4,13 @@
 # ~/.rbenv/shims - rbenv gem exectuables
 export PATH="./bin:./node_modules/.bin:${HOME}/bin:${HOME}/.rbenv/shims:/usr/local/bin:${HOME}/go/bin:/usr/local/sbin:/usr/local/Cellar/postgresql96/9.6.5/bin:/Users/rstankov/.cargo/bin:${PATH}"
 
+# Paths for Android development
+export ANDROID_HOME=/Users/rstankov/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
 # Use vim as editor
 export EDITOR=mvim
 
