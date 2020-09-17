@@ -3,4 +3,5 @@ git checkout master
 git delete-merged
 git remote prune origin
 git prune
+git clean -df
 git gc
