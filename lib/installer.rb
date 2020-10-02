@@ -10,20 +10,12 @@ module Installer
   end
 
   def link(file_path, link_path)
-    Link.new(file_path, link_path).ensure_link
-  end
+    file_path = file_path
+    link_path = File.join(ENV['HOME'], link_path)
 
-  class Link
-    def initialize(file_path, link_path)
-      @file_path = file_path
-      @link_path = File.join(ENV['HOME'], link_path)
-    end
+    puts "linking #{link_path}"
 
-    def ensure_link
-      puts "linking #{@link_path}"
-
-      FileUtils.rm_rf(@link_path)
-      FileUtils.ln_s(File.join(ENV['PWD'], @file_path), @link_path)
-    end
+    FileUtils.rm_rf(link_path)
+    FileUtils.ln_s(File.join(ENV['PWD'], file_path), link_path)
   end
 end
