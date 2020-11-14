@@ -35,7 +35,7 @@ def pbcopy(string)
 end
 
 def load_factory_bot!
-  return if defined? FactoryGirl
+  return if defined? FactoryBot
 
   require 'factory_bot'
 
