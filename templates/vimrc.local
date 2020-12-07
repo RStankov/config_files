@@ -28,8 +28,8 @@ command! Vutils :exe "vsplit ".expand('%:h')."/utils.ts"
 command! Eindex :exe "edit ".expand('%:h')."/index.tsx"
 command! Vindex :exe "vsplit ".expand('%:h')."/index.tsx"
 
-command! Estyles :exe "edit ".expand('%:h')."/styles.css"
-command! Vstyles :exe "vsplit ".expand('%:h')."/styles.css"
+command! Estyles :exe "edit ".expand('%:h')."/styles.module.css"
+command! Vstyles :exe "vsplit ".expand('%:h')."/styles.module.css"
 
 " Commands
 command! Graph2ts :AsyncRun ./bin/graphql2ts
