@@ -16,9 +16,9 @@ ARGV.concat ['--readline', '--prompt-mode', 'simple']
 
 # History
 require 'irb/ext/save-history'
+
 IRB.conf[:SAVE_HISTORY] = 100
 IRB.conf[:HISTORY_FILE] = "#{ENV['HOME']}/.irb-save-history"
-
 IRB.conf[:AUTO_INDENT] = true
 
 # Easily print methods local to an object's class
