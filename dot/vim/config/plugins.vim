@@ -149,12 +149,6 @@ let g:closetag_regions = {
 " Docs: https://github.com/skywind3000/asyncrun.vim#quickfix-window
 let g:asyncrun_open = 8
 
-" Use Coc typescript language server
-" https://github.com/neoclide/coc-tsserver
-" let g:coc_global_extensions = [
-"   \ 'coc-tsserver'
-"   \ ]
-
 " Replace underscored identifier names with their camelCased versions
 let b:switch_custom_definitions = [
       \   {
