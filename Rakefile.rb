@@ -1,6 +1,6 @@
 require_relative 'lib/installer.rb'
 
-desc 'OS X settings'
+desc 'macOS settings'
 task :osx do
   sh 'bash ~/.osx'
 end
