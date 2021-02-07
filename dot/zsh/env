@@ -2,7 +2,7 @@
 # ./bin - project specific executables
 # ~/bin - executables from config files
 # ~/.rbenv/shims - rbenv gem exectuables
-export PATH="./bin:./node_modules/.bin:${HOME}/bin:${HOME}/.rbenv/shims:/usr/local/bin:${HOME}/go/bin:/usr/local/sbin:/usr/local/Cellar/postgresql96/9.6.5/bin:/Users/rstankov/.cargo/bin:${PATH}"
+export PATH="./bin:./node_modules/.bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/bin:$HOME/.rbenv/shims:/usr/local/bin:$HOME/go/bin:/usr/local/sbin:/usr/local/Cellar/postgresql96/9.6.5/bin:$HOME/.cargo/bin:$PATH"
 
 # Paths for Android development
 export ANDROID_HOME=/Users/rstankov/Library/Android/sdk
