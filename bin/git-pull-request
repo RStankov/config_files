@@ -3,6 +3,6 @@
 current_branch=`git rev-parse --abbrev-ref HEAD`
 remote_url=`git remote get-url origin | awk '{gsub(/git@github.com:/,"")}1' | awk '{gsub(/\.git/,"")}1'`
 
-git push  origin $current_branch --set-upstream
+git push origin $current_branch --set-upstream
 
 open https://github.com/$remote_url/compare/$current_branch?expand=1
