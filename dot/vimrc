@@ -1,4 +1,3 @@
-" Configure
 runtime config/bundles.vim
 runtime config/settings.vim
 runtime config/plugins.vim
