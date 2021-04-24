@@ -66,6 +66,9 @@ Plug 'zerowidth/vim-copy-as-rtf'
 " Themes
 Plug 'altercation/vim-colors-solarized'
 
+" Projects
+Plug 'producthunt/vim-producthunt'
+
 call plug#end()
 
 filetype plugin indent on
