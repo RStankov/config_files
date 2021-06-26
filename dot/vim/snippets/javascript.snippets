@@ -20,56 +20,29 @@ snippet expd
 	export default ${1}
 snippet expdf
 	export default function ${1}
-snippet typep
-	type Props = {|
-	  ${1}
-	|};
-snippet types
-	type State = {|
-	  ${1}
-	|};
 snippet imp
 	import ${1} from '${2}';
 snippet impr
 	import * as React from 'react';
 snippet imps
-	import styles from './styles.css';
+	import styles from './styles.module.css';
 snippet impq
 	import QUERY from './Query.graphql';
 snippet impm
 	import MUTATION from './Mutation.graphql';
 snippet impp
-	import paths from 'ph/paths.js';
+	import paths from 'ph/paths';
 snippet impb
 	import Button from 'ph/components/Button';
 snippet impf
 	import Font from 'ph/components/Font';
 snippet impl
-	import { Link } from 'found';
+	import Link from 'ph/components/Link';
 snippet impc
 	import classNames from 'classnames';
 snippet react
-	function ${1}(${2}: Props) {
+	function ${1}(${2}) {
 	  return (
 	    ${3}
 	  );
-	}
-snippet reactc
-	class ${1} extends React.Component<Props> {
-	  render() {
-	    return (
-	      ${2}
-	    );
-	  }
-	}
-snippet reactcs
-	class ${1} extends React.Component<Props, State> {
-	  state = {
-	    ${2}
-	  };
-	  render() {
-	    return (
-
-	    );
-	  }
 	}
