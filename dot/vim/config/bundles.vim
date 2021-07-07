@@ -13,7 +13,7 @@ Plug 'elixir-lang/vim-elixir'
 Plug 'kchmck/vim-coffee-script'
 Plug 'pangloss/vim-javascript'
 Plug 'MaxMEllon/vim-jsx-pretty'
-Plug 'vim-ruby/vim-ruby'
+Plug 'vim-ruby/vim-ruby', { 'branch': 'endless-def' }
 Plug 'fatih/vim-go'
 Plug 'jparise/vim-graphql'
 Plug 'moll/vim-node'
@@ -28,7 +28,7 @@ Plug 'AndrewRadev/splitjoin.vim'
 Plug 'AndrewRadev/switch.vim'
 Plug 'AndrewRadev/writable_search.vim'
 Plug 'corntrace/bufexplorer'
-Plug 'ecomba/vim-ruby-refactoring'
+Plug 'ecomba/vim-ruby-refactoring', { 'branch': 'main' }
 Plug 'janko-m/vim-test'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'kien/ctrlp.vim'
@@ -67,7 +67,7 @@ Plug 'zerowidth/vim-copy-as-rtf'
 Plug 'altercation/vim-colors-solarized'
 
 " Projects
-Plug 'producthunt/vim-producthunt'
+Plug 'producthunt/vim-producthunt', { 'branch': 'main' }
 
 call plug#end()
 
