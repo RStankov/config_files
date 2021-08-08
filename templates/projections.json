@@ -11,4 +11,5 @@
   "frontend/*.test.ts": { "alternate": "frontend/{}.ts" },
   "frontend/*.test.tsx": { "alternate": "frontend/{}.tsx" },
   "frontend/*.js": { "alternate": "frontend/{}.test.js" }
+  "frontend/*.test.js": { "alternate": "frontend/{}.js" }
 }
