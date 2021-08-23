@@ -3,7 +3,7 @@ let g:prettier#autoformat = 0
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql PrettierAsync
 
 " Ale linters setup
-let g:ale_linters = { 'typescript': ['prettier', 'tsserver', 'tslint'], 'css': ['stylelint'], 'javascript': ['eslint'], 'ruby': ['rubocop'] }
+let g:ale_linters = { 'typescript': ['prettier', 'tsserver'], 'css': ['stylelint'], 'javascript': ['eslint'], 'ruby': ['rubocop'] }
 let g:ale_lint_on_save = 1
 let g:ale_lint_on_text_changed = 0
 let g:ale_lint_on_enter = 0
