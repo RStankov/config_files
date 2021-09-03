@@ -22,6 +22,7 @@ Plug 'hashivim/vim-terraform'
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+Plug 'udalov/kotlin-vim'
 
 " Other
 Plug 'AndrewRadev/splitjoin.vim'
