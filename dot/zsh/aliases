@@ -17,6 +17,3 @@ alias gco="git checkout"
 alias gd="git diff"
 alias gdc="git diff --cached"
 alias gst="git status"
-
-# tools
-alias svgoo="svgo --enable=removeTitle"
