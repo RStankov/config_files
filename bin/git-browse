@@ -1,0 +1,5 @@
+#!/bin/bash
+
+remote_url=`git remote get-url origin | awk '{gsub(/git@github.com:/,"")}1' | awk '{gsub(/\.git/,"")}1'`
+
+open https://github.com/$remote_url
