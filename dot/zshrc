@@ -1,7 +1,6 @@
 source $HOME/.zsh/env
 source $HOME/.zsh/theme
 source $HOME/.zsh/aliases
-source $HOME/.zsh/rbenv
 
 for file in $HOME/.zsh/plugins/**/*; do
   source $file
@@ -12,3 +11,11 @@ done
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 
 [[ -s "$NVM_DIR/nvm.sh" ]] && source "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export PORT=5001
+export PATH="/opt/homebrew/opt/libpq/bin:/usr/local/opt/libpq/bin:$PATH"
+export PORT=5001
+export PATH="/opt/homebrew/opt/libpq/bin:/usr/local/opt/libpq/bin:$PATH"
+export PORT=5001
+export PORT=5001
+export PORT=5001
