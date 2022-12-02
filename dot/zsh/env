@@ -7,6 +7,9 @@ export PATH="./bin:./node_modules/.bin:$HOME/.yarn/bin:$HOME/.config/yarn/global
 # Paths for homebrew
 export PATH=$PATH:/opt/homebrew/bin
 
+# CURL
+export PATH=/opt/homebrew/opt/curl/bin:$PATH
+
 # Paths for Android development
 export ANDROID_HOME=/Users/rstankov/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
