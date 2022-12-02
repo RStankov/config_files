@@ -28,6 +28,8 @@ Plug 'udalov/kotlin-vim'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'AndrewRadev/switch.vim'
 Plug 'AndrewRadev/writable_search.vim'
+Plug 'AndrewRadev/tagalong.vim'
+Plug 'AndrewRadev/sideways.vim'
 Plug 'corntrace/bufexplorer'
 Plug 'ecomba/vim-ruby-refactoring', { 'branch': 'main' }
 Plug 'janko-m/vim-test'
