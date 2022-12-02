@@ -31,6 +31,9 @@ nnoremap k gk
 " Switch
 nnoremap <leader>- :Switch<cr>
 
+nnoremap s, :SidewaysLeft<cr>
+nnoremap s. :SidewaysRight<cr>
+
 " Insert blank lines
 map <C-Enter> m`O<Esc>``
 map <S-Enter> m`o<Esc>``
