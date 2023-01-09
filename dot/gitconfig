@@ -17,6 +17,7 @@
   whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
   excludesfile = ~/.gitignore
   editor = mvim -f
+  ignorecase = false
 
 [branch]
   autosetuprebase = always
