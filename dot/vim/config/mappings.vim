@@ -31,7 +31,8 @@ nnoremap k gk
 " Switch
 nnoremap <leader>- :Switch<cr>
 
-nnoremap <leader><leader> :cn
+" Next search result
+nnoremap <leader><leader> :cn<cr>
 
 nnoremap s, :SidewaysLeft<cr>
 nnoremap s. :SidewaysRight<cr>
