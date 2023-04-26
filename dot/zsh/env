@@ -3,7 +3,7 @@
 # ~/bin - executables from config files
 # ~/.rbenv/shims - rbenv gem exectuables
 # /opt/homebrew/bin - homebrew
-export PATH="./bin:./node_modules/.bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/bin:$HOME/.rbenv/shims:/usr/local/bin:$HOME/go/bin:/usr/local/sbin:$HOME/.cargo/bin:/usr/local/opt/libpq/bin:$HOME/.pyenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"
+export PATH="./bin:./node_modules/.bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/bin:$HOME/.rbenv/shims:/usr/local/bin:$HOME/go/bin:/Applications/MacVim.app/Contents/bin/:/usr/local/sbin:$HOME/.cargo/bin:/usr/local/opt/libpq/bin:$HOME/.pyenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"
 
 # MacVim
 export PATH=$PATH:/Applications/MacVim.app/Contents/bin/
