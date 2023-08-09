@@ -6,10 +6,29 @@
   "backend/app/graphql/mutations/*.rb": { "type": "mutation" },
   "backend/app/graphal/resolvers/*.rb": { "type": "resolver" },
   "backend/spec/factories/*.rb": { "type": "factory" },
-  "frontend/*.ts": { "alternate": "frontend/{}.test.ts" },
-  "frontend/*.tsx": { "alternate": "frontend/{}.test.tsx" },
-  "frontend/*.test.ts": { "alternate": "frontend/{}.ts" },
-  "frontend/*.test.tsx": { "alternate": "frontend/{}.tsx" },
-  "frontend/*.js": { "alternate": "frontend/{}.test.js" }
-  "frontend/*.test.js": { "alternate": "frontend/{}.js" }
+  "*.ts": { "alternate": "{}.test.ts" },
+  "*.tsx": { "alternate": "{}.test.tsx" },
+  "*.test.ts": { "alternate": "{}.ts" },
+  "*.test.tsx": { "alternate": "{}.tsx" },
+  "*.js": { "alternate": "{}.test.js" }
+  "*.test.js": { "alternate": "{}.js" }
+  "app/components/*.rb": {
+    "type": "component",
+    "alternate": "app/components/{}.html.erb"
+  },
+  "app/components/*.html.erb": {
+    "alternate": "app/components/{}.rb"
+  },
+  "config/locales/bg.yml": {
+    "alternate": "config/locales/en.yml"
+  },
+  "config/locales/en.yml": {
+    "alternate": "config/locales/bg.yml"
+  },
+  "config/locales/*.bg.yml": {
+    "alternate": "config/locales/{}.en.yml"
+  },
+  "config/locales/*.en.yml": {
+    "alternate": "config/locales/{}.bg.yml"
+  }
 }
