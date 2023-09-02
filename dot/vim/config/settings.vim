@@ -144,5 +144,5 @@ set gcr=n:blinkon0
 
 " Set Python3 path
 " FIXES: https://github.com/macvim-dev/macvim/issues/1003
-set pythonthreedll=/opt/homebrew/Cellar/python@3.11/3.11.3/Frameworks/Python.framework/Versions/3.11/Python
-set pythonthreehome=/opt/homebrew/Cellar/python@3.11/3.11.3/Frameworks/Python.framework/Versions/3.11
+set pythonthreedll=/opt/homebrew/Cellar/python@3.11/3.11.5/Frameworks/Python.framework/Versions/3.11/Python
+set pythonthreehome=/opt/homebrew/Cellar/python@3.11/3.11.5/Frameworks/Python.framework/Versions/3.11
