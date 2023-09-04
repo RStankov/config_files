@@ -3,7 +3,7 @@
 # ~/bin - executables from config files
 # ~/.rbenv/shims - rbenv gem exectuables
 # /opt/homebrew/bin - homebrew
-export PATH="./bin:./node_modules/.bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/bin:$HOME/.rbenv/shims:/usr/local/bin:$HOME/go/bin:/Applications/MacVim.app/Contents/bin/:/usr/local/sbin:$HOME/.cargo/bin:/usr/local/opt/libpq/bin:$HOME/.pyenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"
+export PATH="./bin:./node_modules/.bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/bin:$HOME/.rbenv/shims:/usr/local/bin:$HOME/go/bin:/Applications/MacVim.app/Contents/bin/:/usr/local/sbin:$HOME/.cargo/bin:$HOME/.pyenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"
 
 # MacVim
 export PATH=$PATH:/Applications/MacVim.app/Contents/bin/
@@ -14,6 +14,11 @@ export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+# libpq
+export LDFLAGS="-L/opt/homebrew/opt/libpq/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/libpq/include"
+export PKG_CONFIG_PATH="/opt/homebrew/opt/libpq/lib/pkgconfig"
 
 # Use vim as editor
 export EDITOR=mvim
