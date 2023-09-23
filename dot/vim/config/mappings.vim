@@ -86,6 +86,9 @@ nnoremap <silent> K :call CocAction('doHover')<CR>
 " Do suggested auto-fix action (like imports)
 nmap <leader>do <Plug>(coc-codeaction)
 
+" Replace what was last searched for with '/'
+nmap <leader>r :%s///g<CR>
+
 if has("gui_macvim") && has("gui_running")
   " Map Command-# to switch tabs
   map  <D-0> 0gt
