@@ -1,6 +1,6 @@
 [user]
-	name = Radoslav Stankov
-	email = rstankov@gmail.com
+  name = Radoslav Stankov
+  email = rstankov@gmail.com
 
 [alias]
   st = status
@@ -53,6 +53,7 @@
 
 [init]
   templatedir = ~/.git_template
+  defaultBranch = main
 
 [filter "media"]
   clean = git-media-clean %f
