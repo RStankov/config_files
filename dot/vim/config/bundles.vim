@@ -13,7 +13,7 @@ Plug 'elixir-lang/vim-elixir'
 Plug 'kchmck/vim-coffee-script'
 Plug 'pangloss/vim-javascript'
 Plug 'MaxMEllon/vim-jsx-pretty'
-Plug 'vim-ruby/vim-ruby', { 'branch': 'endless-def' }
+Plug 'vim-ruby/vim-ruby'
 Plug 'fatih/vim-go'
 Plug 'jparise/vim-graphql'
 Plug 'moll/vim-node'
@@ -65,13 +65,10 @@ Plug 'SirVer/ultisnips'
 Plug 'alvan/vim-closetag'
 Plug 'skywind3000/asyncrun.vim'
 Plug 'zerowidth/vim-copy-as-rtf'
-Plug 'github/copilot.vim'
+Plug 'github/copilot.vim', { 'branch': 'release' }
 
 " Themes
 Plug 'altercation/vim-colors-solarized'
-
-" Projects
-Plug 'producthunt/vim-producthunt', { 'branch': 'main' }
 
 call plug#end()
 
