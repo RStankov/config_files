@@ -12,7 +12,11 @@ end
 ARGV.concat ['--readline', '--prompt-mode', 'simple']
 
 # History
-require 'irb/ext/save-history'
+begin
+  require 'irb/ext/save-history'
+rescue LoadError
+  require 'irb/ext/eval_history'
+end
 
 if IRB.respond_to?(:conf)
   IRB.conf[:SAVE_HISTORY] = 100
