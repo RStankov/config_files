@@ -142,6 +142,9 @@ set ttimeoutlen=50
 " Turn off blinking in normal mode
 set gcr=n:blinkon0
 
+" Reduce updatetime from 4000
+set updatetime=300
+
 " Set Python3 path
 " FIXES: https://github.com/macvim-dev/macvim/issues/1003
 set pythonthreedll=/opt/homebrew/Cellar/python@3.11/3.11.6_1/Frameworks/Python.framework/Versions/3.11/Python
