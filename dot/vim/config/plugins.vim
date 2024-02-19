@@ -50,9 +50,6 @@ let g:test#ruby#rspec#options = {
 " Align begin and end in Ruby with one indent
 let g:ruby_indent_assignment_style = 'variable'
 
-" let g:test#javascript#mocha#file_pattern = '.*\.test\.js$'
-" let g:test#javascript#mocha#executable = 'npm run mocha'
-
 " ConoLine
 let g:conoline_auto_enable = 1
 
