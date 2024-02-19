@@ -1,4 +1,4 @@
-" Make , the leader key
+" Map ',' as the leader key
 let mapleader = ","
 
 " Toggle NERDTree
@@ -54,15 +54,8 @@ nmap <silent> <Plug>RemoveWrapingParentheses mzlF(ds(i<Space><Esc>`z
       \:call repeat#set("\<Plug>RemoveWrapingParentheses")<CR>
 nmap <leader>0 <Plug>RemoveWrapingParentheses
 
-" Reformat the entire file
-nnoremap <leader>fef :normal! gg=G``<CR>
-
 " Find merge conflict markers
 nmap <silent> <leader>mc <ESC>/\v^[<=>]{7}( .*\|$)<CR>
-
-" Bind K to grep word under cursor (or selected content)
-nnoremap K yw:tabnew<CR>:F "\b<C-R>0\b"<CR>:cw<CR>
-vnoremap K y:<C-U>tabnew<CR>:F "\b<C-R>0\b"<CR>:cw<CR>
 
 " Emulate TextMate-style indentation shortcuts
 nmap <D-[> <<
