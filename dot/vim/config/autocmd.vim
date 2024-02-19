@@ -8,3 +8,5 @@ au BufReadPost *
 autocmd BufNewFile,BufRead *.json set filetype=javascript
 
 autocmd BufNewFile * if &filetype == "" | setlocal ft=ruby | endif
+
+autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescriptreact

@@ -70,3 +70,6 @@
 
 [url "git@github.com:"]
   insteadOf = https://github.com/
+[maintenance]
+	repo = /Users/rstankov/Projects/angry_building
+	repo = /Users/rstankov/Projects/producthunt
