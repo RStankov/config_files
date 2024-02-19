@@ -63,17 +63,6 @@ let g:vim_jsx_pretty_colorful_config = 1
 " Enable jsdocs
 let g:javascript_plugin_jsdoc = 1
 
-" Enable flow
-let g:javascript_plugin_flow = 1
-
-" Create alternative file
-function! s:CreateAlternative()
-  let related = rails#buffer().alternate_candidates()[0]
-  exec('vsplit ' . related)
-endfunction
-
-command! AC :call <SID>CreateAlternative()
-
 " max line lengh that prettier will wrap on
 let g:prettier#config#print_width = 80
 

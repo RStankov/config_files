@@ -6,3 +6,11 @@ command! -nargs=* -complete=dir F :exe "Rg" <q-args>
 
 " Open current file directory in Finder
 command! Finder silent exe '!open ' . expand("%:p:h")
+
+" Create alternative file
+function! s:CreateAlternative()
+  let related = rails#buffer().alternate_candidates()[0]
+  exec('vsplit ' . related)
+endfunction
+
+command! AC :call <SID>CreateAlternative()
