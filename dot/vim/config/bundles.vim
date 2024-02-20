@@ -59,12 +59,11 @@ Plug 'w0rp/ale'
 Plug 'c-brenn/phoenix.vim'
 Plug 'tweekmonster/startuptime.vim'
 Plug 'mattn/gist-vim'
-Plug 'ervandew/supertab'
-Plug 'SirVer/ultisnips'
 Plug 'alvan/vim-closetag'
 Plug 'skywind3000/asyncrun.vim'
 Plug 'zerowidth/vim-copy-as-rtf'
 Plug 'github/copilot.vim', { 'branch': 'release' }
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Themes
 Plug 'altercation/vim-colors-solarized'

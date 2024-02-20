@@ -9,3 +9,4 @@ dump.rdb
 tags
 tmp
 yarn-error.log
+.solargraph.yml
