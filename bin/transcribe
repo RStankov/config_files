@@ -1,0 +1,5 @@
+#!/bin/zsh
+
+for audio_file in "$@"; do
+  whisper Saudio_file --output_dir "$(dirname "$audio_file")"
+done
