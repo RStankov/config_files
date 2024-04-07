@@ -1,5 +1,5 @@
 {
   "suggest.noselect": true,
   "codeLens.enable": true,
-  "solargraph.useBundler": true
+  "solargraph.useBundler": false
 }
