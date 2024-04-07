@@ -18,7 +18,7 @@ let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-solargraph', 'co
 " - K to show documentation in preview window
 " - gi to navigate to implementation/type definition/definition
 " - <leader>rn to rename symbol
-" - <leader>n to next diagnostic
+" - <leader>n to next error
 " - <leader>o toggle outline
 
 inoremap <expr><S-Tab> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
@@ -30,10 +30,29 @@ nnoremap <silent> K :call CustomCocShowDocumentation()<CR>
 nnoremap <silent> gi :call CustomCocNavigation()<CR>
 
 nnoremap <silent> <leader>rn <Plug>(coc-rename)
-nnoremap <silent> <leader>n <Plug>(coc-diagnostic-next)
+nnoremap <silent> <leader>n :call GoToNextError()<CR>
 nnoremap <silent> <leader>o  :call CustomCocToggleOutling()<CR>
 
-" Custom function
+function! GoToNextError() abort
+  let l:original_pos = getcurpos()
+
+  " Go to next COC error
+  call CocAction('diagnosticNext')
+
+  " If we are at the same position or moved backwards
+  " try to go to ALE error
+  let l:new_pos = getcurpos()
+  if l:new_pos[1] < l:original_pos[1] || (l:new_pos[1] == l:original_pos[1] && l:new_pos[2] <= l:original_pos[2])
+    ALENext
+
+    " Repeat that for COC again (so we can rotate between ALE and COC)
+    let l:new_pos = getcurpos()
+    if l:new_pos[1] < l:original_pos[1] || (l:new_pos[1] == l:original_pos[1] && l:new_pos[2] <= l:original_pos[2])
+      call CocAction('diagnosticNext')
+    endif
+  endif
+endfunction
+
 function! CustomCocOnTab() abort
   call copilot#Dismiss()
 
@@ -70,7 +89,7 @@ function! CustomCocOnEnter() abort
   endif
 endfunction
 
-function! CustomCocShowDocumentation()
+function! CustomCocShowDocumentation() abort
   if CocAction('hasProvider', 'hover')
     call CocActionAsync('doHover')
   else
@@ -78,7 +97,7 @@ function! CustomCocShowDocumentation()
   endif
 endfunction
 
-function! CustomCocNavigation()
+function! CustomCocNavigation() abort
   " Save current cursor position
   let l:pos = getpos('.')
 
