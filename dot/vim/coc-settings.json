@@ -1,5 +1,6 @@
 {
   "suggest.noselect": true,
   "codeLens.enable": true,
-  "solargraph.useBundler": false
+  "solargraph.useBundler": false,
+  "snippets.ultisnips.pythonPrompt": false
 }
