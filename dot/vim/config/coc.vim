@@ -1,9 +1,3 @@
-" Copilot
-let g:copilot_no_tab_map = v:true
-
-" Copilot with CTRL-J (we override the tab with Coc)
-imap <silent><script><expr> <C-J> copilot#Accept("\<CR>")
-
 " Coc setup
 let g:coc_config_home = '/Users/rstankov/.vim'
 let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-solargraph', 'coc-snippets']
@@ -54,8 +48,6 @@ function! GoToNextError() abort
 endfunction
 
 function! CustomCocOnTab() abort
-  call copilot#Dismiss()
-
   if coc#pum#visible()
     return coc#pum#next(1)
   endif
@@ -81,12 +73,7 @@ function! CustomCocOnEnter() abort
     endif
   endif
 
-  let s = copilot#GetDisplayedSuggestion()
-  if !empty(s.text)
-    return copilot#Accept("\<CR>")
-  else
-    return "\<CR>"
-  endif
+  return "\<CR>"
 endfunction
 
 function! CustomCocShowDocumentation() abort

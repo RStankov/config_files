@@ -62,7 +62,6 @@ Plug 'mattn/gist-vim'
 Plug 'alvan/vim-closetag'
 Plug 'skywind3000/asyncrun.vim'
 Plug 'zerowidth/vim-copy-as-rtf'
-Plug 'github/copilot.vim', { 'branch': 'release' }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Themes
