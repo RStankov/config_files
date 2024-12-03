@@ -147,5 +147,5 @@ set updatetime=300
 
 " Set Python3 path
 " FIXES: https://github.com/macvim-dev/macvim/issues/1003
-set pythonthreedll=/opt/homebrew/Cellar/python@3.11/3.11.6_1/Frameworks/Python.framework/Versions/3.11/Python
-set pythonthreehome=/opt/homebrew/Cellar/python@3.11/3.11.6_1/Frameworks/Python.framework/Versions/3.11
+set pythonthreedll=/opt/homebrew/Cellar/python@3.11/3.11.10/Frameworks/Python.framework/Versions/3.11/Python
+set pythonthreehome=/opt/homebrew/Cellar/python@3.11/3.11.10/Frameworks/Python.framework/Versions/3.11

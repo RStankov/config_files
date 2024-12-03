@@ -63,6 +63,7 @@ Plug 'alvan/vim-closetag'
 Plug 'skywind3000/asyncrun.vim'
 Plug 'zerowidth/vim-copy-as-rtf'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'madox2/vim-ai', {'branch': 'main'}
 
 " Themes
 Plug 'altercation/vim-colors-solarized'

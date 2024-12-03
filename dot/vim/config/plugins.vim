@@ -87,6 +87,9 @@ let g:prettier#config#trailing_comma = 'all'
 " flow|babylon|typescript|postcss|json|graphql
 let g:prettier#config#parser = 'flow'
 
+" where vim-ai can find OpenAI keys
+let g:vim_ai_token_file_path = '~/.config/openai.token'
+
 " Use ag over grep
 set grepprg=ag\ --nogroup\ --nocolor
 
