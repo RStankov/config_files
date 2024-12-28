@@ -145,6 +145,10 @@ set gcr=n:blinkon0
 " Reduce updatetime from 4000
 set updatetime=300
 
+" Enable long undo
+set undodir=~/.vim-undo
+set undofile
+
 " Set Python3 path
 " FIXES: https://github.com/macvim-dev/macvim/issues/1003
 set pythonthreedll=/opt/homebrew/Cellar/python@3.11/3.11.10/Frameworks/Python.framework/Versions/3.11/Python
