@@ -1,6 +1,9 @@
 #!/bin/bash
 
-docker stop $(docker ps -q)
+CONTAINERS=$(docker ps -q)
+if [ -n "$CONTAINERS" ]; then
+  docker stop $CONTAINERS
+fi
 
 osascript <<EOF
 tell application "iTerm"
@@ -33,7 +36,7 @@ tell application "iTerm"
     tell application "System Events" to keystroke "t" using {command down}
     delay 0.2
     tell current session of newWindow
-        write text "cd /Users/rstankov/Projects/producthunt
+        write text "cd /Users/rstankov/Projects/producthunt"
     end tell
 end tell
 EOF
