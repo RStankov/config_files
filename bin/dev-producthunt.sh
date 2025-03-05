@@ -5,6 +5,10 @@ if [ -n "$CONTAINERS" ]; then
   docker stop $CONTAINERS
 fi
 
+cd /Users/rstankov/Projects/producthunt
+
+docker-compose up -d --no-recreate
+
 osascript <<EOF
 tell application "iTerm"
     activate
