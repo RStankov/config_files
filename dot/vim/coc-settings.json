@@ -2,5 +2,11 @@
   "suggest.noselect": true,
   "codeLens.enable": true,
   "solargraph.useBundler": false,
-  "snippets.ultisnips.pythonPrompt": false
+  "snippets.ultisnips.pythonPrompt": false,
+  "languageserver": {
+    "ruby-lsp": {
+      "command": "ruby-lsp",
+      "filetypes": ["ruby"]
+    }
+  }
 }

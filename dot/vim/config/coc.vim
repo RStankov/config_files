@@ -1,6 +1,6 @@
 " Coc setup
 let g:coc_config_home = '/Users/rstankov/.vim'
-let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-solargraph', 'coc-snippets']
+let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-snippets']
 
 " Highlight the symbol and its references when holding the cursor
 " autocmd CursorHold * silent call CocActionAsync('highlight')
@@ -88,23 +88,40 @@ function! CustomCocNavigation() abort
   " Save current cursor position
   let l:pos = getpos('.')
 
-  " Try 'go to implementation'
-  call CocAction('jumpImplementation')
-  if l:pos != getpos('.')
-    return
+  " Check and try 'go to definition' if available
+  if CocHasProvider('definition')
+    call CocAction('jumpDefinition')
+    if l:pos != getpos('.')
+      return
+    endif
   endif
 
-  " Try 'go to type definition'
-  call CocAction('jumpTypeDefinition')
-  if l:pos != getpos('.')
-    return
+  " Check and try 'go to implementation' if available
+  if CocHasProvider('implementation')
+    call CocAction('jumpImplementation')
+    if l:pos != getpos('.')
+      return
+    endif
   endif
 
-  " Try 'go to definition'
-  call CocAction('jumpDeclaration')
-  if l:pos != getpos('.')
-    return
+  " Check and try 'go to type definition' if available
+  if CocHasProvider('typeDefinition')
+    call CocAction('jumpTypeDefinition')
+    if l:pos != getpos('.')
+      return
+    endif
   endif
+
+  " Check and try 'go to declaration' if available
+  if CocHasProvider('declaration')
+    call CocAction('jumpDeclaration')
+    if l:pos != getpos('.')
+      return
+    endif
+  endif
+
+  " If nothing worked, fall back to Vim's native gd
+  normal! gd
 endfunction
 
 function! CustomCocToggleOutling() abort
