@@ -6,7 +6,12 @@
   "languageserver": {
     "ruby-lsp": {
       "command": "ruby-lsp",
-      "filetypes": ["ruby"]
+      "filetypes": ["ruby"],
+      "initializationOptions": {
+        "enabledFeatures": {
+          "codeLens": false
+        }
+      }
     }
   }
 }
