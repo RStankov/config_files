@@ -12,7 +12,7 @@ snippet def
 	  ${3}
 	end
 snippet expt
-	expt(${1}).to ${2}
+	expect(${1}).to ${2}
 snippet frozens
 	# frozen_string_literal: true
 
@@ -45,11 +45,13 @@ snippet create_table
 	end
 snippet add_index_unique
 	add_index :team_members, %i(${1}), unique: true
-snippet factory
-	factory ${1}, class_name: Class do
+snippet factory_seq
+	sequence(${1}) { "name-#{_1}" }
+snippet factory_define
+	factory ${1}, class_name: 'Class' do
 	  association :name, factory: :other_factory
 
-	  sequence(:name) { |i| "name-#{i}" }
+	  sequence(:name) { "name-#{_1}" }
 	end
 snippet factory_trait
 	trait ${1} do
