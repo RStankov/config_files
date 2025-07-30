@@ -1,0 +1,7 @@
+#!/bin/bash
+
+rails db:migrate
+
+git reset --hard
+
+RAILS_ENV=test rails db:test:prepare
