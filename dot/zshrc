@@ -22,4 +22,4 @@ export PATH="$PATH:/Users/rstankov/.cache/lm-studio/bin"
 # Added by Windsurf
 export PATH="/Users/rstankov/.codeium/windsurf/bin:$PATH"
 
-export PORT=5001
+[[ "$TERM_PROGRAM" == "kiro" ]] && . "$(kiro --locate-shell-integration-path zsh)"
