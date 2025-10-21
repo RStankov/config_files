@@ -94,14 +94,16 @@ let g:vim_ai_token_file_path = '~/.config/openai.token'
 set grepprg=ag\ --nogroup\ --nocolor
 
 " Turn on Ale only per-project basis
-let g:ale_linters = {}
-let g:ale_lint_on_save = 0
+let g:ale_linters = { 'javascript': [], 'ruby': ['rubocop'], 'typescript': ['prettier', 'tsserver'] }
+let g:ale_lint_on_save = 1
+let g:ale_fixers = { 'ruby': ['rubocop'] }
+let g:ale_fix_on_save = 1
 let g:ale_lint_on_text_changed = 0
 let g:ale_lint_on_enter = 0
 let g:ale_linters_explicit = 1
-let g:ale_fix_on_save = 1
 let g:ale_sign_error = '✗'
 let g:ale_sign_warning = '⚠'
+
 
 " Auto close
 let g:closetag_shortcut = '>'

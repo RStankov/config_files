@@ -14,3 +14,7 @@ function! s:CreateAlternative()
 endfunction
 
 command! AC :call <SID>CreateAlternative()
+
+command! -nargs=* -complete=dir F :exe "Rg --glob !db" <q-args>
+
+command! Rubocop :AsyncRun bundle exec rubocop -a

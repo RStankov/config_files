@@ -10,3 +10,7 @@ autocmd BufNewFile,BufRead *.json set filetype=javascript
 autocmd BufNewFile * if &filetype == "" | setlocal ft=ruby | endif
 
 autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescriptreact
+
+" Reformat with Prettier on save
+let g:prettier#autoformat = 0
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql PrettierAsync
