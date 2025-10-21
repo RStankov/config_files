@@ -173,3 +173,7 @@ if has('gui_vimr')
   nnoremap <C-S-z> <C-r>
   inoremap <C-S-z> <C-o><C-r>
 endif
+
+" Map '==' to format file
+autocmd FileType javascript,typescript,json nnoremap <buffer> == :PrettierAsync<CR>
+autocmd FileType * nnoremap <buffer> == :ALEFix<CR>
