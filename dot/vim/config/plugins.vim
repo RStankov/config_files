@@ -85,7 +85,10 @@ let g:prettier#config#jsx_bracket_same_line = 'true'
 let g:prettier#config#trailing_comma = 'all'
 
 " flow|babylon|typescript|postcss|json|graphql
-let g:prettier#config#parser = 'flow'
+let g:prettier#config#parser = 'typescript'
+
+" require config
+let g:prettier#config#require_config = 1
 
 " where vim-ai can find OpenAI keys
 let g:vim_ai_token_file_path = '~/.config/openai.token'

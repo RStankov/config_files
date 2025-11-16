@@ -13,4 +13,4 @@ autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescriptreact
 
 " Reformat with Prettier on save
 let g:prettier#autoformat = 0
-autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql PrettierAsync
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql execute 'PrettierAsync --require-config'
