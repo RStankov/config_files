@@ -21,9 +21,6 @@ export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 # Node modules bin
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
-# Added by LM Studio CLI (lms)
-export PATH="$PATH:/Users/rstankov/.cache/lm-studio/bin"
-
 # libpq
 export LDFLAGS="-L/opt/homebrew/opt/libpq/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/libpq/include"
