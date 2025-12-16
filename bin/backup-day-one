@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+die() { echo "error: $*" >&2; exit 1; }
+
+[[ $# -eq 1 ]] || die "usage: backup-day-one [file]"
+
+src="$1"
+
+[[ -f "$src" ]] || die "not a file: $src"
+
+src_dir="$(cd -- "$(dirname -- "$src")" && pwd -P)"
+src_base="$(basename -- "$src")"
+
+time="$(stat -f %m "$src" 2>/dev/null || date +%s)"
+
+file="$(date -r "$time" +%F).zip"
+file_enc="$file.enc"
+
+file_path="$src_dir/$file"
+file_enc_path="$src_dir/$file_enc"
+
+trap 'rm -f "$file_enc_path" 2>/dev/null || true' ERR
+
+mv -f "$src" "$file_path"
+
+# Run from src_dir so dev-file-encrypt writes next to the file (common behavior)
+(
+  cd -- "$src_dir"
+  op read "op://Primary/Day One/Backup password" | dev-file-encrypt "$file"
+)
+
+[[ -f "$file_enc_path" ]] || die "expected output missing: $file_enc_path"
+
+dest_dir="$HOME/Dropbox/archive/App Exports/DayOne"
+mkdir -p "$dest_dir"
+mv -f "$file_enc_path" "$dest_dir/$file_enc"
+
+rm -f "$file_path"
