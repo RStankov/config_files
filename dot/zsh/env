@@ -8,6 +8,10 @@ export PATH="./bin:./node_modules/.bin:$HOME/.yarn/bin:$HOME/.config/yarn/global
 # MacVim
 export PATH=$PATH:/Applications/MacVim.app/Contents/bin/
 
+# Pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+
 # Paths for Android development
 export ANDROID_HOME=/Users/rstankov/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
