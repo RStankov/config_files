@@ -7,6 +7,9 @@ let NERDTreeMinimalUI = 1
 " NERDTree auto delete buffer after file is removed
 let NERDTreeAutoDeleteBuffer = 1
 
+" Don't show wildignore files and directories
+let NERDTreeRespectWildIgnore = 1
+
 " Track NERDTree state in tabs (credits @StanAngeloff and @gsamokovarov)
 let g:nerdtree_tabs_open_on_new_tab=0
 let g:nerdtree_tabs_open_on_gui_startup=0

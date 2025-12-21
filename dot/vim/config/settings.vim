@@ -94,11 +94,14 @@ set wildignore+=*.jpg,*.png,*.gif,*.jpeg,*.ico
 set wildignore+=*.swf,*.htc
 set wildignore+=*/tmp/*,*/db/migrate,*/public/stylesheets/compiled
 set wildignore+=*/storage
-set wildignore+=*/node_modules/*
+set wildignore+=node_modules
+set wildignore+=*/venv/*
 set wildignore+=*/flow-typed/*
 set wildignore+=*/deps/*
 set wildignore+=*/log/*
 set wildignore+=*/dist/*
+set wildignore+=*/__pycache__
+set wildignore+=*.egg-info
 
 " Show the current mode
 set showmode
