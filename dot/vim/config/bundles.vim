@@ -67,6 +67,7 @@ Plug 'chrisbra/Colorizer'
 
 " Themes
 Plug 'altercation/vim-colors-solarized'
+Plug 'sderev/alabaster.vim'
 
 call plug#end()
 
