@@ -110,6 +110,12 @@ let g:ale_linters_explicit = 1
 let g:ale_sign_error = '✗'
 let g:ale_sign_warning = '⚠'
 
+" Colorizer auto show colors (turn off with :ColorClear)
+let g:colorizer_auto_color = 1
+let g:colorizer_syntax = 1
+let g:colorizer_auto_filetype = 'css,html,javascript,typescript,javascriptreact,typescriptreact,eruby,htmldjango'
+let g:colorizer_colornames = 0
+let g:colorizer_skip_comments = 1
 
 " Auto close
 let g:closetag_shortcut = '>'
