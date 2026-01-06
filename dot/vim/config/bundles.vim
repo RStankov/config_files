@@ -23,6 +23,7 @@ Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'udalov/kotlin-vim'
+Plug 'jupyter-vim/jupyter-vim'
 
 " Other
 Plug 'AndrewRadev/sideways.vim'
@@ -66,6 +67,7 @@ Plug 'vim-scripts/Auto-Pairs'
 Plug 'vim-scripts/indentpython.vim'
 Plug 'w0rp/ale'
 Plug 'zerowidth/vim-copy-as-rtf'
+Plug 'ubaldot/vim-outline'
 
 " Themes
 Plug 'altercation/vim-colors-solarized'
